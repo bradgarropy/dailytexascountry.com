@@ -1,0 +1,59 @@
+{
+    "name": "dailytexascountry.com",
+    "version": "0.0.1",
+    "description": "🤠 daily texas country",
+    "keywords": [
+        "gatsby",
+        "react",
+        "styled-components",
+        "prettier",
+        "eslint"
+    ],
+    "homepage": "https://dailytexascountry.com",
+    "bugs": {
+        "url": "https://github.com/bradgarropy/dailytexascountry.com/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Brad Garropy",
+        "email": "bradgarropy@gmail.com",
+        "url": "https://bradgarropy.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bradgarropy/dailytexascountry.com"
+    },
+    "scripts": {
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "dependencies": {
+        "babel-plugin-styled-components": "^1.10.7",
+        "dotenv": "^8.2.0",
+        "gatsby": "^2.19.18",
+        "gatsby-plugin-google-analytics": "^2.1.35",
+        "gatsby-plugin-google-fonts": "^1.0.1",
+        "gatsby-plugin-layout": "^1.1.22",
+        "gatsby-plugin-manifest": "^2.2.41",
+        "gatsby-plugin-offline": "^3.0.35",
+        "gatsby-plugin-react-helmet": "^3.1.22",
+        "gatsby-plugin-react-svg": "^3.0.0",
+        "gatsby-plugin-styled-components": "^3.1.19",
+        "modern-normalize": "^0.6.0",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-helmet": "^5.2.1",
+        "styled-components": "^5.0.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.8.0",
+        "eslint-config-bradgarropy": "^1.3.1",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.18.3",
+        "eslint-plugin-react-hooks": "^2.3.0",
+        "prettier": "^1.19.1"
+    }
+}
