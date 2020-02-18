@@ -1,31 +1,27 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled, {ThemeProvider} from "styled-components"
-import Header from "./Header/Header"
-import Footer from "./Footer/Footer"
-import theme from "../styles/theme"
-import GlobalStyles from "../styles/GlobalStyles"
-import Container from "../styles/Container"
 import "../../node_modules/modern-normalize/modern-normalize.css"
+import Sidebar from "./Sidebar/Sidebar"
+import theme from "../styles/theme"
 
 const StyledLayout = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    font-family: "Roboto", sans-serif;
+    grid-template-columns: 1fr 2fr;
+`
+
+const Content = styled.div`
+    color: ${({theme}) => theme.colors.black};
+    background: ${({theme}) => theme.colors.white};
 `
 
 const Layout = ({children}) => (
     <ThemeProvider theme={theme}>
-        <>
-            <GlobalStyles />
-
-            <StyledLayout>
-                <Header />
-                <Container>{children}</Container>
-                <Footer />
-            </StyledLayout>
-        </>
+        <StyledLayout>
+            <Sidebar>Sidebar</Sidebar>
+            <Content>{children}</Content>
+        </StyledLayout>
     </ThemeProvider>
 )
 

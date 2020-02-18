@@ -1,5 +1,11 @@
 import React from "react"
+import styled from "styled-components"
 import {Meta, Twitter, Facebook} from "../components/SEO"
+
+const Section = styled.div`
+    background: ${({theme, color}) => theme.colors[color]};
+    min-height: 50vh;
+`
 
 const IndexPage = () => {
     return (
@@ -8,7 +14,10 @@ const IndexPage = () => {
             <Facebook />
             <Twitter />
 
-            <h1>home</h1>
+            <Section color="white">section</Section>
+            <Section color="red">section</Section>
+            <Section color="white">section</Section>
+            <Section color="red">section</Section>
         </>
     )
 }
