@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import styled, {ThemeProvider} from "styled-components"
 import "../../node_modules/modern-normalize/modern-normalize.css"
 import Sidebar from "./Sidebar/Sidebar"
-import Header from "./Header/MobileHeader"
-import Footer from "./Footer/MobileFooter"
+import MobileHeader from "./Header/MobileHeader"
+import MobileFooter from "./Footer/MobileFooter"
 import theme from "../styles/theme"
 import GlobalStyles from "../styles/GlobalStyles"
 
@@ -32,9 +32,9 @@ const Layout = ({children}) => (
                 <Sidebar />
 
                 <Content>
-                    <Header />
+                    <MobileHeader />
                     {children}
-                    <Footer />
+                    <MobileFooter />
                 </Content>
             </StyledLayout>
         </>

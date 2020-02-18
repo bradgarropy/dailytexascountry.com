@@ -15,21 +15,6 @@ module.exports = {
             resolve: "gatsby-plugin-react-helmet",
         },
         {
-            resolve: "gatsby-plugin-manifest",
-            options: {
-                name: "daily texas country",
-                short_name: "dtxc",
-                start_url: "/",
-                background_color: "#ffffff",
-                theme_color: "#ffffff",
-                display: "minimal-ui",
-                icon: "static/icon.png",
-            },
-        },
-        {
-            resolve: "gatsby-plugin-offline",
-        },
-        {
             resolve: "gatsby-plugin-google-analytics",
             options: {
                 trackingId: process.env.TRACKING_ID,
