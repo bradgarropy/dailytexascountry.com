@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Navigation from "./Navigation"
 
 const StyledMobileHeader = styled.div`
     color: ${({theme}) => theme.colors.white};
@@ -12,7 +13,11 @@ const StyledMobileHeader = styled.div`
 `
 
 const MobileHeader = () => {
-    return <StyledMobileHeader>header</StyledMobileHeader>
+    return (
+        <StyledMobileHeader>
+            <Navigation />
+        </StyledMobileHeader>
+    )
 }
 
 export default MobileHeader

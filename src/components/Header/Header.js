@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Navigation from "./Navigation"
 
 const StyledHeader = styled.div`
     color: ${({theme}) => theme.colors.white};
@@ -8,7 +9,11 @@ const StyledHeader = styled.div`
 `
 
 const Header = () => {
-    return <StyledHeader>header</StyledHeader>
+    return (
+        <StyledHeader>
+            <Navigation />
+        </StyledHeader>
+    )
 }
 
 export default Header

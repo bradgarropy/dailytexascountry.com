@@ -7,7 +7,6 @@ const StyledSidebar = styled.div`
     color: ${({theme}) => theme.colors.white};
     background: ${({theme}) => theme.colors.blue};
     display: grid;
-    justify-content: center;
     align-content: space-between;
     position: sticky;
     top: 0;
