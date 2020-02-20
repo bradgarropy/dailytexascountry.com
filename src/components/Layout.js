@@ -21,6 +21,8 @@ const StyledLayout = styled.div`
 const Content = styled.div`
     color: ${({theme}) => theme.colors.black};
     background: ${({theme}) => theme.colors.white};
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 `
 
 const Layout = ({children}) => (
