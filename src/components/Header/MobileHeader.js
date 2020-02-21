@@ -39,12 +39,16 @@ const StyledMenu = styled(Menu)`
 const MobileHeader = () => {
     const {open, setOpen} = useContext(AppContext)
 
-    const onClick = () => setOpen(!open)
+    const onClick = () => setOpen(false)
+    const onMenu = () => setOpen(!open)
 
     return (
         <StyledMobileHeader open={open}>
-            <StyledLink to="/">DTXC</StyledLink>
-            <StyledMenu onClick={onClick} />
+            <StyledLink to="/" onClick={onClick}>
+                DTXC
+            </StyledLink>
+
+            <StyledMenu onClick={onMenu} />
             <Navigation open={open} />
         </StyledMobileHeader>
     )
