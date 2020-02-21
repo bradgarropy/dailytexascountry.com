@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+import {Link} from "gatsby"
 import styled from "styled-components"
 import Social from "./Social"
 import BG from "../../svg/bg.svg"
 
 const StyledFooter = styled.div`
-    color: ${({ theme }) => theme.colors.white};
-    background: ${({ theme }) => theme.colors.blue};
+    color: ${({theme}) => theme.colors.white};
+    background: ${({theme}) => theme.colors.blue};
     padding: 2rem;
     display: grid;
     grid-auto-flow: column;
@@ -15,16 +15,15 @@ const StyledFooter = styled.div`
 `
 
 const StyledLink = styled(Link)`
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({theme}) => theme.colors.white};
     text-decoration: none;
     font-weight: bold;
 `
 
 const StyledA = styled.a`
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({theme}) => theme.colors.white};
     text-decoration: none;
     font-weight: bold;
-
 `
 
 const StyledBG = styled(BG)`
