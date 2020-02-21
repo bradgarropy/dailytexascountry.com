@@ -5,6 +5,7 @@ import "../../node_modules/modern-normalize/modern-normalize.css"
 import Sidebar from "./Sidebar/Sidebar"
 import MobileHeader from "./Header/MobileHeader"
 import MobileFooter from "./Footer/MobileFooter"
+import {AppProvider} from "../context/app"
 import theme from "../styles/theme"
 import GlobalStyles from "../styles/GlobalStyles"
 
@@ -30,15 +31,17 @@ const Layout = ({children}) => (
         <>
             <GlobalStyles />
 
-            <StyledLayout>
-                <Sidebar />
+            <AppProvider>
+                <StyledLayout>
+                    <Sidebar />
 
-                <Content>
-                    <MobileHeader />
-                    {children}
-                    <MobileFooter />
-                </Content>
-            </StyledLayout>
+                    <Content>
+                        <MobileHeader />
+                        {children}
+                        <MobileFooter />
+                    </Content>
+                </StyledLayout>
+            </AppProvider>
         </>
     </ThemeProvider>
 )

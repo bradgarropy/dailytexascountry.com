@@ -9,6 +9,9 @@ module.exports = {
         description: "🤠 daily texas country",
         keywords: ["gatsby", "react", "scss", "eslint"],
         email: "bradgarropy@gmail.com",
+        twitter: "dailytxcountry",
+        youtube: "UCpbIlFaiv-3188nAWtgL0Iw",
+        instagram: "dailytexascountry",
     },
     plugins: [
         {
