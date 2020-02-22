@@ -5,7 +5,7 @@ const usePosts = () => {
         {
             allFile(filter: {sourceInstanceName: {eq: "posts"}}) {
                 nodes {
-                    relativePath
+                    relativeDirectory
                 }
             }
         }
