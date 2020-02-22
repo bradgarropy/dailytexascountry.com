@@ -17,7 +17,7 @@ const BlogPage = () => {
             <ul>
                 {posts.map((post, index) => (
                     <li key={index}>
-                        <Link to={`/posts/${post.relativeDirectory}`}>
+                        <Link to={`/blog/${post.relativeDirectory}`}>
                             {post.relativeDirectory}
                         </Link>
                     </li>
