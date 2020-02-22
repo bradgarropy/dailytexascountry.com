@@ -89,6 +89,9 @@ module.exports = {
             resolve: "gatsby-plugin-twitter",
         },
         {
+            resolve: "gatsby-plugin-instagram-embed",
+        },
+        {
             resolve: "gatsby-plugin-sharp",
         },
         {
