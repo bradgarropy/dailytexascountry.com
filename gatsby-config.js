@@ -49,5 +49,53 @@ module.exports = {
                 },
             },
         },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "posts",
+                path: "content/posts",
+            },
+        },
+        {
+            resolve: "gatsby-transformer-remark",
+            options: {
+                plugins: [
+                    {
+                        resolve: "gatsby-remark-images",
+                        options: {
+                            maxWidth: 700,
+                        },
+                    },
+                    {
+                        resolve: "gatsby-remark-autolink-headers",
+                        options: {
+                            maintainCase: false,
+                            removeAccents: true,
+                        },
+                    },
+                    {
+                        resolve: "gatsby-remark-embedder",
+                    },
+                    {
+                        resolve: "gatsby-remark-external-links",
+                        options: {
+                            rel: "noopener noreferrer",
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            resolve: "gatsby-plugin-twitter",
+        },
+        {
+            resolve: "gatsby-plugin-instagram-embed",
+        },
+        {
+            resolve: "gatsby-plugin-sharp",
+        },
+        {
+            resolve: "gatsby-transformer-sharp",
+        },
     ],
 }

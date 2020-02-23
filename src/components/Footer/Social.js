@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import useSiteMetadata from "../../hooks/useSiteMetadata"
+import {useSiteMetadata} from "../../hooks"
 import Twitter from "../../svg/twitter.svg"
 import YouTube from "../../svg/youtube.svg"
 import Instagram from "../../svg/instagram.svg"
