@@ -1,7 +1,7 @@
 ---
-slug: instagram-embed
+slug: instagram
 ---
 
-# Instagram Embed
+# Instagram
 
 https://www.instagram.com/p/B8pnuX6BFzB/
