@@ -1,7 +1,7 @@
 import React from "react"
 import {Link} from "gatsby"
-import {Meta, Twitter, Facebook} from "../components/SEO"
 import {usePosts} from "../hooks"
+import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const BlogPage = () => {
     const posts = usePosts()
@@ -15,13 +15,17 @@ const BlogPage = () => {
             <h1>blog</h1>
 
             <ul>
-                {posts.map((post, index) => (
-                    <li key={index}>
-                        <Link to={`/blog/${post.relativeDirectory}`}>
-                            {post.relativeDirectory}
-                        </Link>
-                    </li>
-                ))}
+                {posts.map((post, index) => {
+                    const {relativeDirectory} = post
+
+                    return (
+                        <li key={index}>
+                            <Link to={`/blog/${relativeDirectory}`}>
+                                {relativeDirectory}
+                            </Link>
+                        </li>
+                    )
+                })}
             </ul>
         </>
     )

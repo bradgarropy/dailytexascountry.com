@@ -29,7 +29,6 @@ const createPages = async ({graphql, actions}) => {
     `)
 
     const posts = response.data.allFile.nodes
-    console.log(posts)
     posts.map(post => createPostPage(post, createPage))
 }
 

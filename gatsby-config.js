@@ -1,6 +1,7 @@
-require("dotenv").config({
-    path: `.env.${process.env.NODE_ENV}`,
-})
+require("dotenv").config()
+
+const dtxcChannelId = "UCpbIlFaiv-3188nAWtgL0Iw"
+const bradgarropyChannelId = "UCgbFhcZKt36Upo7oxWlLEig"
 
 module.exports = {
     siteMetadata: {
@@ -10,7 +11,7 @@ module.exports = {
         keywords: ["gatsby", "react", "scss", "eslint"],
         email: "bradgarropy@gmail.com",
         twitter: "dailytxcountry",
-        youtube: "UCpbIlFaiv-3188nAWtgL0Iw",
+        youtube: dtxcChannelId,
         instagram: "dailytexascountry",
     },
     plugins: [
@@ -54,6 +55,14 @@ module.exports = {
             options: {
                 name: "posts",
                 path: "content/posts",
+            },
+        },
+        {
+            resolve: "gatsby-source-youtube-v2",
+            options: {
+                channelId: [dtxcChannelId, bradgarropyChannelId],
+                apiKey: process.env.YOUTUBE_API_KEY,
+                maxVideos: 50,
             },
         },
         {
