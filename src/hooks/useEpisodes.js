@@ -14,7 +14,6 @@ const useEpisodes = () => {
 
     const data = useStaticQuery(query)
     const episodes = data.allYoutubeVideo.nodes
-    console.log(episodes)
 
     return episodes
 }
