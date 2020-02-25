@@ -3,7 +3,12 @@ import {useStaticQuery, graphql} from "gatsby"
 const usePosts = () => {
     const query = graphql`
         {
-            allFile(filter: {sourceInstanceName: {eq: "posts"}}) {
+            allFile(
+                filter: {
+                    sourceInstanceName: {eq: "posts"}
+                    extension: {eq: "md"}
+                }
+            ) {
                 nodes {
                     relativeDirectory
                 }

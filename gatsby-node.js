@@ -15,7 +15,12 @@ const createPages = async ({graphql, actions}) => {
 
     const response = await graphql(`
         {
-            allFile(filter: {sourceInstanceName: {eq: "posts"}}) {
+            allFile(
+                filter: {
+                    sourceInstanceName: {eq: "posts"}
+                    extension: {eq: "md"}
+                }
+            ) {
                 nodes {
                     relativeDirectory
                 }
@@ -24,6 +29,7 @@ const createPages = async ({graphql, actions}) => {
     `)
 
     const posts = response.data.allFile.nodes
+    console.log(posts)
     posts.map(post => createPostPage(post, createPage))
 }
 
