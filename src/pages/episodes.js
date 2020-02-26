@@ -19,7 +19,11 @@ const EpisodesPage = () => {
 
                     return (
                         <li key={index}>
-                            <a href={`https://youtube.com/watch?v=${videoId}`}>
+                            <a
+                                href={`https://youtube.com/watch?v=${videoId}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 {title}
                             </a>
                         </li>
