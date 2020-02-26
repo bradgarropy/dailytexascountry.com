@@ -58,6 +58,13 @@ module.exports = {
             },
         },
         {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "pages",
+                path: "content/pages",
+            },
+        },
+        {
             resolve: "gatsby-source-youtube-v2",
             options: {
                 channelId: [dtxcChannelId, bradgarropyChannelId],
