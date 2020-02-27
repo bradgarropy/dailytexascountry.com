@@ -1,36 +1,20 @@
 import React from "react"
 import {useEpisodes} from "../hooks"
+import Container from "../styles/Container"
+import Episodes from "../components/Episodes"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const EpisodesPage = () => {
     const episodes = useEpisodes()
 
     return (
-        <>
+        <Container>
             <Meta title="episodes" />
             <Facebook />
             <Twitter />
 
-            <h1>episodes</h1>
-
-            <ul>
-                {episodes.map((episode, index) => {
-                    const {videoId, title} = episode
-
-                    return (
-                        <li key={index}>
-                            <a
-                                href={`https://youtube.com/watch?v=${videoId}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {title}
-                            </a>
-                        </li>
-                    )
-                })}
-            </ul>
-        </>
+            <Episodes episodes={episodes} />
+        </Container>
     )
 }
 
