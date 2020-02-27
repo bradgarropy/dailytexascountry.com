@@ -1,6 +1,6 @@
 import {useStaticQuery, graphql} from "gatsby"
 
-const usePosts = () => {
+const usePosts = ({limit = 0} = {}) => {
     const query = graphql`
         {
             allFile(
@@ -17,7 +17,12 @@ const usePosts = () => {
     `
 
     const data = useStaticQuery(query)
-    const posts = data.allFile.nodes
+
+    let posts = data.allFile.nodes
+
+    if (limit) {
+        posts = posts.slice(0, limit)
+    }
 
     return posts
 }

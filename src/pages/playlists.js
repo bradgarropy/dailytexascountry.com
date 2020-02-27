@@ -12,6 +12,7 @@ const PlaylistsPage = () => {
             <Twitter />
 
             <h1>playlists</h1>
+
             <ul>
                 {playlists.map((playlist, index) => {
                     const {name} = playlist

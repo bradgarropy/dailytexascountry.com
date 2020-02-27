@@ -1,6 +1,6 @@
 import {useStaticQuery, graphql} from "gatsby"
 
-const useEpisodes = () => {
+const useEpisodes = ({limit = 0} = {}) => {
     const query = graphql`
         {
             allYoutubeVideo {
@@ -13,7 +13,12 @@ const useEpisodes = () => {
     `
 
     const data = useStaticQuery(query)
-    const episodes = data.allYoutubeVideo.nodes
+
+    let episodes = data.allYoutubeVideo.nodes
+
+    if (limit) {
+        episodes = episodes.slice(0, limit)
+    }
 
     return episodes
 }
