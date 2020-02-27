@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 import styled from "styled-components"
 import Navigation from "./Navigation"
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
     color: ${({theme}) => theme.colors.white};
     background: ${({theme}) => theme.colors.blue};
     padding: 2rem;
