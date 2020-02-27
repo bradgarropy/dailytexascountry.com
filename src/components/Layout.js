@@ -37,7 +37,7 @@ const Layout = ({children}) => (
 
                     <Content>
                         <MobileHeader />
-                        {children}
+                        <main>{children}</main>
                         <MobileFooter />
                     </Content>
                 </StyledLayout>

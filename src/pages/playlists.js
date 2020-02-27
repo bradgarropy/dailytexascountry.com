@@ -1,36 +1,20 @@
 import React from "react"
 import {usePlaylists} from "../hooks"
+import Container from "../styles/Container"
+import Playlists from "../components/Playlists"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const PlaylistsPage = () => {
     const playlists = usePlaylists()
 
     return (
-        <>
+        <Container>
             <Meta title="playlists" />
             <Facebook />
             <Twitter />
 
-            <h1>playlists</h1>
-            <ul>
-                {playlists.map((playlist, index) => {
-                    const {name} = playlist
-                    const url = playlist.external_urls.spotify
-
-                    return (
-                        <li key={index}>
-                            <a
-                                href={url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {name}
-                            </a>
-                        </li>
-                    )
-                })}
-            </ul>
-        </>
+            <Playlists playlists={playlists} />
+        </Container>
     )
 }
 

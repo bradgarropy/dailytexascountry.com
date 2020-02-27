@@ -6,7 +6,7 @@ import Navigation from "./Navigation"
 import {AppContext} from "../../context/app"
 import Menu from "../../svg/menu.svg"
 
-const StyledMobileHeader = styled.div`
+const StyledMobileHeader = styled.header`
     color: ${({theme}) => theme.colors.white};
     background: ${({theme}) => theme.colors.blue};
     padding: 2rem;

@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Social from "./Social"
 import BG from "../../svg/bg.svg"
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
     color: ${({theme}) => theme.colors.white};
     background: ${({theme}) => theme.colors.blue};
     padding: 2rem;
