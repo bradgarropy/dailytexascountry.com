@@ -1,7 +1,8 @@
 ---
 slug: sharp
+title: Sharp
+date: 2020-01-01
+tags: []
 ---
-
-# Sharp
 
 ![dtxc](images/logo.jpg)

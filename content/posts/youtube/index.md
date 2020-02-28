@@ -1,7 +1,8 @@
 ---
 slug: youtube
+title: YouTube
+date: 2020-01-01
+tags: []
 ---
-
-# YouTube
 
 https://youtu.be/l7BmkU9z4BE
