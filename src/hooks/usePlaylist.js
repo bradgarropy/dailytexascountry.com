@@ -1,6 +1,6 @@
 import {useStaticQuery, graphql} from "gatsby"
 
-const usePlaylists = ({name = undefined, limit = 0} = {}) => {
+const usePlaylist = ({name} = {}) => {
     const query = graphql`
         {
             allSpotifyPlaylist(
@@ -18,17 +18,10 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
 
     const data = useStaticQuery(query)
 
-    let playlists = data.allSpotifyPlaylist.nodes
+    const playlists = data.allSpotifyPlaylist.nodes
+    const playlist = playlists.find(playlist => playlist.name === name)
 
-    if (limit) {
-        playlists = playlists.slice(0, limit)
-    }
-
-    if (name) {
-        playlists = playlists.filter(playlist => playlist.name === name)
-    }
-
-    return playlists
+    return playlist
 }
 
-export default usePlaylists
+export default usePlaylist

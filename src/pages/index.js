@@ -10,7 +10,7 @@ import {usePosts, useEpisodes, usePlaylists} from "../hooks"
 const IndexPage = () => {
     const posts = usePosts({limit: 3})
     const episodes = useEpisodes({limit: 1})
-    const playlists = usePlaylists({limit: 1})
+    const playlists = usePlaylists({name: "Daily Texas Country"})
 
     return (
         <>
