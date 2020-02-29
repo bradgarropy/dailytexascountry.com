@@ -2,7 +2,7 @@
 slug: post-four
 title: Post Four
 date: 2020-04-27
-tags: ["dancin"]
+tags: ["review", "new music"]
 image: https://source.unsplash.com/1600x1200/?country,music
 ---
 

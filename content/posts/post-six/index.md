@@ -2,7 +2,7 @@
 slug: post-six
 title: Post Six
 date: 2020-06-27
-tags: ["dancin", "drinkin"]
+tags: ["dancin", "drinkin", "concert"]
 image: https://source.unsplash.com/1600x1200/?country,music
 ---
 

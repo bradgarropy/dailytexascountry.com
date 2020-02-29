@@ -2,7 +2,7 @@
 slug: post-three
 title: Post Three
 date: 2020-03-27
-tags: ["dancin"]
+tags: ["drinkin", "concert"]
 image: https://source.unsplash.com/1600x1200/?country,music
 ---
 

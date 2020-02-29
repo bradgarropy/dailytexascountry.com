@@ -4,23 +4,17 @@ import PropType from "prop-types"
 
 const Posts = ({posts}) => {
     return (
-        <>
-            <h1>blog</h1>
+        <ul>
+            {posts.map((post, index) => {
+                const {slug} = post.frontmatter
 
-            <ul>
-                {posts.map((post, index) => {
-                    const {relativeDirectory} = post
-
-                    return (
-                        <li key={index}>
-                            <Link to={`/blog/${relativeDirectory}`}>
-                                {relativeDirectory}
-                            </Link>
-                        </li>
-                    )
-                })}
-            </ul>
-        </>
+                return (
+                    <li key={index}>
+                        <Link to={`/blog/${slug}`}>{slug}</Link>
+                    </li>
+                )
+            })}
+        </ul>
     )
 }
 

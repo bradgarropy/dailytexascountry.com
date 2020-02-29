@@ -1,15 +1,13 @@
 import {useStaticQuery, graphql} from "gatsby"
 
-const usePosts = ({limit = 0} = {}) => {
+const useTags = ({limit = 0} = {}) => {
     const query = graphql`
         {
             allMarkdownRemark(
                 filter: {fileAbsolutePath: {regex: "/content/posts/"}}
             ) {
-                nodes {
-                    frontmatter {
-                        slug
-                    }
+                group(field: frontmatter___tags) {
+                    fieldValue
                 }
             }
         }
@@ -17,13 +15,13 @@ const usePosts = ({limit = 0} = {}) => {
 
     const data = useStaticQuery(query)
 
-    let posts = data.allMarkdownRemark.nodes
+    let tags = data.allMarkdownRemark.group.map(member => member.fieldValue)
 
     if (limit) {
-        posts = posts.slice(0, limit)
+        tags = tags.slice(0, limit)
     }
 
-    return posts
+    return tags
 }
 
-export default usePosts
+export default useTags

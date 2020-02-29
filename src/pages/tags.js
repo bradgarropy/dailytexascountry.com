@@ -1,11 +1,11 @@
 import React from "react"
-import {usePosts} from "../hooks"
-import Posts from "../components/Posts"
+import {useTags} from "../hooks"
+import Tags from "../components/Tags"
 import Container from "../styles/Container"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
-const BlogPage = () => {
-    const posts = usePosts()
+const TagsPage = () => {
+    const tags = useTags()
 
     return (
         <Container>
@@ -13,10 +13,10 @@ const BlogPage = () => {
             <Facebook />
             <Twitter />
 
-            <h1>blog</h1>
-            <Posts posts={posts} />
+            <h1>tags</h1>
+            <Tags tags={tags} />
         </Container>
     )
 }
 
-export default BlogPage
+export default TagsPage

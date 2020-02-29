@@ -2,7 +2,7 @@
 slug: post-two
 title: Post Two
 date: 2020-02-27
-tags: ["dancin"]
+tags: ["drinkin", "dancin"]
 image: https://source.unsplash.com/1600x1200/?country,music
 ---
 

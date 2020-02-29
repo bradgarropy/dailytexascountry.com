@@ -19,6 +19,7 @@ const IndexPage = () => {
             <Twitter />
 
             <Section color="white">
+                <h1>blog</h1>
                 <Posts posts={posts} />
                 <Link to="/blog">see more</Link>
             </Section>

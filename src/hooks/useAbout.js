@@ -3,19 +3,14 @@ import {useStaticQuery, graphql} from "gatsby"
 const useAbout = () => {
     const query = graphql`
         {
-            file(
-                sourceInstanceName: {eq: "pages"}
-                relativeDirectory: {eq: "about"}
-            ) {
-                childMarkdownRemark {
-                    html
-                }
+            markdownRemark(fileAbsolutePath: {regex: "/content/pages/about/"}) {
+                html
             }
         }
     `
 
     const data = useStaticQuery(query)
-    const about = data.file.childMarkdownRemark
+    const about = data.markdownRemark
 
     return about
 }

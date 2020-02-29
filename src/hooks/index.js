@@ -1,3 +1,4 @@
+export {default as useTags} from "./useTags"
 export {default as useAbout} from "./useAbout"
 export {default as usePosts} from "./usePosts"
 export {default as useEpisodes} from "./useEpisodes"

@@ -1,6 +1,6 @@
 import React from "react"
-import {graphql} from "gatsby"
 import PropTypes from "prop-types"
+import {Link, graphql} from "gatsby"
 import styled from "styled-components"
 import Container from "../styles/Container"
 import {Meta, Twitter, Facebook} from "../components/SEO"
@@ -12,10 +12,16 @@ const Image = styled.img`
     object-fit: cover;
 `
 
+const Tags = styled.div`
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 0.75rem;
+`
+
 const PostTemplate = ({data}) => {
     const {html} = data.markdownRemark
     const {image, title, date, tags} = data.markdownRemark.frontmatter
-    console.log(tags)
 
     return (
         <Container>
@@ -28,7 +34,13 @@ const PostTemplate = ({data}) => {
             <h1>{title}</h1>
             <p>{date}</p>
 
-            {tags && <p>{tags.join(", ")}</p>}
+            <Tags>
+                {tags.map((tag, index) => (
+                    <Link key={index} to={`/tags/${tag}`}>
+                        {tag}
+                    </Link>
+                ))}
+            </Tags>
 
             <div dangerouslySetInnerHTML={{__html: html}} />
         </Container>
