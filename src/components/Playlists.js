@@ -1,30 +1,37 @@
 import React from "react"
+import Img from "gatsby-image"
 import PropType from "prop-types"
+import styled from "styled-components"
+
+const StyledPlaylists = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+`
 
 const Playlists = ({playlists}) => {
     return (
-        <>
-            <h1>playlists</h1>
+        <StyledPlaylists>
+            {playlists.map((playlist, index) => {
+                const {name, description} = playlist
+                const url = playlist.external_urls.spotify
+                const image = playlist.image.localFile.childImageSharp.fluid
 
-            <ul>
-                {playlists.map((playlist, index) => {
-                    const {name} = playlist
-                    const url = playlist.external_urls.spotify
+                return (
+                    <article key={index}>
+                        <a href={url} target="_blank" rel="noopener noreferrer">
+                            <Img fluid={image} />
+                        </a>
 
-                    return (
-                        <li key={index}>
-                            <a
-                                href={url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {name}
-                            </a>
-                        </li>
-                    )
-                })}
-            </ul>
-        </>
+                        <a href={url} target="_blank" rel="noopener noreferrer">
+                            <p>{name}</p>
+                        </a>
+
+                        <p>{description}</p>
+                    </article>
+                )
+            })}
+        </StyledPlaylists>
     )
 }
 

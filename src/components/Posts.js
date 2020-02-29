@@ -14,12 +14,16 @@ const Posts = ({posts}) => {
     return (
         <StyledPosts>
             {posts.map((post, index) => {
-                const {slug, title, image} = post.frontmatter
+                const {slug, title} = post.frontmatter
+                const image = post.frontmatter.image.childImageSharp.fluid
 
                 return (
                     <article key={index}>
                         <Link to={`/blog/${slug}`}>
-                            <Img fluid={image.childImageSharp.fluid} />
+                            <Img fluid={image} />
+                        </Link>
+
+                        <Link to={`/blog/${slug}`}>
                             <p>{title}</p>
                         </Link>
                     </article>

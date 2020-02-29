@@ -13,6 +13,7 @@ const PlaylistsPage = () => {
             <Facebook />
             <Twitter />
 
+            <h1>playlists</h1>
             <Playlists playlists={playlists} />
         </Container>
     )

@@ -1,4 +1,5 @@
 import {useStaticQuery, graphql} from "gatsby"
+import decode from "../utils/decode"
 
 const usePlaylists = ({name = undefined, limit = 0} = {}) => {
     const query = graphql`
@@ -8,8 +9,18 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
             ) {
                 nodes {
                     name
+                    description
                     external_urls {
                         spotify
+                    }
+                    image {
+                        localFile {
+                            childImageSharp {
+                                fluid(maxWidth: 700) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -27,6 +38,11 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
     if (name) {
         playlists = playlists.filter(playlist => playlist.name === name)
     }
+
+    // decode description
+    playlists.forEach(
+        playlist => (playlist.description = decode(playlist.description)),
+    )
 
     return playlists
 }
