@@ -5,10 +5,19 @@ const usePosts = ({limit = 0} = {}) => {
         {
             allMarkdownRemark(
                 filter: {fileAbsolutePath: {regex: "/content/posts/"}}
+                sort: {fields: frontmatter___date}
             ) {
                 nodes {
                     frontmatter {
                         slug
+                        title
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 700) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                 }
             }

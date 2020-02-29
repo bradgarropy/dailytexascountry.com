@@ -1,11 +1,12 @@
 import React from "react"
+import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import {Link, graphql} from "gatsby"
 import styled from "styled-components"
 import Container from "../styles/Container"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
-const Image = styled.img`
+const Image = styled(Img)`
     display: block;
     width: 100%;
     max-height: 50vh;
@@ -29,7 +30,7 @@ const PostTemplate = ({data}) => {
             <Facebook />
             <Twitter />
 
-            <Image src={image} alt="" />
+            <Image fluid={image.childImageSharp.fluid} />
 
             <h1>{title}</h1>
             <p>{date}</p>
@@ -60,7 +61,13 @@ const query = graphql`
                 title
                 date(formatString: "MMMM D, YYYY")
                 tags
-                image
+                image {
+                    childImageSharp {
+                        fluid(maxWidth: 700) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
             }
         }
     }

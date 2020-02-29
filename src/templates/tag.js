@@ -28,10 +28,21 @@ TagTemplate.propTypes = {
 
 const query = graphql`
     query($tag: [String]!) {
-        allMarkdownRemark(filter: {frontmatter: {tags: {in: $tag}}}) {
+        allMarkdownRemark(
+            filter: {frontmatter: {tags: {in: $tag}}}
+            sort: {fields: frontmatter___date}
+        ) {
             nodes {
                 frontmatter {
                     slug
+                    title
+                    image {
+                        childImageSharp {
+                            fluid(maxWidth: 700) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
                 }
             }
         }
