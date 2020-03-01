@@ -5,7 +5,7 @@ const usePosts = ({limit = 0} = {}) => {
         {
             allMarkdownRemark(
                 filter: {fileAbsolutePath: {regex: "/content/posts/"}}
-                sort: {fields: frontmatter___date}
+                sort: {fields: frontmatter___date, order: DESC}
             ) {
                 nodes {
                     frontmatter {

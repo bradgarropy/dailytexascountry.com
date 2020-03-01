@@ -1,9 +1,12 @@
 import {useStaticQuery, graphql} from "gatsby"
 
-const useEpisodes = ({limit = 0} = {}) => {
+const useEpisode = () => {
     const query = graphql`
         {
-            allYoutubeVideo(sort: {fields: publishedAt, order: DESC}) {
+            allYoutubeVideo(
+                limit: 1
+                sort: {fields: publishedAt, order: DESC}
+            ) {
                 nodes {
                     title
                     videoId
@@ -22,18 +25,12 @@ const useEpisodes = ({limit = 0} = {}) => {
 
     const data = useStaticQuery(query)
 
-    let episodes = data.allYoutubeVideo.nodes
-
-    if (limit) {
-        episodes = episodes.slice(0, limit)
-    }
+    const episode = data.allYoutubeVideo.nodes[0]
 
     // truncate description
-    episodes.forEach(
-        episode => (episode.description = episode.description.split("---")[0]),
-    )
+    episode.description = episode.description.split("---")[0]
 
-    return episodes
+    return episode
 }
 
-export default useEpisodes
+export default useEpisode

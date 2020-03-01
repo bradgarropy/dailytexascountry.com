@@ -2,15 +2,15 @@ import React from "react"
 import {Link} from "gatsby"
 import Section from "../styles/Section"
 import Posts from "../components/Posts"
-import Episodes from "../components/Episodes"
+import YouTube from "../components/YouTube"
 import Playlists from "../components/Playlists"
 import {Meta, Twitter, Facebook} from "../components/SEO"
-import {usePosts, useEpisodes, usePlaylists} from "../hooks"
+import {usePosts, useEpisode, usePlaylist} from "../hooks"
 
 const IndexPage = () => {
     const posts = usePosts({limit: 3})
-    const episodes = useEpisodes({limit: 1})
-    const playlists = usePlaylists({name: "Daily Texas Country"})
+    const episode = useEpisode()
+    const playlist = usePlaylist({name: "Daily Texas Country"})
 
     return (
         <>
@@ -26,7 +26,7 @@ const IndexPage = () => {
 
             <Section color="red">
                 <h1>episodes</h1>
-                <Episodes episodes={episodes} />
+                <YouTube id={episode.videoId} />
                 <Link to="/episodes">see more</Link>
             </Section>
 
@@ -35,7 +35,8 @@ const IndexPage = () => {
             </Section>
 
             <Section color="red">
-                <Playlists playlists={playlists} />
+                <h1>playlists</h1>
+                <Playlists playlists={[playlist]} />
                 <Link to="/playlists">see more</Link>
             </Section>
         </>
