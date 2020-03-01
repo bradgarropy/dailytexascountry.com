@@ -25,6 +25,7 @@ const IndexPage = () => {
             </Section>
 
             <Section color="red">
+                <h1>episodes</h1>
                 <Episodes episodes={episodes} />
                 <Link to="/episodes">see more</Link>
             </Section>

@@ -5,7 +5,7 @@ import Episodes from "../components/Episodes"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const EpisodesPage = () => {
-    const episodes = useEpisodes()
+    const episodes = useEpisodes({limit: 5})
 
     return (
         <Container>
@@ -13,6 +13,7 @@ const EpisodesPage = () => {
             <Facebook />
             <Twitter />
 
+            <h1>episodes</h1>
             <Episodes episodes={episodes} />
         </Container>
     )

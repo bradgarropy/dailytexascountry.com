@@ -7,6 +7,14 @@ const useEpisodes = ({limit = 0} = {}) => {
                 nodes {
                     title
                     videoId
+                    description
+                    localThumbnail {
+                        childImageSharp {
+                            fluid(maxWidth: 700) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -19,6 +27,11 @@ const useEpisodes = ({limit = 0} = {}) => {
     if (limit) {
         episodes = episodes.slice(0, limit)
     }
+
+    // truncate description
+    episodes.forEach(
+        episode => (episode.description = episode.description.split("---")[0]),
+    )
 
     return episodes
 }
