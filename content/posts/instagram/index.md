@@ -3,7 +3,7 @@ slug: instagram
 title: Instagram
 date: 2020-01-01
 tags: []
-image: "images/logo.jpg"
+image: "images/image.jpg"
 ---
 
 ## Raw URL
