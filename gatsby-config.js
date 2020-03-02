@@ -1,7 +1,6 @@
 require("dotenv").config()
 
 const dtxcChannelId = "UCpbIlFaiv-3188nAWtgL0Iw"
-const bradgarropyChannelId = "UCgbFhcZKt36Upo7oxWlLEig"
 
 module.exports = {
     siteMetadata: {
@@ -67,7 +66,7 @@ module.exports = {
         {
             resolve: "gatsby-source-youtube-v2",
             options: {
-                channelId: [dtxcChannelId, bradgarropyChannelId],
+                channelId: [dtxcChannelId],
                 apiKey: process.env.YOUTUBE_API_KEY,
                 maxVideos: 50,
             },
