@@ -1,8 +1,8 @@
 ---
-slug: post-five
-title: Post Five
+slug: flatland-calvarys-new-single
+title: Flatland Calvary's New Single
 date: 2020-05-27
-tags: ["dancin"]
+tags: ["new music", "review"]
 image: "images/image.jpg"
 ---
 

@@ -30,7 +30,7 @@ const query = graphql`
     query($tag: [String]!) {
         allMarkdownRemark(
             filter: {frontmatter: {tags: {in: $tag}}}
-            sort: {fields: frontmatter___date}
+            sort: {fields: frontmatter___date, order: DESC}
         ) {
             nodes {
                 frontmatter {

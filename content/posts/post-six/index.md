@@ -1,8 +1,8 @@
 ---
-slug: post-six
-title: Post Six
+slug: brandon-rhyder-puts-on-a-great-hometown-show
+title: Brandon Rhyder Puts on a Great Hometown Show
 date: 2020-06-27
-tags: ["dancin", "drinkin", "concert"]
+tags: ["concert", "review", "drinkin"]
 image: "images/image.jpg"
 ---
 

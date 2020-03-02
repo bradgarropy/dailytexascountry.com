@@ -2,7 +2,7 @@
 slug: instagram
 title: Instagram
 date: 2020-01-01
-tags: []
+tags: ["life"]
 image: "images/image.jpg"
 ---
 

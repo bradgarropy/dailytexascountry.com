@@ -1,8 +1,8 @@
 ---
-slug: post-two
-title: Post Two
+slug: courtney-pattons-breakout-show
+title: Courtney Patton's Breakout Show
 date: 2020-02-27
-tags: ["drinkin", "dancin"]
+tags: ["drinkin", "dancin", "concert"]
 image: "images/image.jpg"
 ---
 

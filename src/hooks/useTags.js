@@ -5,6 +5,7 @@ const useTags = ({limit = 0} = {}) => {
         {
             allMarkdownRemark(
                 filter: {fileAbsolutePath: {regex: "/content/posts/"}}
+                sort: {fields: frontmatter___date, order: DESC}
             ) {
                 group(field: frontmatter___tags) {
                     fieldValue

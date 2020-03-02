@@ -1,8 +1,8 @@
 ---
-slug: post-three
-title: Post Three
+slug: how-songs-get-recorded
+title: How Songs Get Recorded
 date: 2020-03-27
-tags: ["drinkin", "concert"]
+tags: ["life", "music"]
 image: "images/image.jpg"
 ---
 

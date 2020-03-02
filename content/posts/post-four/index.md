@@ -1,8 +1,8 @@
 ---
-slug: post-four
-title: Post Four
+slug: you-aint-a-cowboy
+title: You Ain't a Cowboy
 date: 2020-04-27
-tags: ["review", "new music"]
+tags: ["life"]
 image: "images/image.jpg"
 ---
 

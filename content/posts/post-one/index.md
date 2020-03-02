@@ -1,8 +1,8 @@
 ---
-slug: post-one
-title: Post One
+slug: bri-bagwells-cool-in-the-heat
+title: Bri Bagwell's Cool in the Heat
 date: 2020-01-27
-tags: ["drinkin"]
+tags: ["concert", "drinkin", "review"]
 image: "images/image.jpg"
 ---
 
