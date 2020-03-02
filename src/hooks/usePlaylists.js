@@ -1,5 +1,5 @@
+import he from "he"
 import {useStaticQuery, graphql} from "gatsby"
-import decode from "../utils/decode"
 
 const usePlaylists = ({name = undefined, limit = 0} = {}) => {
     const query = graphql`
@@ -41,7 +41,7 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
 
     // decode description
     playlists.forEach(
-        playlist => (playlist.description = decode(playlist.description)),
+        playlist => (playlist.description = he.decode(playlist.description)),
     )
 
     return playlists

@@ -32,7 +32,7 @@
     "dependencies": {
         "babel-plugin-styled-components": "^1.10.7",
         "dotenv": "^8.2.0",
-        "gatsby": "^2.19.22",
+        "gatsby": "^2.19.23",
         "gatsby-image": "^2.2.41",
         "gatsby-plugin-google-analytics": "^2.1.36",
         "gatsby-plugin-google-fonts": "^1.0.1",
@@ -54,6 +54,7 @@
         "gatsby-source-youtube-v2": "^1.0.1",
         "gatsby-transformer-remark": "^2.6.53",
         "gatsby-transformer-sharp": "^2.3.16",
+        "he": "^1.2.0",
         "modern-normalize": "^0.6.0",
         "react": "^16.13.0",
         "react-dom": "^16.13.0",
