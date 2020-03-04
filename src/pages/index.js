@@ -1,11 +1,42 @@
 import React from "react"
 import {Link} from "gatsby"
+import styled from "styled-components"
 import Section from "../styles/Section"
 import Posts from "../components/Posts"
 import YouTube from "../components/YouTube"
 import Playlists from "../components/Playlists"
+import SectionHeader from "../styles/SectionHeader"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 import {usePosts, useEpisode, usePlaylist} from "../hooks"
+
+const MoreButton = styled(Link)`
+    justify-self: end;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: ${({theme, secondary}) =>
+        secondary ? theme.colors.white : theme.colors.red};
+    background: ${({theme, secondary}) =>
+        secondary ? theme.colors.red : theme.colors.white};
+`
+
+const BlogSection = styled.div`
+    display: grid;
+    gap: 1rem;
+`
+
+const EpisodesSection = styled.div`
+    justify-self: center;
+    display: grid;
+    gap: 1rem;
+`
+
+const PlaylistsSection = styled.div`
+    /* justify-self: center;
+    display: grid;
+    gap: 1rem; */
+`
 
 const IndexPage = () => {
     const posts = usePosts({limit: 3})
@@ -19,25 +50,35 @@ const IndexPage = () => {
             <Twitter />
 
             <Section color="white">
-                <h1>blog</h1>
-                <Posts posts={posts} />
-                <Link to="/blog">see more</Link>
+                <BlogSection>
+                    <SectionHeader>latest posts</SectionHeader>
+                    <Posts posts={posts} />
+                    <MoreButton secondary to="/blog">
+                        read more
+                    </MoreButton>
+                </BlogSection>
             </Section>
 
             <Section color="red">
-                <h1>episodes</h1>
-                <YouTube id={episode.videoId} />
-                <Link to="/episodes">see more</Link>
+                <EpisodesSection>
+                    <SectionHeader>episodes</SectionHeader>
+                    <YouTube id={episode.videoId} />
+                    <MoreButton to="/episodes">watch more</MoreButton>
+                </EpisodesSection>
             </Section>
 
             <Section color="white">
-                <h1>store</h1>
+                <div>
+                    <SectionHeader>store</SectionHeader>
+                </div>
             </Section>
 
             <Section color="red">
-                <h1>playlists</h1>
-                <Playlists playlists={[playlist]} />
-                <Link to="/playlists">see more</Link>
+                <PlaylistsSection>
+                    <SectionHeader>playlists</SectionHeader>
+                    <Playlists playlists={[playlist]} />
+                    <MoreButton to="/playlists">hear more</MoreButton>
+                </PlaylistsSection>
             </Section>
         </>
     )

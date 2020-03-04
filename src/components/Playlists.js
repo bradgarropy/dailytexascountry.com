@@ -1,7 +1,7 @@
 import React from "react"
-import Img from "gatsby-image"
 import PropType from "prop-types"
 import styled from "styled-components"
+import Image from "../styles/Image"
 
 const StyledPlaylists = styled.div`
     display: grid;
@@ -20,7 +20,7 @@ const Playlists = ({playlists}) => {
                 return (
                     <article key={index}>
                         <a href={url} target="_blank" rel="noopener noreferrer">
-                            <Img fluid={image} />
+                            <Image fluid={image} />
                         </a>
 
                         <a href={url} target="_blank" rel="noopener noreferrer">

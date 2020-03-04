@@ -1,8 +1,8 @@
 import React from "react"
 import {Link} from "gatsby"
-import Img from "gatsby-image"
 import PropType from "prop-types"
 import styled from "styled-components"
+import Image from "../styles/Image"
 
 const StyledPosts = styled.div`
     display: grid;
@@ -20,7 +20,7 @@ const Posts = ({posts}) => {
                 return (
                     <article key={index}>
                         <Link to={`/blog/${slug}`}>
-                            <Img fluid={image} />
+                            <Image fluid={image} />
                         </Link>
 
                         <Link to={`/blog/${slug}`}>
