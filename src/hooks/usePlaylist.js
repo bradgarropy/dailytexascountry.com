@@ -22,6 +22,9 @@ const usePlaylist = ({name} = {}) => {
                             }
                         }
                     }
+                    images {
+                        url
+                    }
                 }
             }
         }

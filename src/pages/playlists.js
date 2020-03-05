@@ -1,7 +1,7 @@
 import React from "react"
 import {usePlaylists} from "../hooks"
 import Container from "../styles/Container"
-import Playlists from "../components/Playlists"
+import Playlists from "../components/Playlists/Playlists"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const PlaylistsPage = () => {

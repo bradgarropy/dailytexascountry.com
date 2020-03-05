@@ -1,7 +1,7 @@
 import React from "react"
 import PropType from "prop-types"
 import styled from "styled-components"
-import Image from "../styles/Image"
+import Image from "../../styles/Image"
 
 const StyledPlaylists = styled.div`
     display: grid;

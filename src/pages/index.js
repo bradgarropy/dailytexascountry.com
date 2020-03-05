@@ -4,10 +4,10 @@ import styled from "styled-components"
 import Section from "../styles/Section"
 import Posts from "../components/Posts"
 import YouTube from "../components/YouTube"
-import Playlists from "../components/Playlists"
 import SectionHeader from "../styles/SectionHeader"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 import {usePosts, useEpisode, usePlaylist} from "../hooks"
+import FeaturedPlaylist from "../components/Playlists/FeaturedPlaylist"
 
 const MoreButton = styled(Link)`
     justify-self: end;
@@ -33,9 +33,9 @@ const EpisodesSection = styled.div`
 `
 
 const PlaylistsSection = styled.div`
-    /* justify-self: center;
+    justify-self: center;
     display: grid;
-    gap: 1rem; */
+    gap: 1rem;
 `
 
 const IndexPage = () => {
@@ -75,8 +75,7 @@ const IndexPage = () => {
 
             <Section color="red">
                 <PlaylistsSection>
-                    <SectionHeader>playlists</SectionHeader>
-                    <Playlists playlists={[playlist]} />
+                    <FeaturedPlaylist playlist={playlist} />
                     <MoreButton to="/playlists">hear more</MoreButton>
                 </PlaylistsSection>
             </Section>

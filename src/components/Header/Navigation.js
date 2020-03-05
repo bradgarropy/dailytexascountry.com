@@ -8,7 +8,7 @@ import {AppContext} from "../../context/app"
 const StyledNavigation = styled.div`
     display: ${({open}) => (open ? "grid" : "none")};
     grid-auto-flow: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     justify-items: start;
     color: ${({theme}) => theme.colors.white};
 
