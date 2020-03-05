@@ -1,7 +1,7 @@
 import React from "react"
 import {usePosts} from "../hooks"
-import Posts from "../components/Posts"
 import Container from "../styles/Container"
+import Posts from "../components/Posts/Posts"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const BlogPage = () => {

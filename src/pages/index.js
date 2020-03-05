@@ -2,11 +2,11 @@ import React from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
 import Section from "../styles/Section"
-import Posts from "../components/Posts"
 import YouTube from "../components/YouTube"
 import SectionHeader from "../styles/SectionHeader"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 import {usePosts, useEpisode, usePlaylist} from "../hooks"
+import FeaturedPosts from "../components/Posts/FeaturedPosts"
 import FeaturedPlaylist from "../components/Playlists/FeaturedPlaylist"
 
 const MoreButton = styled(Link)`
@@ -52,7 +52,7 @@ const IndexPage = () => {
             <Section color="white">
                 <BlogSection>
                     <SectionHeader>latest posts</SectionHeader>
-                    <Posts posts={posts} />
+                    <FeaturedPosts posts={posts} />
                     <MoreButton secondary to="/blog">
                         read more
                     </MoreButton>

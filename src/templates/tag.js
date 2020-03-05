@@ -1,7 +1,7 @@
 import React from "react"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
-import Posts from "../components/Posts"
+import Posts from "../components/Posts/Posts"
 import Container from "../styles/Container"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
