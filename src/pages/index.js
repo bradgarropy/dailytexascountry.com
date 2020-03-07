@@ -10,15 +10,19 @@ import FeaturedPosts from "../components/Posts/FeaturedPosts"
 import FeaturedPlaylist from "../components/Playlists/FeaturedPlaylist"
 
 const MoreButton = styled(Link)`
+    font-family: "Patua One";
     justify-self: end;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
-    text-decoration: none;
-    font-weight: 700;
+    font-size: 1.2rem;
     color: ${({theme, secondary}) =>
         secondary ? theme.colors.white : theme.colors.red};
     background: ${({theme, secondary}) =>
         secondary ? theme.colors.red : theme.colors.white};
+
+    :hover {
+        text-decoration: none;
+    }
 `
 
 const BlogSection = styled.div`

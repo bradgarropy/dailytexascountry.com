@@ -2,6 +2,7 @@ import React from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
 import Navigation from "./Navigation"
+import DTXC from "../../svg/dtxc.svg"
 
 const StyledHeader = styled.header`
     color: ${({theme}) => theme.colors.white};
@@ -13,16 +14,20 @@ const StyledHeader = styled.header`
 
 const StyledLink = styled(Link)`
     justify-self: center;
-    text-decoration: none;
-    color: ${({theme}) => theme.colors.white};
-    font-size: 4rem;
-    font-weight: bold;
+    display: grid;
+`
+
+const StyledDTXC = styled(DTXC)`
+    max-width: 10rem;
+    height: auto;
 `
 
 const Header = () => {
     return (
         <StyledHeader>
-            <StyledLink to="/">DTXC</StyledLink>
+            <StyledLink to="/">
+                <StyledDTXC />
+            </StyledLink>
             <Navigation />
         </StyledHeader>
     )

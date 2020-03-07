@@ -17,8 +17,6 @@ const StyledPost = styled.article`
 `
 
 const PostTitle = styled(Link)`
-    text-decoration: none;
-
     h2 {
         margin: 0;
     }

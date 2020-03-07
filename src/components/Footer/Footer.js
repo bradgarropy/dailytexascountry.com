@@ -17,7 +17,7 @@ const StyledFooter = styled.footer`
 const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
     text-decoration: none;
-    font-weight: bold;
+    font-family: "Patua One";
 `
 
 const StyledA = styled.a`

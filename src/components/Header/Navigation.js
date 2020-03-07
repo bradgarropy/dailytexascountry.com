@@ -21,7 +21,8 @@ const StyledNavigation = styled.div`
 const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Patua One";
 `
 
 const Navigation = ({open = true}) => {
