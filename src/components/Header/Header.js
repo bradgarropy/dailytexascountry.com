@@ -10,6 +10,9 @@ const StyledHeader = styled.header`
     padding: 2rem;
     display: grid;
     row-gap: 2rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: start;
 `
 
 const StyledLink = styled(Link)`

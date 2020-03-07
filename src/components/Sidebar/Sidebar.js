@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+import Star from "../../svg/star.svg"
 
 const StyledSidebar = styled.div`
     color: ${({theme}) => theme.colors.white};
@@ -17,10 +18,20 @@ const StyledSidebar = styled.div`
     }
 `
 
+const StyledStar = styled(Star)`
+    width: 50%;
+    height: auto;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: center;
+`
+
 const Sidebar = () => {
     return (
         <StyledSidebar>
             <Header />
+            <StyledStar />
             <Footer />
         </StyledSidebar>
     )

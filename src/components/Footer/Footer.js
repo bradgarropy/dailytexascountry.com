@@ -11,7 +11,9 @@ const StyledFooter = styled.footer`
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-    align-items: center;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: end;
 `
 
 const StyledLink = styled(Link)`
