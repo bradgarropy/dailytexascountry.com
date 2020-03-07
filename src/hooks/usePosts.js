@@ -11,6 +11,8 @@ const usePosts = ({limit = 0} = {}) => {
                     frontmatter {
                         slug
                         title
+                        date(formatString: "MMMM D, YYYY")
+                        tags
                         image {
                             childImageSharp {
                                 fluid(maxWidth: 700) {

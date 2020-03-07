@@ -21,6 +21,11 @@ const PlaylistInfo = styled.div`
         font-size: 2rem;
         margin: 0;
     }
+
+    span {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
 `
 
 const PlaylistImage = styled(Image)`

@@ -7,6 +7,7 @@ const StyledPlaylists = styled.div`
     display: grid;
     grid-auto-flow: row;
     gap: 3rem;
+    justify-content: center;
 `
 
 const Playlists = ({playlists}) => {
