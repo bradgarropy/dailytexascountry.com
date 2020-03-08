@@ -14,6 +14,7 @@ const StyledFooter = styled.footer`
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     align-self: end;
+    align-items: center;
 `
 
 const StyledLink = styled(Link)`
