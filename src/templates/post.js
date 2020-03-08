@@ -1,9 +1,10 @@
 import React from "react"
 import Img from "gatsby-image"
+import {graphql} from "gatsby"
 import PropTypes from "prop-types"
-import {Link, graphql} from "gatsby"
 import styled from "styled-components"
 import Container from "../styles/Container"
+import PostMeta from "../components/Posts/PostMeta"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const Image = styled(Img)`
@@ -11,18 +12,19 @@ const Image = styled(Img)`
     width: 100%;
     max-height: 50vh;
     object-fit: cover;
+    margin-bottom: 2rem;
 `
 
-const Tags = styled.div`
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
-    gap: 0.75rem;
+const PostBody = styled.div`
+    margin-top: 2rem;
+    line-height: 1.75;
+    font-size: 1.1rem;
 `
 
 const PostTemplate = ({data}) => {
-    const {html} = data.markdownRemark
-    const {image, title, date, tags} = data.markdownRemark.frontmatter
+    const post = data.markdownRemark
+    const {html, frontmatter} = post
+    const image = frontmatter.image.childImageSharp.fluid
 
     return (
         <Container>
@@ -30,20 +32,9 @@ const PostTemplate = ({data}) => {
             <Facebook />
             <Twitter />
 
-            <Image fluid={image.childImageSharp.fluid} />
-
-            <h1>{title}</h1>
-            <p>{date}</p>
-
-            <Tags>
-                {tags.map((tag, index) => (
-                    <Link key={index} to={`/tags/${tag}`}>
-                        {tag}
-                    </Link>
-                ))}
-            </Tags>
-
-            <div dangerouslySetInnerHTML={{__html: html}} />
+            <Image fluid={image} />
+            <PostMeta post={post} />
+            <PostBody dangerouslySetInnerHTML={{__html: html}} />
         </Container>
     )
 }

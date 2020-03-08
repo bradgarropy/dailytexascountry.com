@@ -21,6 +21,7 @@ const PlaylistName = styled.a`
 
 const PlaylistDescription = styled.p`
     max-width: 30rem;
+    line-height: 1.5;
 `
 
 const PlaylistImage = styled(Image)`
