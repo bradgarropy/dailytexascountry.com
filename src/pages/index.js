@@ -34,6 +34,7 @@ const EpisodesSection = styled.div`
     justify-self: center;
     display: grid;
     gap: 1rem;
+    width: 60%;
 `
 
 const PlaylistsSection = styled.div`
