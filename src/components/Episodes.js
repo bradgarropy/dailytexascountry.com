@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const StyledEpisodes = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
     gap: 1rem;
 `
 

@@ -7,8 +7,13 @@ const StyledFeaturedPlaylist = styled.article`
     display: grid;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, auto);
     gap: 1rem;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, auto);
+    }
 `
 
 const PlaylistInfo = styled.div`
