@@ -2,9 +2,10 @@ import React from "react"
 import {useContext} from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
+import DTXC from "../../svg/dtxc.svg"
+import Menu from "../../svg/menu.svg"
 import Navigation from "./Navigation"
 import {AppContext} from "../../context/app"
-import Menu from "../../svg/menu.svg"
 
 const StyledMobileHeader = styled.header`
     color: ${({theme}) => theme.colors.white};
@@ -30,6 +31,11 @@ const StyledLink = styled(Link)`
     justify-self: start;
 `
 
+const StyledDTXC = styled(DTXC)`
+    max-width: 10rem;
+    height: auto;
+`
+
 const StyledMenu = styled(Menu)`
     max-height: 1.5rem;
     width: auto;
@@ -45,7 +51,7 @@ const MobileHeader = () => {
     return (
         <StyledMobileHeader open={open}>
             <StyledLink to="/" onClick={onClick}>
-                DTXC
+                <StyledDTXC />
             </StyledLink>
 
             <StyledMenu onClick={onMenu} />
