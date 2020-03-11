@@ -6,7 +6,7 @@ import Episode from "./Episode"
 const StyledEpisodes = styled.div`
     display: grid;
     grid-auto-flow: row;
-    gap: 3rem;
+    gap: 5rem;
     justify-items: center;
 `
 
