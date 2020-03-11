@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
     justify-content: space-between;
     align-items: center;
 
-    @media (min-width: ${({theme}) => theme.breakpoints.mobile}) {
+    @media (min-width: ${({theme}) => theme.breakpoints.tablet}) {
         display: none;
     }
 `

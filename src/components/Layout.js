@@ -14,7 +14,7 @@ const StyledLayout = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
         grid-template-columns: 1fr;
     }
 `

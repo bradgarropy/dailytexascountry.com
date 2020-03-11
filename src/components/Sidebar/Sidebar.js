@@ -13,7 +13,7 @@ const StyledSidebar = styled.div`
     top: 0;
     height: 100vh;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
         display: none;
     }
 `

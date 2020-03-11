@@ -9,7 +9,7 @@ const StyledFeaturedPosts = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
         grid-template-rows: repeat(3, auto);
         grid-template-columns: none;
     }

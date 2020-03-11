@@ -1,7 +1,7 @@
 import React from "react"
 import {useEpisodes} from "../hooks"
 import Container from "../styles/Container"
-import Episodes from "../components/Episodes"
+import Episodes from "../components/Episodes/Episodes"
 import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const EpisodesPage = () => {

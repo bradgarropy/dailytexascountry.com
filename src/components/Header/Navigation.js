@@ -12,7 +12,7 @@ const StyledNavigation = styled.div`
     justify-items: start;
     color: ${({theme}) => theme.colors.white};
 
-    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
         grid-auto-flow: row;
         gap: 2rem;
     }

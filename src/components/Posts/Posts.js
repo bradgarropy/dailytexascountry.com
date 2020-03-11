@@ -6,7 +6,7 @@ import Post from "./Post"
 const StyledPosts = styled.div`
     display: grid;
     grid-auto-flow: row;
-    gap: 3rem;
+    gap: 5rem;
     justify-content: center;
 `
 

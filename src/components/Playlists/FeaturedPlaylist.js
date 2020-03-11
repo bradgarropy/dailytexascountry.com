@@ -10,7 +10,7 @@ const StyledFeaturedPlaylist = styled.article`
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
         grid-template-columns: none;
         grid-template-rows: repeat(2, auto);
     }

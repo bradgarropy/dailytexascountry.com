@@ -5,9 +5,19 @@ import Image from "../../styles/Image"
 
 const StyledPlaylist = styled.article`
     display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    max-width: 50rem;
     gap: 2rem;
+    align-items: center;
+    justify-items: center;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        gap: 1.5rem;
+        text-align: center;
+    }
 `
 
 const PlaylistName = styled.a`
@@ -22,6 +32,10 @@ const PlaylistName = styled.a`
 const PlaylistDescription = styled.p`
     max-width: 30rem;
     line-height: 1.5;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        margin-top: 0.5rem;
+    }
 `
 
 const PlaylistImage = styled(Image)`

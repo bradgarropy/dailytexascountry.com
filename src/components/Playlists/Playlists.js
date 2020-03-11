@@ -6,7 +6,7 @@ import Playlist from "./Playlist"
 const StyledPlaylists = styled.div`
     display: grid;
     grid-auto-flow: row;
-    gap: 3rem;
+    gap: 5rem;
     justify-content: center;
 `
 

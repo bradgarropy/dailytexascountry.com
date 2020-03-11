@@ -19,7 +19,7 @@ const StyledMobileHeader = styled.header`
     align-items: center;
     height: ${({open}) => (open ? "100vh" : "auto")};
 
-    @media (min-width: ${({theme}) => theme.breakpoints.mobile}) {
+    @media (min-width: ${({theme}) => theme.breakpoints.tablet}) {
         display: none;
     }
 `
