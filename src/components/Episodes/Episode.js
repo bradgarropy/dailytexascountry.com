@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "../../styles/Image"
-import Title from "../../styles/Title"
+import EpisodeMeta from "./EpisodeMeta"
 
 const StyledEpisode = styled.article`
     display: grid;
@@ -10,16 +10,12 @@ const StyledEpisode = styled.article`
     width: 55%;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
-        width: 70%;
+        width: 100%;
     }
 `
 
-const TitleLink = styled.a`
-    justify-self: start;
-`
-
 const Episode = ({episode}) => {
-    const {videoId, title} = episode
+    const {videoId} = episode
     const thumbnail = episode.localThumbnail.childImageSharp.fluid
 
     return (
@@ -32,13 +28,7 @@ const Episode = ({episode}) => {
                 <Image fluid={thumbnail} />
             </a>
 
-            <TitleLink
-                href={`https://youtube.com/watch?v=${videoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <Title>{title}</Title>
-            </TitleLink>
+            <EpisodeMeta episode={episode} />
         </StyledEpisode>
     )
 }

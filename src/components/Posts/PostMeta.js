@@ -2,19 +2,14 @@ import React from "react"
 import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import Title from "../../styles/Title"
 
 const StyledPostMeta = styled.div`
     display: grid;
 `
 
 const PostTitle = styled(Link)`
-    text-decoration: none;
     justify-self: start;
-
-    h2 {
-        font-size: 2rem;
-        margin: 0 0 0.3rem 0;
-    }
 `
 
 const PostTags = styled.div`
@@ -22,6 +17,7 @@ const PostTags = styled.div`
     grid-auto-flow: column;
     justify-content: start;
     gap: 0.5rem;
+    margin-top: 0.3rem;
 `
 
 const PostTag = styled(Link)`
@@ -40,7 +36,7 @@ const PostMeta = ({post}) => {
             <span>{date}</span>
 
             <PostTitle to={`/blog/${slug}`}>
-                <h2>{title}</h2>
+                <Title>{title}</Title>
             </PostTitle>
 
             <PostTags>

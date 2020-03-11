@@ -16,7 +16,7 @@ const StyledPlaylist = styled.article`
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
         grid-template-columns: auto;
         grid-template-rows: repeat(2, auto);
-        gap: 1.5rem;
+        gap: 1rem;
     }
 `
 

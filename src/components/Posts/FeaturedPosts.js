@@ -21,7 +21,13 @@ const StyledPost = styled.article`
     align-content: start;
 `
 
+const PostMeta = styled.div`
+    display: grid;
+`
+
 const PostTitle = styled(Link)`
+    justify-self: start;
+
     h2 {
         margin: 0;
     }
@@ -40,9 +46,11 @@ const FeaturedPosts = ({posts}) => {
                             <Image fluid={image} />
                         </Link>
 
-                        <PostTitle to={`/blog/${slug}`}>
-                            <h2>{title}</h2>
-                        </PostTitle>
+                        <PostMeta>
+                            <PostTitle to={`/blog/${slug}`}>
+                                <h2>{title}</h2>
+                            </PostTitle>
+                        </PostMeta>
                     </StyledPost>
                 )
             })}

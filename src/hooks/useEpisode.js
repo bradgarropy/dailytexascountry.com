@@ -8,6 +8,7 @@ const useEpisode = () => {
                     title
                     videoId
                     description
+                    publishedAt(formatString: "MMMM D, YYYY")
                     localThumbnail {
                         childImageSharp {
                             fluid(maxWidth: 700) {
