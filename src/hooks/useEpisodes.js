@@ -3,7 +3,7 @@ import {useStaticQuery, graphql} from "gatsby"
 const useEpisodes = ({limit = 0} = {}) => {
     const query = graphql`
         {
-            allYoutubeVideo(sort: {fields: publishedAt, order: ASC}) {
+            allYoutubeVideo(sort: {fields: publishedAt, order: DESC}) {
                 nodes {
                     title
                     videoId
