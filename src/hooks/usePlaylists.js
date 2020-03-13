@@ -10,6 +10,9 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
                 nodes {
                     name
                     description
+                    tracks {
+                        total
+                    }
                     external_urls {
                         spotify
                     }

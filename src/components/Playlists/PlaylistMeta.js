@@ -5,17 +5,16 @@ import Title from "../../styles/Title"
 
 const StyledPlaylistMeta = styled.div`
     display: grid;
-    gap: 1rem;
-    justify-items: center;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        justify-items: center;
         grid-template-columns: auto;
         grid-template-rows: repeat(2, auto);
         gap: 0.25rem;
     }
 `
 
-const PlaylistName = styled.a`
+const PlaylistLink = styled.a`
     justify-self: start;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
@@ -23,10 +22,16 @@ const PlaylistName = styled.a`
     }
 `
 
+const PlaylistName = styled(Title)`
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        text-align: center;
+    }
+`
+
 const PlaylistDescription = styled.p`
     max-width: 30rem;
     line-height: 1.5;
-    margin: 0;
+    margin: 1rem 0 0 0;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
         margin-top: 0.5rem;
@@ -39,9 +44,9 @@ const PlaylistMeta = ({playlist}) => {
 
     return (
         <StyledPlaylistMeta>
-            <PlaylistName href={url} target="_blank" rel="noopener noreferrer">
-                <Title>{name}</Title>
-            </PlaylistName>
+            <PlaylistLink href={url} target="_blank" rel="noopener noreferrer">
+                <PlaylistName>{name}</PlaylistName>
+            </PlaylistLink>
 
             <PlaylistDescription>{description}</PlaylistDescription>
         </StyledPlaylistMeta>

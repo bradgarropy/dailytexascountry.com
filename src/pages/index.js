@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "gatsby"
+import PropTypes from "prop-types"
 import styled from "styled-components"
 import Section from "../styles/Section"
 import YouTube from "../components/YouTube"
@@ -19,10 +20,6 @@ const MoreButton = styled(Link)`
         secondary ? theme.colors.white : theme.colors.red};
     background: ${({theme, secondary}) =>
         secondary ? theme.colors.red : theme.colors.white};
-
-    :hover {
-        text-decoration: none;
-    }
 `
 
 const BlogSection = styled.div`
@@ -58,7 +55,7 @@ const IndexPage = () => {
                 <BlogSection>
                     <SectionHeader>latest posts</SectionHeader>
                     <FeaturedPosts posts={posts} />
-                    <MoreButton secondary to="/blog">
+                    <MoreButton secondary="true" to="/blog">
                         read more
                     </MoreButton>
                 </BlogSection>

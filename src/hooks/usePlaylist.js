@@ -10,6 +10,9 @@ const usePlaylist = ({name} = {}) => {
                 nodes {
                     name
                     description
+                    tracks {
+                        total
+                    }
                     external_urls {
                         spotify
                     }

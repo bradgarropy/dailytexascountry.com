@@ -9,7 +9,7 @@ const StyledPost = styled.article`
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
-    max-width: 50rem;
+    max-width: ${({theme}) => theme.breakpoints.mobile};
     gap: 2rem;
     align-items: center;
 

@@ -8,7 +8,7 @@ const StyledFeaturedPlaylist = styled.article`
     justify-content: center;
     justify-items: center;
     grid-template-columns: repeat(2, auto);
-    gap: 1rem;
+    gap: 2rem;
 
     @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
         grid-template-columns: none;
@@ -44,14 +44,14 @@ const FeaturedPlaylist = ({playlist}) => {
 
     return (
         <StyledFeaturedPlaylist>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+                <PlaylistImage fluid={image} />
+            </a>
+
             <PlaylistInfo>
                 <h1>{name}</h1>
                 <span>{description}</span>
             </PlaylistInfo>
-
-            <a href={url} target="_blank" rel="noopener noreferrer">
-                <PlaylistImage fluid={image} />
-            </a>
         </StyledFeaturedPlaylist>
     )
 }
