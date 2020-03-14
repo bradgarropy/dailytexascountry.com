@@ -24,20 +24,20 @@ const MoreButton = styled(Link)`
 
 const BlogSection = styled.div`
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 `
 
 const EpisodesSection = styled.div`
     justify-self: center;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     width: 60%;
 `
 
 const PlaylistsSection = styled.div`
     justify-self: center;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 `
 
 const IndexPage = () => {
