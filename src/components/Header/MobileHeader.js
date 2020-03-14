@@ -2,9 +2,11 @@ import React from "react"
 import {useContext} from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
-import DTXC from "../../svg/dtxc.svg"
 import Menu from "../../svg/menu.svg"
 import Navigation from "./Navigation"
+import DTXC19 from "../../svg/dtxc19.svg"
+// import DTXC20 from "../../svg/dtxc20.svg"
+// import DTXC21 from "../../svg/dtxc21.svg"
 import {AppContext} from "../../context/app"
 
 const StyledMobileHeader = styled.header`
@@ -31,7 +33,7 @@ const StyledLink = styled(Link)`
     justify-self: start;
 `
 
-const StyledDTXC = styled(DTXC)`
+const StyledDTXC = styled(DTXC19)`
     max-width: 10rem;
     height: auto;
 `
