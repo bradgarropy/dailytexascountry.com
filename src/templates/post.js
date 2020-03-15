@@ -28,6 +28,36 @@ const PostBody = styled.div`
     p:first-of-type {
         margin-top: 0;
     }
+
+    *::selection {
+        background: ${({theme}) => theme.colors.redSelection};
+        color: ${({theme}) => theme.colors.white};
+    }
+
+    a:not(.anchor):not(.instagram-media > a) {
+        transition: all 300ms ease 0s;
+        box-shadow: ${({theme}) => theme.colors.red} 0 -0.1rem inset;
+    }
+
+    a:not(.anchor):not(.instagram-media > a):hover {
+        text-decoration: none;
+        color: ${({theme}) => theme.colors.white};
+        box-shadow: ${({theme}) => theme.colors.red} 0 -2rem 0 inset;
+        padding: 0px 0.2rem;
+        margin: 0px -0.2rem;
+    }
+
+    iframe {
+        margin: 1rem auto;
+    }
+
+    twitter-widget {
+        margin: 2rem auto !important;
+    }
+
+    .instagram-media {
+        margin: 2rem auto !important;
+    }
 `
 
 const PostTemplate = ({data}) => {
