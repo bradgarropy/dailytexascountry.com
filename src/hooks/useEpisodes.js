@@ -24,7 +24,6 @@ const useEpisodes = ({limit = 0} = {}) => {
     const data = useStaticQuery(query)
 
     let episodes = data.allYoutubeVideo.nodes
-    console.log(episodes)
 
     if (limit) {
         episodes = episodes.slice(0, limit + 1)
