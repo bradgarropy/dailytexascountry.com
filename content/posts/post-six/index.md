@@ -1,7 +1,7 @@
 ---
 slug: brandon-rhyder-puts-on-a-great-hometown-show
 title: Brandon Rhyder Puts on a Great Hometown Show
-date: 2020-06-27
+date: 2020-03-10
 tags: ["concert", "review", "drinkin"]
 image: "images/image.jpg"
 ---

@@ -1,7 +1,7 @@
 ---
 slug: how-songs-get-recorded
 title: How Songs Get Recorded
-date: 2020-03-27
+date: 2020-03-07
 tags: ["life", "music"]
 image: "images/image.jpg"
 ---

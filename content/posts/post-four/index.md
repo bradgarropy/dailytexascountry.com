@@ -1,7 +1,7 @@
 ---
 slug: you-aint-a-cowboy
 title: You Ain't a Cowboy
-date: 2020-04-27
+date: 2020-03-08
 tags: ["life"]
 image: "images/image.jpg"
 ---

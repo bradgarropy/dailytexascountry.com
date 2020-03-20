@@ -1,7 +1,7 @@
 ---
 slug: flatland-calvarys-new-single
 title: Flatland Calvary's New Single
-date: 2020-05-27
+date: 2020-03-09
 tags: ["new music", "review"]
 image: "images/image.jpg"
 ---

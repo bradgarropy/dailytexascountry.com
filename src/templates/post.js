@@ -34,6 +34,33 @@ const PostBody = styled.div`
         color: ${({theme}) => theme.colors.white};
     }
 
+    table {
+        margin: 2rem auto !important;
+        border: 0.1rem solid ${({theme}) => theme.colors.blue};
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+    }
+
+    th {
+        font-family: "Patua One";
+        font-weight: normal;
+        font-size: 1.25rem;
+    }
+
+    td {
+        font-size: 1rem;
+    }
+
+    th:not(:last-child),
+    td:not(:last-child) {
+        padding: 0 1rem 0 0;
+    }
+
+    th:last-child,
+    tr:last-child {
+        padding: 0;
+    }
+
     a:not(.anchor):not(.instagram-media > a) {
         transition: all 300ms ease 0s;
         box-shadow: ${({theme}) => theme.colors.red} 0 -0.1rem inset;
