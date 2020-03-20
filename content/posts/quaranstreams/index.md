@@ -16,6 +16,7 @@ Here's a list of all the streams I've found so far.
 
 | Date | Stream                       | Artist(s)                                       | Type      |
 | :--- | :--------------------------- | :---------------------------------------------- | :-------- |
+| 3/24 | [Facebook][ray-johnston]     | Ray Johnston                                    | Acoustic  |
 | 3/23 | [Facebook][garth-brooks]     | Garth Brooks, Trisha Yearwood                   | Acoustic  |
 | 3/20 | [Facebook][wade-bowen]       | Wade Bowen, Cody Canada                         | Acoustic  |
 | 3/19 | [Facebook][casey-donahew]    | Casey Donahew, Chris Colston                    | Acoustic  |
@@ -24,6 +25,7 @@ Here's a list of all the streams I've found so far.
 
 I'll keep this updated as the quarantine continues. If you know of any streams that I missed, tweet them to [@dailytxcountry][twitter] and I'll add them to the list. Now go crack a beer with your friends and tune in!
 
+[ray-johnston]: https://www.facebook.com/events/1541096839400379
 [garth-brooks]: https://www.facebook.com/GarthBrooks
 [wade-bowen]: https://www.facebook.com/thewadebowen/videos/255579418936960
 [casey-donahew]: https://www.facebook.com/CaseyDonahewBand/videos/518465142420527
