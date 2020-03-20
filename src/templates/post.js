@@ -36,9 +36,13 @@ const PostBody = styled.div`
 
     table {
         margin: 2rem auto !important;
-        border: 0.1rem solid ${({theme}) => theme.colors.blue};
         border-radius: 0.25rem;
         padding: 0.5rem;
+        border-collapse: collapse;
+    }
+
+    thead tr {
+        border-bottom: 0.2rem solid ${({theme}) => theme.colors.blue};
     }
 
     th {
