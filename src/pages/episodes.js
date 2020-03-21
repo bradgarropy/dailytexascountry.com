@@ -9,7 +9,7 @@ const EpisodesPage = () => {
 
     return (
         <Container>
-            <Meta title="episodes" />
+            <Meta title="Episodes" />
             <Facebook />
             <Twitter />
 

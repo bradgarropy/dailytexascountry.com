@@ -9,7 +9,7 @@ const PlaylistsPage = () => {
 
     return (
         <Container>
-            <Meta title="playlists" />
+            <Meta title="Playlists" />
             <Facebook />
             <Twitter />
 

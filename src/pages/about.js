@@ -8,7 +8,7 @@ const AboutPage = () => {
 
     return (
         <Container>
-            <Meta title="about" />
+            <Meta title="About" />
             <Facebook />
             <Twitter />
 

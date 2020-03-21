@@ -94,11 +94,12 @@ const PostBody = styled.div`
 const PostTemplate = ({data}) => {
     const post = data.markdownRemark
     const {html, frontmatter} = post
+    const {title} = frontmatter
     const image = frontmatter.image.childImageSharp.fluid
 
     return (
         <Container>
-            <Meta title="post" />
+            <Meta title={title} />
             <Facebook />
             <Twitter />
 

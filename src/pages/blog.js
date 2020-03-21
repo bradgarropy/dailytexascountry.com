@@ -9,7 +9,7 @@ const BlogPage = () => {
 
     return (
         <Container>
-            <Meta title="blog" />
+            <Meta title="Blog" />
             <Facebook />
             <Twitter />
 

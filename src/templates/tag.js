@@ -11,7 +11,7 @@ const TagTemplate = ({data, pageContext}) => {
 
     return (
         <Container>
-            <Meta title="post" />
+            <Meta title={`Tag | ${tag}`} />
             <Facebook />
             <Twitter />
 

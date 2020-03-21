@@ -5,7 +5,7 @@ import {Meta, Twitter, Facebook} from "../components/SEO"
 const StorePage = () => {
     return (
         <Container>
-            <Meta title="store" />
+            <Meta title="Store" />
             <Facebook />
             <Twitter />
 

@@ -5,12 +5,12 @@ import {Meta, Twitter, Facebook} from "../components/SEO"
 const NotFoundPage = () => {
     return (
         <Container>
-            <Meta title="not found" />
+            <Meta title="404" />
             <Facebook />
             <Twitter />
 
-            <h1>NOT FOUND</h1>
-            <p>You just hit a route that doesn&apos;t exist... the sadness.</p>
+            <h1>Ya&apos;ll go to hell, and I&apos;ll go to Texas.</h1>
+            <h1>- Davy Crockett</h1>
         </Container>
     )
 }
