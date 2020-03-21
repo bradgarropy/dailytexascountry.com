@@ -4,8 +4,6 @@ title: Quaranstreams
 date: 2020-03-20
 tags: ["concert", "livestream"]
 image: "images/band-of-heathens.png"
-# image: "images/casey-donahew.png"
-# image: "images/mike-ryan.png"
 ---
 
 In the midst of all the COVID-19 chaos, shows are being cancelled all over the place. Without concerts, country artists are struggling to do what they love and make a paycheck.
