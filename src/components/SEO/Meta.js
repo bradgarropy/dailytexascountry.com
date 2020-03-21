@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {useStaticQuery, graphql} from "gatsby"
 import Helmet from "react-helmet"
-import icon from "../../../static/icon.png"
+import icon from "../../../static/favicon.png"
 
 const Meta = ({title}) => {
     const data = useStaticQuery(graphql`
@@ -20,11 +20,11 @@ const Meta = ({title}) => {
 
     return (
         <Helmet>
-            <html lang="en"/>
+            <html lang="en" />
             <title>{title}</title>
-            <meta name="description" content={description}/>
-            <meta name="keywords" content={keywords}/>
-            <link rel="icon" type="image/png" href={icon}/>
+            <meta name="description" content={description} />
+            <meta name="keywords" content={keywords} />
+            <link rel="icon" type="image/png" href={icon} />
         </Helmet>
     )
 }
