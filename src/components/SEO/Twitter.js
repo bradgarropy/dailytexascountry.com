@@ -5,8 +5,8 @@ import Helmet from "react-helmet"
 const Twitter = ({
     card = "summary",
     site = "@bradgarropy",
-    title = "daily texas country",
-    description = "🤠 daily texas country",
+    title = "Daily Texas Country",
+    description = "🤠 Daily Texas Country",
     image = "https://dailytexascountry.com/twitter.png",
 }) => {
     return (
