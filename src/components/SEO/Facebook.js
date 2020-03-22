@@ -5,8 +5,8 @@ import Helmet from "react-helmet"
 const Facebook = ({
     url = "https://dailytexascountry.com",
     type = "website",
-    title = "daily texas country",
-    description = "🤠 daily texas country",
+    title = "Daily Texas Country",
+    description = "🤠 Daily Texas Country",
     image = "https://dailytexascountry.com/facebook.png",
 }) => {
     return (

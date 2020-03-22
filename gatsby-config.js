@@ -6,7 +6,7 @@ module.exports = {
     siteMetadata: {
         siteUrl: "https://dailytexascountry.com",
         title: "DTXC",
-        description: "🤠 daily texas country",
+        description: "🤠 Daily Texas Country",
         keywords: ["gatsby", "react", "scss", "eslint"],
         email: "bradgarropy@gmail.com",
         twitter: "dailytxcountry",

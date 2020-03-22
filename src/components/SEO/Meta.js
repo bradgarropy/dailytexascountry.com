@@ -1,22 +1,11 @@
 import React from "react"
-import PropTypes from "prop-types"
-import {useStaticQuery, graphql} from "gatsby"
 import Helmet from "react-helmet"
+import PropTypes from "prop-types"
 import icon from "../../../static/favicon.png"
+import useSiteMetadata from "../../hooks/useSiteMetadata"
 
 const Meta = ({title}) => {
-    const data = useStaticQuery(graphql`
-        {
-            site {
-                siteMetadata {
-                    description
-                    keywords
-                }
-            }
-        }
-    `)
-
-    const {description, keywords} = data.site.siteMetadata
+    const {description, keywords} = useSiteMetadata()
 
     return (
         <Helmet>
