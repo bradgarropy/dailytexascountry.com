@@ -9,8 +9,16 @@ const AboutPage = () => {
     return (
         <Container>
             <Meta title="About" />
-            <Facebook />
-            <Twitter />
+
+            <Facebook
+                title="About"
+                description="Why I know my shit about Texas country music."
+            />
+
+            <Twitter
+                title="About"
+                description="Why I know my shit about Texas country music."
+            />
 
             <div dangerouslySetInnerHTML={{__html: html}} />
         </Container>
