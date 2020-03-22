@@ -16,6 +16,7 @@ Here's a list of all the streams I've found so far.
 | :--- | :--------------------------- | :---------------------------------------------- | :-------- |
 | 3/24 | [Facebook][ray-johnston]     | Ray Johnston                                    | Acoustic  |
 | 3/23 | [Facebook][garth-brooks]     | Garth Brooks, Trisha Yearwood                   | Acoustic  |
+| 3/21 | [Facebook][randall-king]     | Randall King                                    | Acoustic  |
 | 3/20 | [Facebook][wade-bowen]       | Wade Bowen, Cody Canada                         | Acoustic  |
 | 3/19 | [Facebook][casey-donahew]    | Casey Donahew, Chris Colston                    | Acoustic  |
 | 3/17 | [Facebook][luke-combs]       | Luke Combs                                      | Acoustic  |
@@ -26,6 +27,7 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 
 [ray-johnston]: https://www.facebook.com/events/1541096839400379
 [garth-brooks]: https://www.facebook.com/GarthBrooks
+[randall-king]: https://www.facebook.com/114539201938287/videos/222118509174798
 [wade-bowen]: https://www.facebook.com/thewadebowen/videos/255579418936960
 [casey-donahew]: https://www.facebook.com/CaseyDonahewBand/videos/518465142420527
 [luke-combs]: https://www.facebook.com/207710979309900/videos/643877509515542
