@@ -46,7 +46,7 @@ const IndexPage = () => {
 
     return (
         <>
-            <SEO title="DTXC" />
+            <SEO title="Daily Texas Country" />
 
             <Section color="white">
                 <BlogSection>
