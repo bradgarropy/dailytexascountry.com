@@ -4,8 +4,8 @@ import PropTypes from "prop-types"
 import icon from "../../../static/favicon.png"
 import useSiteMetadata from "../../hooks/useSiteMetadata"
 
-const Meta = ({title}) => {
-    const {description, keywords} = useSiteMetadata()
+const Meta = ({title, description}) => {
+    const {keywords} = useSiteMetadata()
 
     return (
         <Helmet>
@@ -20,6 +20,7 @@ const Meta = ({title}) => {
 
 Meta.propTypes = {
     title: PropTypes.string,
+    description: PropTypes.string,
 }
 
 export default Meta
