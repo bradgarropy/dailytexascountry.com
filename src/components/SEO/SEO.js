@@ -4,9 +4,6 @@ import Meta from "./Meta"
 import Twitter from "./Twitter"
 import Facebook from "./Facebook"
 import {useSiteMetadata} from "../../hooks"
-import twitter from "../../../static/twitter.png"
-import favicon from "../../../static/favicon.png"
-import facebook from "../../../static/facebook.png"
 
 const SEO = ({url = "", title = "", description = ""}) => {
     const meta = useSiteMetadata()
@@ -15,11 +12,8 @@ const SEO = ({url = "", title = "", description = ""}) => {
     const defaultUrl = meta.url
     const defaultTitle = meta.title
     const defaultDescription = meta.description
-    const defaultTwitterImage = `${meta.url}${twitter}`
-    const defaultFacebookImage = `${meta.url}${facebook}`
-
-    console.log(defaultTwitterImage)
-    console.log(defaultFacebookImage)
+    const defaultTwitterImage = `${meta.url}/twitter.png`
+    const defaultFacebookImage = `${meta.url}/facebook.png`
 
     return (
         <>
@@ -27,7 +21,7 @@ const SEO = ({url = "", title = "", description = ""}) => {
                 title={title || defaultTitle}
                 description={description || defaultDescription}
                 keywords={meta.keywords}
-                icon={favicon}
+                icon={`${meta.url}/favicon.png`}
             />
 
             <Facebook
