@@ -7,19 +7,17 @@ import {useSiteMetadata} from "../../hooks"
 
 const SEO = ({url = "", title = "", description = ""}) => {
     const meta = useSiteMetadata()
-    console.log(meta)
 
     const defaultUrl = meta.url
     const defaultTitle = meta.title
-    const defaultDescription = meta.description
-    const defaultTwitterImage = `${meta.url}/twitter.png`
-    const defaultFacebookImage = `${meta.url}/facebook.png`
+    const twitterImage = `${meta.url}/twitter.png`
+    const facebookImage = `${meta.url}/facebook.png`
 
     return (
         <>
             <Meta
                 title={title || defaultTitle}
-                description={description || defaultDescription}
+                description={description}
                 keywords={meta.keywords}
                 icon={`${meta.url}/favicon.png`}
             />
@@ -27,15 +25,15 @@ const SEO = ({url = "", title = "", description = ""}) => {
             <Facebook
                 url={url || defaultUrl}
                 title={title || defaultTitle}
-                description={description || defaultDescription}
-                image={defaultFacebookImage}
+                description={description}
+                image={facebookImage}
             />
 
             <Twitter
                 site={meta.twitter}
                 title={title || defaultTitle}
-                description={description || defaultDescription}
-                image={defaultTwitterImage}
+                description={description}
+                image={twitterImage}
             />
         </>
     )
