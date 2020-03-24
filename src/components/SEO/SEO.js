@@ -5,13 +5,13 @@ import Twitter from "./Twitter"
 import Facebook from "./Facebook"
 import {useSiteMetadata} from "../../hooks"
 
-const SEO = ({url = "", title = "", description = ""}) => {
+const SEO = ({url = "", title = "", description = "", image = ""}) => {
     const meta = useSiteMetadata()
 
     const defaultUrl = meta.url
     const defaultTitle = meta.title
-    const twitterImage = `${meta.url}/twitter.png`
-    const facebookImage = `${meta.url}/facebook.png`
+    const defaultTwitterImage = `${meta.url}/twitter.png`
+    const defaultFacebookImage = `${meta.url}/facebook.png`
 
     return (
         <>
@@ -26,14 +26,14 @@ const SEO = ({url = "", title = "", description = ""}) => {
                 url={url || defaultUrl}
                 title={title || defaultTitle}
                 description={description}
-                image={facebookImage}
+                image={image || defaultFacebookImage}
             />
 
             <Twitter
                 site={meta.twitter}
                 title={title || defaultTitle}
                 description={description}
-                image={twitterImage}
+                image={image || defaultTwitterImage}
             />
         </>
     )
@@ -43,6 +43,7 @@ SEO.propTypes = {
     url: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
+    image: PropTypes.string,
 }
 
 export default SEO

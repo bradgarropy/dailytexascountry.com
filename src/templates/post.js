@@ -4,6 +4,7 @@ import {graphql} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import {SEO} from "../components/SEO"
+import {useSiteMetadata} from "../hooks"
 import Container from "../styles/Container"
 import PostMeta from "../components/Posts/PostMeta"
 
@@ -19,6 +20,7 @@ const Image = styled(Img)`
     width: 100%;
     max-height: 50vh;
     object-fit: cover;
+    border-radius: 0.25rem;
 `
 
 const PostBody = styled.div`
@@ -92,17 +94,20 @@ const PostBody = styled.div`
 `
 
 const PostTemplate = ({data}) => {
+    const {url} = useSiteMetadata()
+
     const post = data.markdownRemark
     const {html, frontmatter} = post
     const {title} = frontmatter
-    const image = frontmatter.image.childImageSharp.fluid
+    const {fluid} = frontmatter.image.childImageSharp
+    const image = `${url}${frontmatter.image.publicURL}`
 
     return (
         <Container>
-            <SEO title={title} />
+            <SEO title={title} image={image} />
 
             <Post>
-                <Image fluid={image} />
+                <Image fluid={fluid} />
                 <PostMeta post={post} />
                 <PostBody dangerouslySetInnerHTML={{__html: html}} />
             </Post>
@@ -124,6 +129,7 @@ const query = graphql`
                 date(formatString: "MMMM D, YYYY")
                 tags
                 image {
+                    publicURL
                     childImageSharp {
                         fluid(maxWidth: 700) {
                             ...GatsbyImageSharpFluid
