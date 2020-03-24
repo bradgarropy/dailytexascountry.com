@@ -5,7 +5,7 @@ const useSiteMetadata = () => {
         {
             site {
                 siteMetadata {
-                    siteUrl
+                    url
                     title
                     description
                     keywords

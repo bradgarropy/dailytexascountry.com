@@ -4,7 +4,7 @@ const dtxcChannelId = "UCpbIlFaiv-3188nAWtgL0Iw"
 
 module.exports = {
     siteMetadata: {
-        siteUrl: "https://dailytexascountry.com",
+        url: "https://dailytexascountry.com",
         title: "DTXC",
         description: "🤠 Daily Texas Country",
         keywords: [

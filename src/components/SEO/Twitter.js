@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import useSiteMetadata from "../../hooks/useSiteMetadata"
 
 const Twitter = ({title = "", description = ""}) => {
-    const {twitter} = useSiteMetadata()
+    const {url, twitter} = useSiteMetadata()
 
     return (
         <Helmet>
@@ -12,11 +12,7 @@ const Twitter = ({title = "", description = ""}) => {
             <meta name="twitter:site" content={`@${twitter}`} />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
-
-            <meta
-                name="twitter:image"
-                content="https://dailytexascountry.com/twitter.png"
-            />
+            <meta name="twitter:image" content={`${url}/twitter.png`} />
         </Helmet>
     )
 }
