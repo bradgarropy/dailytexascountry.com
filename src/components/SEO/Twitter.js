@@ -1,32 +1,29 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import twitter from "../../../static/twitter.png"
+import useSiteMetadata from "../../hooks/useSiteMetadata"
 
-const Twitter = ({
-    card = "summary",
-    site = "@bradgarropy",
-    title = "Daily Texas Country",
-    description = "🤠 Daily Texas Country",
-    image = "https://dailytexascountry.com/twitter.png",
-}) => {
+const Twitter = ({title = "", description = ""}) => {
+    const {twitter} = useSiteMetadata()
+
     return (
         <Helmet>
-            <meta name="twitter:card" content={card} />
-            <meta name="twitter:site" content={site} />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content={`@${twitter}`} />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={twitter} />
+
+            <meta
+                name="twitter:image"
+                content="https://dailytexascountry.com/twitter.png"
+            />
         </Helmet>
     )
 }
 
 Twitter.propTypes = {
-    card: PropTypes.string,
-    site: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
-    image: PropTypes.string,
 }
 
 export default Twitter

@@ -1,13 +1,11 @@
 import React from "react"
+import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
-import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const StorePage = () => {
     return (
         <Container>
-            <Meta title="Store" />
-            <Facebook />
-            <Twitter />
+            <SEO title="Store" />
 
             <h1>store</h1>
         </Container>

@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import icon from "../../../static/favicon.png"
 import useSiteMetadata from "../../hooks/useSiteMetadata"
 
-const Meta = ({title, description}) => {
+const Meta = ({title = "", description = ""}) => {
     const {keywords} = useSiteMetadata()
 
     return (

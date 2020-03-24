@@ -1,9 +1,9 @@
 import React from "react"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
-import Posts from "../components/Posts/Posts"
+import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
-import {Meta, Twitter, Facebook} from "../components/SEO"
+import Posts from "../components/Posts/Posts"
 
 const TagTemplate = ({data, pageContext}) => {
     const {tag} = pageContext
@@ -11,9 +11,7 @@ const TagTemplate = ({data, pageContext}) => {
 
     return (
         <Container>
-            <Meta title={`Tag | ${tag}`} />
-            <Facebook />
-            <Twitter />
+            <SEO title={`Tag | ${tag}`} />
 
             <h1>tag: {tag}</h1>
             <Posts posts={posts} />

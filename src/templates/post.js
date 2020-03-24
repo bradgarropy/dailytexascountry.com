@@ -3,9 +3,9 @@ import Img from "gatsby-image"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import PostMeta from "../components/Posts/PostMeta"
-import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const Post = styled.article`
     display: grid;
@@ -99,9 +99,7 @@ const PostTemplate = ({data}) => {
 
     return (
         <Container>
-            <Meta title={title} />
-            <Facebook />
-            <Twitter />
+            <SEO title={title} />
 
             <Post>
                 <Image fluid={image} />

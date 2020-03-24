@@ -4,12 +4,12 @@ import Meta from "./Meta"
 import Twitter from "./Twitter"
 import Facebook from "./Facebook"
 
-const SEO = ({title, description}) => {
+const SEO = ({title = "", description = ""}) => {
     return (
         <>
-            <Meta />
-            <Twitter />
-            <Facebook />
+            <Meta title={title} description={description} />
+            <Twitter title={title} description={description} />
+            <Facebook title={title} description={description} />
         </>
     )
 }
