@@ -4,7 +4,7 @@ const createPostPage = (post, createPage) => {
     const {slug} = post.frontmatter
 
     createPage({
-        path: `/blog/${slug}`,
+        path: `/posts/${slug}`,
         component: path.resolve("./src/templates/post.js"),
         context: {slug},
     })

@@ -4,15 +4,15 @@ import Helmet from "react-helmet"
 
 const Twitter = ({
     card = "summary",
-    site = "@bradgarropy",
-    title = "daily texas country",
-    description = "🤠 daily texas country",
-    image = "https://dailytexascountry.com/twitter.png",
+    site = "",
+    title = "",
+    description = "",
+    image = "",
 }) => {
     return (
         <Helmet>
             <meta name="twitter:card" content={card} />
-            <meta name="twitter:site" content={site} />
+            <meta name="twitter:site" content={site && `@${site}`} />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={image} />

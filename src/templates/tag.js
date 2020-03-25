@@ -1,19 +1,17 @@
 import React from "react"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
-import Posts from "../components/Posts/Posts"
+import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
-import {Meta, Twitter, Facebook} from "../components/SEO"
+import Posts from "../components/Posts/Posts"
 
-const TagTemplate = ({data, pageContext}) => {
+const TagTemplate = ({uri, data, pageContext}) => {
     const {tag} = pageContext
     const posts = data.allMarkdownRemark.nodes
 
     return (
         <Container>
-            <Meta title="post" />
-            <Facebook />
-            <Twitter />
+            <SEO path={uri} title={`Tag | ${tag}`} />
 
             <h1>tag: {tag}</h1>
             <Posts posts={posts} />
@@ -22,6 +20,7 @@ const TagTemplate = ({data, pageContext}) => {
 }
 
 TagTemplate.propTypes = {
+    uri: PropTypes.string.isRequired,
     data: PropTypes.object.isRequired,
     pageContext: PropTypes.object.isRequired,
 }

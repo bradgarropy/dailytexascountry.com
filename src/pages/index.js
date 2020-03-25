@@ -1,11 +1,10 @@
 import React from "react"
 import {Link} from "gatsby"
-import PropTypes from "prop-types"
 import styled from "styled-components"
+import {SEO} from "../components/SEO"
 import Section from "../styles/Section"
 import YouTube from "../components/YouTube"
 import SectionHeader from "../styles/SectionHeader"
-import {Meta, Twitter, Facebook} from "../components/SEO"
 import {usePosts, useEpisode, usePlaylist} from "../hooks"
 import FeaturedPosts from "../components/Posts/FeaturedPosts"
 import FeaturedPlaylist from "../components/Playlists/FeaturedPlaylist"
@@ -22,7 +21,7 @@ const MoreButton = styled(Link)`
         secondary ? theme.colors.red : theme.colors.white};
 `
 
-const BlogSection = styled.div`
+const PostsSection = styled.div`
     display: grid;
     gap: 2rem;
 `
@@ -47,18 +46,16 @@ const IndexPage = () => {
 
     return (
         <>
-            <Meta title="DTXC" />
-            <Facebook />
-            <Twitter />
+            <SEO />
 
             <Section color="white">
-                <BlogSection>
+                <PostsSection>
                     <SectionHeader>latest posts</SectionHeader>
                     <FeaturedPosts posts={posts} />
-                    <MoreButton secondary="true" to="/blog">
+                    <MoreButton secondary="true" to="/posts">
                         read more
                     </MoreButton>
-                </BlogSection>
+                </PostsSection>
             </Section>
 
             <Section color="red">

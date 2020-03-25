@@ -1,17 +1,20 @@
 import React from "react"
+import PropTypes from "prop-types"
+import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
-import {Meta, Twitter, Facebook} from "../components/SEO"
 
-const StorePage = () => {
+const StorePage = ({uri}) => {
     return (
         <Container>
-            <Meta title="store" />
-            <Facebook />
-            <Twitter />
+            <SEO path={uri} title="Store" />
 
             <h1>store</h1>
         </Container>
     )
+}
+
+StorePage.propTypes = {
+    uri: PropTypes.string.isRequired,
 }
 
 export default StorePage

@@ -35,7 +35,7 @@ const PostMeta = ({post}) => {
         <StyledPostMeta>
             <span>{date}</span>
 
-            <PostTitle to={`/blog/${slug}`}>
+            <PostTitle to={`/posts/${slug}`}>
                 <Title>{title}</Title>
             </PostTitle>
 

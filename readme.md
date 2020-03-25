@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://dailytexascountry.com">
-        <img alt="🤠 daily texas country" src="/static/icon.png" width="150">
+        <img alt="🤠 daily texas country" src="/static/favicon.png" width="150">
     </a>
 </p>
 

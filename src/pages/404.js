@@ -1,18 +1,21 @@
 import React from "react"
+import PropTypes from "prop-types"
+import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
-import {Meta, Twitter, Facebook} from "../components/SEO"
 
-const NotFoundPage = () => {
+const NotFoundPage = ({uri}) => {
     return (
         <Container>
-            <Meta title="not found" />
-            <Facebook />
-            <Twitter />
+            <SEO path={uri} title="404" />
 
-            <h1>NOT FOUND</h1>
-            <p>You just hit a route that doesn&apos;t exist... the sadness.</p>
+            <h1>Ya&apos;ll go to hell, and I&apos;ll go to Texas.</h1>
+            <h1>- Davy Crockett</h1>
         </Container>
     )
+}
+
+NotFoundPage.propTypes = {
+    uri: PropTypes.string.isRequired,
 }
 
 export default NotFoundPage

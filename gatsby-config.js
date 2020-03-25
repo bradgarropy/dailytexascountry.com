@@ -4,10 +4,20 @@ const dtxcChannelId = "UCpbIlFaiv-3188nAWtgL0Iw"
 
 module.exports = {
     siteMetadata: {
-        siteUrl: "https://dailytexascountry.com",
-        title: "DTXC",
-        description: "🤠 daily texas country",
-        keywords: ["gatsby", "react", "scss", "eslint"],
+        url: "https://dailytexascountry.com",
+        title: "Daily Texas Country",
+        description: "🤠 Daily Texas Country",
+        keywords: [
+            "dtxc",
+            "dailytexascountry",
+            "daily texas country",
+            "texas",
+            "country",
+            "music",
+            "texas country",
+            "country music",
+            "texas country music",
+        ],
         email: "bradgarropy@gmail.com",
         twitter: "dailytxcountry",
         youtube: dtxcChannelId,

@@ -1,36 +1,24 @@
 import React from "react"
-import PropTypes from "prop-types"
-import {useStaticQuery, graphql} from "gatsby"
 import Helmet from "react-helmet"
-import icon from "../../../static/icon.png"
+import PropTypes from "prop-types"
 
-const Meta = ({title}) => {
-    const data = useStaticQuery(graphql`
-        {
-            site {
-                siteMetadata {
-                    description
-                    keywords
-                }
-            }
-        }
-    `)
-
-    const {description, keywords} = data.site.siteMetadata
-
+const Meta = ({title = "", description = "", keywords = [], icon = ""}) => {
     return (
         <Helmet>
-            <html lang="en"/>
+            <html lang="en" />
             <title>{title}</title>
-            <meta name="description" content={description}/>
-            <meta name="keywords" content={keywords}/>
-            <link rel="icon" type="image/png" href={icon}/>
+            <meta name="description" content={description} />
+            <meta name="keywords" content={keywords.join(",")} />
+            <link rel="icon" type="image/png" href={icon} />
         </Helmet>
     )
 }
 
 Meta.propTypes = {
     title: PropTypes.string,
+    description: PropTypes.string,
+    keywords: PropTypes.arrayOf(PropTypes.string),
+    icon: PropTypes.string,
 }
 
 export default Meta

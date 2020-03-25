@@ -3,9 +3,9 @@ import Img from "gatsby-image"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import PostMeta from "../components/Posts/PostMeta"
-import {Meta, Twitter, Facebook} from "../components/SEO"
 
 const Post = styled.article`
     display: grid;
@@ -19,6 +19,7 @@ const Image = styled(Img)`
     width: 100%;
     max-height: 50vh;
     object-fit: cover;
+    border-radius: 0.25rem;
 `
 
 const PostBody = styled.div`
@@ -91,19 +92,19 @@ const PostBody = styled.div`
     }
 `
 
-const PostTemplate = ({data}) => {
+const PostTemplate = ({uri, data}) => {
     const post = data.markdownRemark
     const {html, frontmatter} = post
-    const image = frontmatter.image.childImageSharp.fluid
+    const {title} = frontmatter
+    const {fluid} = frontmatter.image.childImageSharp
+    const image = frontmatter.image.publicURL
 
     return (
         <Container>
-            <Meta title="post" />
-            <Facebook />
-            <Twitter />
+            <SEO path={uri} title={title} image={image} />
 
             <Post>
-                <Image fluid={image} />
+                <Image fluid={fluid} />
                 <PostMeta post={post} />
                 <PostBody dangerouslySetInnerHTML={{__html: html}} />
             </Post>
@@ -112,6 +113,7 @@ const PostTemplate = ({data}) => {
 }
 
 PostTemplate.propTypes = {
+    uri: PropTypes.string.isRequired,
     data: PropTypes.object.isRequired,
 }
 
@@ -125,6 +127,7 @@ const query = graphql`
                 date(formatString: "MMMM D, YYYY")
                 tags
                 image {
+                    publicURL
                     childImageSharp {
                         fluid(maxWidth: 700) {
                             ...GatsbyImageSharpFluid

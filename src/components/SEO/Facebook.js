@@ -3,11 +3,11 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
 const Facebook = ({
-    url = "https://dailytexascountry.com",
+    url = "",
     type = "website",
-    title = "daily texas country",
-    description = "🤠 daily texas country",
-    image = "https://dailytexascountry.com/facebook.png",
+    title = "",
+    description = "",
+    image = "",
 }) => {
     return (
         <Helmet>

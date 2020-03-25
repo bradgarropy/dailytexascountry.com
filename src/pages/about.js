@@ -1,20 +1,23 @@
 import React from "react"
+import PropTypes from "prop-types"
 import {useAbout} from "../hooks"
+import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
-import {Meta, Twitter, Facebook} from "../components/SEO"
 
-const AboutPage = () => {
+const AboutPage = ({uri}) => {
     const {html} = useAbout()
 
     return (
         <Container>
-            <Meta title="about" />
-            <Facebook />
-            <Twitter />
+            <SEO path={uri} title="About" />
 
             <div dangerouslySetInnerHTML={{__html: html}} />
         </Container>
     )
+}
+
+AboutPage.propTypes = {
+    uri: PropTypes.string.isRequired,
 }
 
 export default AboutPage
