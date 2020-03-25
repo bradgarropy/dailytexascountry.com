@@ -9,11 +9,7 @@ const AboutPage = ({uri}) => {
 
     return (
         <Container>
-            <SEO
-                path={uri}
-                title="About"
-                description="Why I know my shit about Texas country music."
-            />
+            <SEO path={uri} title="About" />
 
             <div dangerouslySetInnerHTML={{__html: html}} />
         </Container>
