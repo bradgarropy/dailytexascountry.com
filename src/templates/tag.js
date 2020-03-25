@@ -5,13 +5,13 @@ import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import Posts from "../components/Posts/Posts"
 
-const TagTemplate = ({data, pageContext}) => {
+const TagTemplate = ({uri, data, pageContext}) => {
     const {tag} = pageContext
     const posts = data.allMarkdownRemark.nodes
 
     return (
         <Container>
-            <SEO title={`Tag | ${tag}`} />
+            <SEO path={uri} title={`Tag | ${tag}`} />
 
             <h1>tag: {tag}</h1>
             <Posts posts={posts} />
@@ -20,6 +20,7 @@ const TagTemplate = ({data, pageContext}) => {
 }
 
 TagTemplate.propTypes = {
+    uri: PropTypes.string.isRequired,
     data: PropTypes.object.isRequired,
     pageContext: PropTypes.object.isRequired,
 }

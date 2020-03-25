@@ -4,7 +4,6 @@ import {graphql} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import {SEO} from "../components/SEO"
-import {useSiteMetadata} from "../hooks"
 import Container from "../styles/Container"
 import PostMeta from "../components/Posts/PostMeta"
 
@@ -93,18 +92,16 @@ const PostBody = styled.div`
     }
 `
 
-const PostTemplate = ({data}) => {
-    const {url} = useSiteMetadata()
-
+const PostTemplate = ({uri, data}) => {
     const post = data.markdownRemark
     const {html, frontmatter} = post
     const {title} = frontmatter
     const {fluid} = frontmatter.image.childImageSharp
-    const image = `${url}${frontmatter.image.publicURL}`
+    const image = frontmatter.image.publicURL
 
     return (
         <Container>
-            <SEO title={title} image={image} />
+            <SEO path={uri} title={title} image={image} />
 
             <Post>
                 <Image fluid={fluid} />
@@ -116,6 +113,7 @@ const PostTemplate = ({data}) => {
 }
 
 PostTemplate.propTypes = {
+    uri: PropTypes.string.isRequired,
     data: PropTypes.object.isRequired,
 }
 
