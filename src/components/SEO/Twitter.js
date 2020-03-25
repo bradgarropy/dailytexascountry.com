@@ -12,7 +12,7 @@ const Twitter = ({
     return (
         <Helmet>
             <meta name="twitter:card" content={card} />
-            <meta name="twitter:site" content={site} />
+            <meta name="twitter:site" content={site || `@${site}`} />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={image} />
