@@ -5,21 +5,21 @@ import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import Posts from "../components/Posts/Posts"
 
-const BlogPage = ({uri}) => {
+const PostsPage = ({uri}) => {
     const posts = usePosts()
 
     return (
         <Container>
-            <SEO path={uri} title="Blog" />
+            <SEO path={uri} title="Posts" />
 
-            <h1>blog</h1>
+            <h1>posts</h1>
             <Posts posts={posts} />
         </Container>
     )
 }
 
-BlogPage.propTypes = {
+PostsPage.propTypes = {
     uri: PropTypes.string.isRequired,
 }
 
-export default BlogPage
+export default PostsPage

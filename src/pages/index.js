@@ -21,7 +21,7 @@ const MoreButton = styled(Link)`
         secondary ? theme.colors.red : theme.colors.white};
 `
 
-const BlogSection = styled.div`
+const PostsSection = styled.div`
     display: grid;
     gap: 2rem;
 `
@@ -49,13 +49,13 @@ const IndexPage = () => {
             <SEO />
 
             <Section color="white">
-                <BlogSection>
+                <PostsSection>
                     <SectionHeader>latest posts</SectionHeader>
                     <FeaturedPosts posts={posts} />
-                    <MoreButton secondary="true" to="/blog">
+                    <MoreButton secondary="true" to="/posts">
                         read more
                     </MoreButton>
-                </BlogSection>
+                </PostsSection>
             </Section>
 
             <Section color="red">

@@ -32,8 +32,8 @@ const Navigation = ({open = true}) => {
 
     return (
         <StyledNavigation open={open}>
-            <StyledLink to="/blog" onClick={onClick}>
-                blog
+            <StyledLink to="/posts" onClick={onClick}>
+                posts
             </StyledLink>
 
             <StyledLink to="/episodes" onClick={onClick}>

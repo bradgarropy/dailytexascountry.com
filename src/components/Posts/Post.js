@@ -26,7 +26,7 @@ const Post = ({post}) => {
 
     return (
         <StyledPost>
-            <Link to={`/blog/${slug}`}>
+            <Link to={`/posts/${slug}`}>
                 <Image fluid={image} />
             </Link>
 

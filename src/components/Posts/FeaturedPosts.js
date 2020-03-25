@@ -42,12 +42,12 @@ const FeaturedPosts = ({posts}) => {
 
                 return (
                     <StyledPost key={index}>
-                        <Link to={`/blog/${slug}`}>
+                        <Link to={`/posts/${slug}`}>
                             <Image fluid={image} />
                         </Link>
 
                         <PostMeta>
-                            <PostTitle to={`/blog/${slug}`}>
+                            <PostTitle to={`/posts/${slug}`}>
                                 <h2>{title}</h2>
                             </PostTitle>
                         </PostMeta>
