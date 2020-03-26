@@ -92,7 +92,7 @@ const PostBody = styled.div`
     }
 `
 
-const PostTemplate = ({uri, data}) => {
+const PostTemplate = ({data}) => {
     const post = data.markdownRemark
     const {html, frontmatter} = post
     const {title} = frontmatter
@@ -101,7 +101,7 @@ const PostTemplate = ({uri, data}) => {
 
     return (
         <Container>
-            <SEO path={uri} title={title} image={image} />
+            <SEO title={title} image={image} />
 
             <Post>
                 <Image fluid={fluid} />
@@ -113,7 +113,6 @@ const PostTemplate = ({uri, data}) => {
 }
 
 PostTemplate.propTypes = {
-    uri: PropTypes.string.isRequired,
     data: PropTypes.object.isRequired,
 }
 

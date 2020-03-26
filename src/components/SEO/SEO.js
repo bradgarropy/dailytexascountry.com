@@ -1,20 +1,24 @@
 import React from "react"
 import PropTypes from "prop-types"
+import {useLocation} from "@reach/router"
 import Meta from "./Meta"
 import Twitter from "./Twitter"
 import Facebook from "./Facebook"
 import {useSiteMetadata} from "../../hooks"
 
-const SEO = ({path = "", title = "", description = "", image = ""}) => {
+const SEO = ({title = "", description = "", image = ""}) => {
+    const {pathname} = useLocation()
+    console.log(pathname)
+
     const meta = useSiteMetadata()
 
-    const defaultUrl = meta.url
     const defaultTitle = meta.title
     const defaultTwitterImage = `${meta.url}/twitter.png`
     const defaultFacebookImage = `${meta.url}/facebook.png`
 
     const seoImage = `${meta.url}${image}`
-    const seoUrl = `${meta.url}${path}`
+    const seoUrl = `${meta.url}${pathname}`
+    console.log(seoUrl)
 
     return (
         <>
@@ -26,7 +30,7 @@ const SEO = ({path = "", title = "", description = "", image = ""}) => {
             />
 
             <Facebook
-                url={path ? seoUrl : defaultUrl}
+                url={seoUrl}
                 title={title || defaultTitle}
                 description={description}
                 image={image ? seoImage : defaultFacebookImage}
@@ -43,7 +47,6 @@ const SEO = ({path = "", title = "", description = "", image = ""}) => {
 }
 
 SEO.propTypes = {
-    path: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
     image: PropTypes.string,
