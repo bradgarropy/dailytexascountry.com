@@ -8,6 +8,16 @@ const Section = styled.section`
     padding: 3rem 4rem;
     display: grid;
     align-content: center;
+
+    *::selection {
+        background: ${({theme, color}) =>
+            color === "red" && theme.colors.blueSelection};
+    }
+
+    img::selection {
+        background: ${({theme, color}) =>
+            color === "red" && theme.colors.blueSelectionImage};
+    }
 `
 
 export default Section

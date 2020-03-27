@@ -14,6 +14,15 @@ const GlobalStyles = createGlobalStyle`
             text-decoration: underline;
         }
     }
+
+    *::selection {
+        background: ${({theme}) => theme.colors.redSelection};
+        color: ${({theme}) => theme.colors.white};
+    }
+
+    img::selection {
+        background: ${({theme}) => theme.colors.redSelectionImage};
+    }
 `
 
 export default GlobalStyles

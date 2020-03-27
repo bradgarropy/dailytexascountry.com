@@ -30,11 +30,6 @@ const PostBody = styled.div`
         margin-top: 0;
     }
 
-    *::selection {
-        background: ${({theme}) => theme.colors.redSelection};
-        color: ${({theme}) => theme.colors.white};
-    }
-
     table {
         margin: 2rem auto !important;
         border-radius: 0.25rem;
