@@ -1,6 +1,8 @@
 import React from "react"
 import {useAbout} from "../hooks"
+import Post from "../styles/Post"
 import {SEO} from "../components/SEO"
+import PostBody from "../styles/PostBody"
 import Container from "../styles/Container"
 
 const AboutPage = () => {
@@ -10,7 +12,9 @@ const AboutPage = () => {
         <Container>
             <SEO title="About" />
 
-            <div dangerouslySetInnerHTML={{__html: html}} />
+            <Post>
+                <PostBody dangerouslySetInnerHTML={{__html: html}} />
+            </Post>
         </Container>
     )
 }
