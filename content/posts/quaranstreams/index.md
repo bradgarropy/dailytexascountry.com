@@ -37,9 +37,9 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 [jason-eady]: https://www.facebook.com/events/2308112812624612
 [curtis-grimes]: https://www.facebook.com/events/525495054699115
 [drew-fish]: https://www.facebook.com/events/198216328130235
-[jesse-raub-jr]: https://www.facebook.com/events/213668259878005
+[jesse-raub-jr]: https://www.facebook.com/464449500251833/videos/646091632848502
 [cody-johnson]: https://www.facebook.com/12417566442/videos/221169409239807
-[ray-johnston]: https://www.facebook.com/events/1541096839400379
+[ray-johnston]: https://www.facebook.com/101176188184/videos/352271655676901
 [garth-brooks]: https://www.facebook.com/727776603968442/videos/1127791137563266
 [jon-wolfe]: https://www.facebook.com/7764681979/videos/2486645101587177
 [josh-ward]: https://www.facebook.com/watchparty/517477845869868
