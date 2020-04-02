@@ -8,7 +8,6 @@ import {useSiteMetadata} from "../../hooks"
 
 const SEO = ({title = "", description = "", image = ""}) => {
     const {pathname} = useLocation()
-    console.log(pathname)
 
     const meta = useSiteMetadata()
 
@@ -18,7 +17,6 @@ const SEO = ({title = "", description = "", image = ""}) => {
 
     const seoImage = `${meta.url}${image}`
     const seoUrl = `${meta.url}${pathname}`
-    console.log(seoUrl)
 
     return (
         <>

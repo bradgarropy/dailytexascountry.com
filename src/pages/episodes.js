@@ -11,7 +11,7 @@ const EpisodesPage = () => {
         <Container>
             <SEO title="Episodes" />
 
-            <h1>episodes</h1>
+            <h1>Episodes</h1>
             <Episodes episodes={episodes} />
         </Container>
     )

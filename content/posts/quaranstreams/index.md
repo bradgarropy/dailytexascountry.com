@@ -18,8 +18,10 @@ Here's a list of all the streams I've found so far.
 | 4/8  | [Facebook][jason-eady]           | Jason Eady, Courtney Patton   | Acoustic  |
 | 4/3  | [Facebook][curtis-grimes]        | Curtis Grimes                 | Acoustic  |
 | 4/1  | [Facebook][drew-fish]            | Drew Fish                     | Acoustic  |
+| 3/31 | [Facebook][kevin-fowler-2]       | Kevin Fowler, Jon Wolfe       | Acoustic  |
 | 3/28 | [Facebook][jesse-raub-jr]        | Jesse Raub Jr.                | Acoustic  |
 | 3/26 | [Facebook][cody-johnson]         | Cody Johnson                  | Acoustic  |
+| 3/24 | [Facebook][kevin-fowler-1]       | Kevin Fowler, Roger Creager   | Acoustic  |
 | 3/24 | [Facebook][ray-johnston]         | Ray Johnston                  | Acoustic  |
 | 3/23 | [Facebook][garth-brooks]         | Garth Brooks, Trisha Yearwood | Acoustic  |
 | 3/23 | [Facebook][jon-wolfe]            | Jon Wolfe                     | Acoustic  |
@@ -36,9 +38,11 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 [midnight-river-choir]: https://www.facebook.com/events/253710238978784
 [jason-eady]: https://www.facebook.com/events/2308112812624612
 [curtis-grimes]: https://www.facebook.com/events/525495054699115
-[drew-fish]: https://www.facebook.com/events/198216328130235
+[drew-fish]: https://www.facebook.com/464449500251833/videos/213093483259969
+[kevin-fowler-2]: https://www.facebook.com/15822102761/videos/576437096412309
 [jesse-raub-jr]: https://www.facebook.com/464449500251833/videos/646091632848502
 [cody-johnson]: https://www.facebook.com/12417566442/videos/221169409239807
+[kevin-fowler-1]: https://www.facebook.com/15822102761/videos/215054873049426
 [ray-johnston]: https://www.facebook.com/101176188184/videos/352271655676901
 [garth-brooks]: https://www.facebook.com/727776603968442/videos/1127791137563266
 [jon-wolfe]: https://www.facebook.com/7764681979/videos/2486645101587177

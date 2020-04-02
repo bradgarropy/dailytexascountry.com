@@ -50,7 +50,7 @@ const IndexPage = () => {
 
             <Section color="white">
                 <PostsSection>
-                    <SectionHeader>latest posts</SectionHeader>
+                    <SectionHeader>Latest Posts</SectionHeader>
                     <FeaturedPosts posts={posts} />
                     <MoreButton secondary="true" to="/posts">
                         read more

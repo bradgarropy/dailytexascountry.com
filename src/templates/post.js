@@ -13,7 +13,7 @@ const Image = styled(Img)`
     display: block;
     width: 100%;
     max-height: 50vh;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 0.25rem;
 `
 

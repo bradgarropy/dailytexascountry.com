@@ -11,7 +11,7 @@ const PlaylistsPage = () => {
         <Container>
             <SEO title="Playlists" />
 
-            <h1>playlists</h1>
+            <h1>Playlists</h1>
             <Playlists playlists={playlists} />
         </Container>
     )
