@@ -17,6 +17,7 @@ Here's a list of all the streams I've found so far.
 | 4/9  | [Facebook][midnight-river-choir] | Midnight River Choir          | Acoustic  |
 | 4/8  | [Facebook][jason-eady]           | Jason Eady, Courtney Patton   | Acoustic  |
 | 4/3  | [Facebook][curtis-grimes]        | Curtis Grimes                 | Acoustic  |
+| 4/1  | [Facebook][stoney-larue]         | Stoney LaRue                  | Acoustic  |
 | 4/1  | [Facebook][drew-fish]            | Drew Fish                     | Acoustic  |
 | 3/31 | [Facebook][kevin-fowler-2]       | Kevin Fowler, Jon Wolfe       | Acoustic  |
 | 3/28 | [Facebook][jesse-raub-jr]        | Jesse Raub Jr.                | Acoustic  |
@@ -38,6 +39,7 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 [midnight-river-choir]: https://www.facebook.com/events/253710238978784
 [jason-eady]: https://www.facebook.com/events/2308112812624612
 [curtis-grimes]: https://www.facebook.com/events/525495054699115
+[stoney-larue]: https://www.facebook.com/144950267652/videos/899047443870671
 [drew-fish]: https://www.facebook.com/464449500251833/videos/213093483259969
 [kevin-fowler-2]: https://www.facebook.com/15822102761/videos/576437096412309
 [jesse-raub-jr]: https://www.facebook.com/464449500251833/videos/646091632848502
