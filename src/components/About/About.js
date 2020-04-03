@@ -14,14 +14,23 @@ const StyledAbout = styled.div`
 const AboutSection = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: column;
+    grid-template-areas: "text image";
     grid-gap: 5rem;
     align-items: center;
 
+    &:nth-child(even) {
+        grid-template-areas: "image text";
+    }
+
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
         grid-template-columns: auto;
-        grid-template-rows: repeat(2, auto);
-        grid-gap: 2rem;
+        grid-gap: 1rem;
+
+        &:nth-child(n) {
+            grid-template-areas:
+                "image"
+                "text";
+        }
     }
 `
 
@@ -29,12 +38,15 @@ const Image = styled.img`
     width: 100%;
     height: auto;
     border-radius: 0.25rem;
+    grid-area: image;
 `
 
 const About = () => {
     return (
         <StyledAbout>
             <AboutSection>
+                <Image src={Farm} />
+
                 <div>
                     <Title>My Hometown</Title>
                     <p>
@@ -44,8 +56,6 @@ const About = () => {
                         iusto autem impedit in, minus asperiores?
                     </p>
                 </div>
-
-                <Image src={Farm} />
             </AboutSection>
 
             <AboutSection>
@@ -63,6 +73,8 @@ const About = () => {
             </AboutSection>
 
             <AboutSection>
+                <Image src={Concert} />
+
                 <div>
                     <Title>Front Seat Show</Title>
                     <p>
@@ -72,8 +84,6 @@ const About = () => {
                         iusto autem impedit in, minus asperiores?
                     </p>
                 </div>
-
-                <Image src={Concert} />
             </AboutSection>
 
             <AboutSection>
