@@ -109,6 +109,7 @@ const About = () => {
 
                 <div>
                     <Title>Take Me Out To A Dancehall</Title>
+
                     <Description>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolor suscipit atque esse hic consequatur dolores.
