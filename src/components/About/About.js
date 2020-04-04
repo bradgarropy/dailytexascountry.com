@@ -49,6 +49,8 @@ const Summary = styled(Description)`
     justify-self: center;
     text-align: center;
     max-width: ${({theme}) => theme.breakpoints.mobile};
+    font-size: 1.25rem;
+    font-family: "Patua One";
 `
 
 const About = () => {
@@ -101,9 +103,19 @@ const About = () => {
                         I&apos;ve been to probably a hundred shows now all over
                         Texas and other states. Along the way I&apos;ve met many
                         artists and musicians,{" "}
-                        <a href="https://youtu.be/fZenUaPL0i8">Zane Williams</a>{" "}
+                        <a
+                            href="https://youtu.be/fZenUaPL0i8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Zane Williams
+                        </a>{" "}
                         and{" "}
-                        <a href="https://instagram.com/p/BeJOF7uFcjw">
+                        <a
+                            href="https://instagram.com/p/BeJOF7uFcjw"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Casey Donahew
                         </a>{" "}
                         even announced both of our pregnancies!
@@ -121,10 +133,20 @@ const About = () => {
                         Dancing has been an obsession since I first stepped foot
                         into Midnight Rodeo years ago. One step, two step, half
                         step, I love it all. I met my{" "}
-                        <a href="https://instagram.com/p/B5CJS9kAy2u">wife</a>{" "}
+                        <a
+                            href="https://instagram.com/p/B5CJS9kAy2u"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            wife
+                        </a>{" "}
                         at a country bar when she asked me for a dance! We found
                         our home at{" "}
-                        <a href="http://north.mavericksdancehall.com">
+                        <a
+                            href="http://north.mavericksdancehall.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Maverick&apos;s Dance Hall
                         </a>{" "}
                         in Austin and met the whole crew there.
@@ -133,14 +155,12 @@ const About = () => {
             </AboutSection>
 
             <Summary>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                quaerat quis dolores eaque excepturi dignissimos doloribus ullam
-                nulla laudantium consectetur iure, ut repudiandae modi alias.
-                Accusantium nesciunt voluptatum impedit aut?Molestias explicabo
-                tenetur unde dolor! Officia magni, commodi nostrum reprehenderit
-                ea labore. Dicta, qui? Delectus vero dolorum consequuntur iste
-                recusandae quaerat dignissimos, facere officia, ab, eos magnam
-                soluta officiis. Eius?
+                I&apos;ve been around the Texas country scene for over 10 years
+                now, and every bit of that experience is built into Daily Texas
+                Country. If you enjoy the lonestar state&apos;s music and
+                lifestyle as much as I do, you belong here. And if you know all
+                of the songs I referenced in the sections above, you{" "}
+                <i>really</i> belong here.
             </Summary>
         </StyledAbout>
     )
