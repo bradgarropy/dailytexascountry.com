@@ -99,7 +99,14 @@ const About = () => {
                     <Description>
                         Country music grabbed hold of me and never let go.
                         I&apos;ve been to probably a hundred shows now all over
-                        Texas and even some in Colorado.
+                        Texas and other states. Along the way I&apos;ve met many
+                        artists and musicians,{" "}
+                        <a href="https://youtu.be/fZenUaPL0i8">Zane Williams</a>{" "}
+                        and{" "}
+                        <a href="https://instagram.com/p/BeJOF7uFcjw">
+                            Casey Donahew
+                        </a>{" "}
+                        even announced both of our pregnancies!
                     </Description>
                 </div>
             </AboutSection>
@@ -111,10 +118,16 @@ const About = () => {
                     <Title>Take Me Out To A Dancehall</Title>
 
                     <Description>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolor suscipit atque esse hic consequatur dolores.
-                        Maiores, quam? Rerum debitis optio omnis fuga id eum
-                        iusto autem impedit in, minus asperiores?
+                        Dancing has been an obsession since I first stepped foot
+                        into Midnight Rodeo years ago. One step, two step, half
+                        step, I love it all. I met my{" "}
+                        <a href="https://instagram.com/p/B5CJS9kAy2u">wife</a>{" "}
+                        at a country bar when she asked me for a dance! We found
+                        our home at{" "}
+                        <a href="http://north.mavericksdancehall.com">
+                            Maverick&apos;s Dance Hall
+                        </a>{" "}
+                        in Austin and met the whole crew there.
                     </Description>
                 </div>
             </AboutSection>
