@@ -41,6 +41,19 @@ const Image = styled(Img)`
 
 const Description = styled.p`
     line-height: 1.75;
+
+    a {
+        transition: all 300ms ease 0s;
+        box-shadow: ${({theme}) => theme.colors.red} 0 -0.1rem inset;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: ${({theme}) => theme.colors.white};
+        box-shadow: ${({theme}) => theme.colors.red} 0 -2rem 0 inset;
+        padding: 0px 0.2rem;
+        margin: 0px -0.2rem;
+    }
 `
 
 const Summary = styled(Description)`
@@ -78,10 +91,10 @@ const About = () => {
             <Summary>
                 I&apos;ve been around the Texas country scene for over 10 years
                 now, and every bit of that experience is built into Daily Texas
-                Country. If you enjoy the lonestar state&apos;s music and
-                lifestyle as much as I do, you belong here. And if you know all
-                of the songs I referenced in the sections above, you{" "}
-                <em>really</em> belong here.
+                Country. If you enjoy the lonestar state music and lifestyle as
+                much as I do, you belong here. And if you know all of the songs
+                I referenced in the sections above, you <em>really</em> belong
+                here.
             </Summary>
         </StyledAbout>
     )
