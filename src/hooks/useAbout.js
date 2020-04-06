@@ -3,14 +3,28 @@ import {useStaticQuery, graphql} from "gatsby"
 const useAbout = () => {
     const query = graphql`
         {
-            markdownRemark(fileAbsolutePath: {regex: "/content/pages/about/"}) {
-                html
+            allMarkdownRemark(
+                filter: {fileAbsolutePath: {regex: "/content/pages/about/"}}
+            ) {
+                nodes {
+                    html
+                    frontmatter {
+                        title
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 700) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     `
 
     const data = useStaticQuery(query)
-    const about = data.markdownRemark
+    const about = data.allMarkdownRemark.nodes
 
     return about
 }
