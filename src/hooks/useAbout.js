@@ -5,6 +5,7 @@ const useAbout = () => {
         {
             allMarkdownRemark(
                 filter: {fileAbsolutePath: {regex: "/content/pages/about/"}}
+                sort: {fields: fileAbsolutePath, order: ASC}
             ) {
                 nodes {
                     html
