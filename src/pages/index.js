@@ -14,7 +14,8 @@ const MoreButton = styled(Link)`
     justify-self: end;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
     color: ${({theme, secondary}) =>
         secondary ? theme.colors.white : theme.colors.red};
     background: ${({theme, secondary}) =>
@@ -53,29 +54,29 @@ const IndexPage = () => {
                     <SectionHeader>Latest Posts</SectionHeader>
                     <FeaturedPosts posts={posts} />
                     <MoreButton secondary="true" to="/posts">
-                        read more
+                        READ MORE
                     </MoreButton>
                 </PostsSection>
             </Section>
 
             <Section color="red">
                 <EpisodesSection>
-                    <SectionHeader>episodes</SectionHeader>
+                    <SectionHeader>Episodes</SectionHeader>
                     <YouTube id={episode.videoId} />
-                    <MoreButton to="/episodes">watch more</MoreButton>
+                    <MoreButton to="/episodes">WATCH MORE</MoreButton>
                 </EpisodesSection>
             </Section>
 
             <Section color="white">
                 <div>
-                    <SectionHeader>store</SectionHeader>
+                    <SectionHeader>Store</SectionHeader>
                 </div>
             </Section>
 
             <Section color="red">
                 <PlaylistsSection>
                     <FeaturedPlaylist playlist={playlist} />
-                    <MoreButton to="/playlists">hear more</MoreButton>
+                    <MoreButton to="/playlists">HEAR MORE</MoreButton>
                 </PlaylistsSection>
             </Section>
         </>

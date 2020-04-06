@@ -20,8 +20,9 @@ const StyledNavigation = styled.div`
 
 const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
+    text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "Patua One";
 `
 
@@ -33,19 +34,19 @@ const Navigation = ({open = true}) => {
     return (
         <StyledNavigation open={open}>
             <StyledLink to="/posts" onClick={onClick}>
-                posts
+                POSTS
             </StyledLink>
 
             <StyledLink to="/episodes" onClick={onClick}>
-                episodes
+                EPISODES
             </StyledLink>
 
             <StyledLink to="/store" onClick={onClick}>
-                store
+                STORE
             </StyledLink>
 
             <StyledLink to="/playlists" onClick={onClick}>
-                playlists
+                PLAYLISTS
             </StyledLink>
         </StyledNavigation>
     )

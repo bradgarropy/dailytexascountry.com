@@ -28,6 +28,7 @@ const StyledA = styled.a`
     color: ${({theme}) => theme.colors.white};
     text-decoration: none;
     font-weight: bold;
+    text-transform: uppercase;
 `
 
 const StyledBG = styled(BG)`
@@ -38,7 +39,7 @@ const StyledBG = styled(BG)`
 const Footer = () => {
     return (
         <StyledFooter>
-            <StyledLink to="/about">about</StyledLink>
+            <StyledLink to="/about">ABOUT</StyledLink>
             <Social />
 
             <StyledA

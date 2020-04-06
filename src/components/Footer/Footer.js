@@ -21,6 +21,7 @@ const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
     text-decoration: none;
     font-family: "Patua One";
+    text-transform: uppercase;
 `
 
 const StyledA = styled.a`
@@ -37,7 +38,7 @@ const StyledBG = styled(BG)`
 const Footer = () => {
     return (
         <StyledFooter>
-            <StyledLink to="/about">about</StyledLink>
+            <StyledLink to="/about">ABOUT</StyledLink>
             <Social />
 
             <StyledA
