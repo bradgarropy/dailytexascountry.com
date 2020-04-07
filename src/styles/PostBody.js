@@ -53,7 +53,8 @@ const PostBody = styled.div`
     }
 
     iframe {
-        margin: 1rem auto;
+        display: block;
+        margin: 2rem auto;
     }
 
     twitter-widget {
