@@ -34,6 +34,7 @@
         "dotenv": "^8.2.0",
         "gatsby": "^2.19.49",
         "gatsby-image": "^2.2.41",
+        "gatsby-plugin-catch-links": "^2.2.1",
         "gatsby-plugin-google-analytics": "^2.1.36",
         "gatsby-plugin-google-fonts": "^1.0.1",
         "gatsby-plugin-instagram-embed": "^1.1.0",
