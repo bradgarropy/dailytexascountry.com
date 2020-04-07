@@ -28,7 +28,7 @@ const PlaylistCount = styled.span`
     position: absolute;
     line-height: 1rem;
     top: -1.25rem;
-    right: -1.25rem;
+    left: -1.25rem;
     background: ${({theme}) => theme.colors.red};
     color: ${({theme}) => theme.colors.white};
     border: 0.25rem solid ${({theme}) => theme.colors.white};

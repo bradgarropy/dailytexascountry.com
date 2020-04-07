@@ -32,7 +32,7 @@ const StyledLink = styled(Link)`
 `
 
 const StyledDTXC = styled(DTXC)`
-    max-width: 10rem;
+    max-width: 8rem;
     height: auto;
 `
 
