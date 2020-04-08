@@ -18,8 +18,8 @@ Now that this quarantine thing will be going on [for a while][ny-times], a lot o
 | 4/8  | [Facebook][jason-eady]           | Jason Eady, Courtney Patton | Acoustic |
 | 4/6  | [Facebook][stoney-larue-2]       | Stoney LaRue                | Acoustic |
 | 4/3  | [Facebook][curtis-grimes]        | Curtis Grimes               | Acoustic |
-| 4/3  | [Facebook][wade-bowen-3]         | Wade Bowen, Jack Ingram     | Acoustic |
-| 4/2  | [Facebook][casey-donahew-3]      | Casey Donahew               | Acoustic |
+| 4/3  | [Facebook][wade-bowen-1]         | Wade Bowen, Jack Ingram     | Acoustic |
+| 4/2  | [Facebook][casey-donahew-1]      | Casey Donahew               | Acoustic |
 | 4/1  | [Facebook][stoney-larue-1]       | Stoney LaRue                | Acoustic |
 | 4/1  | [Facebook][drew-fish]            | Drew Fish                   | Acoustic |
 
@@ -31,8 +31,8 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 [jason-eady]: https://www.facebook.com/events/2308112812624612
 [stoney-larue-2]: https://www.facebook.com/144950267652/videos/2961231943897477
 [curtis-grimes]: https://www.facebook.com/464449500251833/videos/215002039732026
-[wade-bowen-3]: https://www.facebook.com/17995575887/videos/908794339533599
-[casey-donahew-3]: https://www.facebook.com/121598385287/videos/524808571802175
+[wade-bowen-1]: https://www.facebook.com/17995575887/videos/908794339533599
+[casey-donahew-1]: https://www.facebook.com/121598385287/videos/524808571802175
 [stoney-larue-1]: https://www.facebook.com/144950267652/videos/899047443870671
 [drew-fish]: https://www.facebook.com/464449500251833/videos/213093483259969
 [twitter]: https://twitter.com/dailytxcountry
