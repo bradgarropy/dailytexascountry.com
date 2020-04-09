@@ -1,5 +1,5 @@
 import React from "react"
-import PropType from "prop-types"
+import PropTypes from "prop-types"
 import styled from "styled-components"
 import Post from "./Post"
 
@@ -21,7 +21,7 @@ const Posts = ({posts}) => {
 }
 
 Posts.propTypes = {
-    posts: PropType.arrayOf(PropType.object).isRequired,
+    posts: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default Posts

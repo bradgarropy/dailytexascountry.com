@@ -1,6 +1,6 @@
 import React from "react"
 import {Link} from "gatsby"
-import PropType from "prop-types"
+import PropTypes from "prop-types"
 
 const Tags = ({tags}) => {
     return (
@@ -17,7 +17,7 @@ const Tags = ({tags}) => {
 }
 
 Tags.propTypes = {
-    tags: PropType.arrayOf(PropType.string).isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 export default Tags
