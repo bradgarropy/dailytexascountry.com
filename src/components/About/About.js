@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import YouTube from "../YouTube"
 import {useAbout} from "../../hooks"
 import Title from "../../styles/Title"
 
@@ -96,6 +97,8 @@ const About = () => {
                 I referenced in the sections above, you <em>really</em> belong
                 here.
             </Summary>
+
+            <YouTube id="QnwQb2-8yzE" />
         </StyledAbout>
     )
 }

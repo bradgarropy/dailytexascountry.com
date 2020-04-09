@@ -14,6 +14,8 @@ If you're looking for an excuse to drink whiskey, look no further. Check out [Wh
 
 And if you really like what we're doing here, head over to our [store][store]. Spread the love for Texas country music with some Daily Texas Country apparel.
 
+https://youtu.be/QnwQb2-8yzE
+
 [dtxc]: /
 [spotify-playlist]: https://open.spotify.com/playlist/0AbnxNMZqSCVog82luj1Ir
 [playlists]: /playlists
