@@ -1,8 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
+import PropTypes from "prop-types"
 import styled from "styled-components"
 import YouTube from "../YouTube"
-import {useAbout} from "../../hooks"
 import Title from "../../styles/Title"
 
 const StyledAbout = styled.div`
@@ -40,7 +40,7 @@ const Image = styled(Img)`
     grid-area: image;
 `
 
-const Description = styled.p`
+const Description = styled.div`
     line-height: 1.75;
 
     a {
@@ -65,9 +65,7 @@ const Summary = styled(Description)`
     font-family: "Patua One";
 `
 
-const About = () => {
-    const sections = useAbout()
-
+const About = ({sections}) => {
     return (
         <StyledAbout>
             {sections.map((section, index) => {
@@ -101,6 +99,10 @@ const About = () => {
             <YouTube id="QnwQb2-8yzE" />
         </StyledAbout>
     )
+}
+
+About.propTypes = {
+    sections: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default About
