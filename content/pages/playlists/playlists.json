@@ -1,0 +1,26 @@
+[
+    {
+        "spotifyId": "0AbnxNMZqSCVog82luj1Ir",
+        "image": "./images/daily-texas-country.jpg"
+    },
+    {
+        "spotifyId": "1scfj3mhEJq0GKjGBIJwcN",
+        "image": "./images/editors-choice.jpg"
+    },
+    {
+        "spotifyId": "4b2rmuamnNrGwE1cR0OO3j",
+        "image": "./images/hot-off-the-press.jpg"
+    },
+    {
+        "spotifyId": "0qAYxWH0K5VEyO4rIeCjCp",
+        "image": "./images/recently-added.jpg"
+    },
+    {
+        "spotifyId": "0W6y1ioqi349f45jX9PkBn",
+        "image": "./images/lone-star-jam-2020.jpg"
+    },
+    {
+        "spotifyId": "565yq6KHQ1bMAEIuHmh6Ix",
+        "image": "./images/kokefest-2020.jpg"
+    }
+]

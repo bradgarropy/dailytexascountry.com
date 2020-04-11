@@ -40,7 +40,7 @@ const PlaylistImage = styled(Image)`
 const FeaturedPlaylist = ({playlist}) => {
     const {name, description} = playlist
     const url = playlist.external_urls.spotify
-    const image = playlist.image.localFile.childImageSharp.fluid
+    const image = playlist.image.childImageSharp.fluid
 
     return (
         <StyledFeaturedPlaylist>

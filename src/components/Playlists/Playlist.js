@@ -45,7 +45,7 @@ const PlaylistImage = styled(Image)`
 const Playlist = ({playlist}) => {
     const count = playlist.tracks.total
     const url = playlist.external_urls.spotify
-    const image = playlist.image.localFile.childImageSharp.fluid
+    const image = playlist.image.childImageSharp.fluid
 
     return (
         <StyledPlaylist>

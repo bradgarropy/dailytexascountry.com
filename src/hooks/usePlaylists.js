@@ -8,6 +8,7 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
                 filter: {name: {regex: "/DTXC|Daily Texas Country/"}}
             ) {
                 nodes {
+                    spotifyId
                     name
                     description
                     tracks {
@@ -16,12 +17,15 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
                     external_urls {
                         spotify
                     }
+                }
+            }
+            allPlaylistsJson {
+                nodes {
+                    spotifyId
                     image {
-                        localFile {
-                            childImageSharp {
-                                fluid(maxWidth: 700) {
-                                    ...GatsbyImageSharpFluid
-                                }
+                        childImageSharp {
+                            fluid(maxWidth: 700) {
+                                ...GatsbyImageSharpFluid
                             }
                         }
                     }
@@ -32,7 +36,18 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
 
     const data = useStaticQuery(query)
 
-    let playlists = data.allSpotifyPlaylist.nodes
+    const jsonPlaylists = data.allPlaylistsJson.nodes
+    const spotifyPlaylists = data.allSpotifyPlaylist.nodes
+
+    // combine data
+    let playlists = jsonPlaylists.map(jsonPlaylist => {
+        const spotifyPlaylist = spotifyPlaylists.find(
+            spotifyPlaylist =>
+                spotifyPlaylist.spotifyId === jsonPlaylist.spotifyId,
+        )
+
+        return {...jsonPlaylist, ...spotifyPlaylist}
+    })
 
     if (limit) {
         playlists = playlists.slice(0, limit)

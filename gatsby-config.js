@@ -95,6 +95,9 @@ module.exports = {
             },
         },
         {
+            resolve: "gatsby-transformer-json",
+        },
+        {
             resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
