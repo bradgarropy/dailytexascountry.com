@@ -23,6 +23,38 @@ const GlobalStyles = createGlobalStyle`
     img::selection {
         background: ${({theme}) => theme.colors.redSelectionImage};
     }
+
+    /* twitter */
+    twitter-widget {
+        margin: 2rem auto !important;
+    }
+
+    /* instagram */
+    .instagram-media {
+        margin: 2rem auto !important;
+    }
+
+    /* youtube */
+    .youtube {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        margin: 2rem auto;
+
+        ::after {
+            padding-top: 56.25%;
+            display: block;
+            content: "";
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 `
 
 export default GlobalStyles

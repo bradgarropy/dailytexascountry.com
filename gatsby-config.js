@@ -1,5 +1,7 @@
 require("dotenv").config()
 
+const youtube = require("./src/transformers/youtube")
+
 const dtxcChannelId = "UCpbIlFaiv-3188nAWtgL0Iw"
 
 module.exports = {
@@ -111,6 +113,9 @@ module.exports = {
                     },
                     {
                         resolve: "gatsby-remark-embedder",
+                        options: {
+                            customTransformers: [youtube],
+                        },
                     },
                     {
                         resolve: "gatsby-remark-external-links",

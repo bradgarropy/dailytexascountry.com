@@ -51,19 +51,6 @@ const PostBody = styled.div`
         padding: 0px 0.2rem;
         margin: 0px -0.2rem;
     }
-
-    iframe {
-        display: block;
-        margin: 2rem auto;
-    }
-
-    twitter-widget {
-        margin: 2rem auto !important;
-    }
-
-    .instagram-media {
-        margin: 2rem auto !important;
-    }
 `
 
 export default PostBody
