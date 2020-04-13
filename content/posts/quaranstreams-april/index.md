@@ -14,8 +14,10 @@ Now that this quarantine thing will be going on [for a while][ny-times], a lot o
 
 | Date | Stream                           | Artist(s)                   | Type      |
 | :--- | :------------------------------- | :-------------------------- | :-------- |
+| 4/11 | [Facebook][wade-bowen-2]         | Wade Bowen                  | Acoustic  |
 | 4/11 | [Facebook][josh-ward]            | Josh Ward                   | Acoustic  |
 | 4/9  | [Facebook][cody-johnson]         | Cody Johnson                | Acoustic  |
+| 4/9  | [Facebook][casey-donahew-2]      | Casey Donahew               | Acoustic  |
 | 4/9  | [Facebook][jon-wolfe]            | Jon Wolfe                   | Acoustic  |
 | 4/9  | [Facebook][midnight-river-choir] | Midnight River Choir        | Full Band |
 | 4/8  | [Facebook][jason-eady]           | Jason Eady, Courtney Patton | Acoustic  |
@@ -30,8 +32,10 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 
 [ny-times]: https://www.nytimes.com/2020/03/29/world/coronavirus-live-news-updates.html
 [quaranstreams-march]: /posts/quaranstreams-march
+[wade-bowen-2]: https://www.facebook.com/17995575887/videos/1086658571712441
 [josh-ward]: https://www.facebook.com/464449500251833/videos/2760184867429683
 [cody-johnson]: https://www.facebook.com/12417566442/videos/223100655567405
+[casey-donahew-2]: https://www.facebook.com/121598385287/videos/647124112534158
 [jon-wolfe]: https://www.facebook.com/7764681979/videos/3198340600200534
 [midnight-river-choir]: https://www.facebook.com/464449500251833/videos/2934820809932261
 [jason-eady]: https://www.facebook.com/464449500251833/videos/231834371352682
