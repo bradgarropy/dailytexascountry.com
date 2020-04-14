@@ -14,6 +14,7 @@ Now that this quarantine thing will be going on [for a while][ny-times], a lot o
 
 | Date | Stream                           | Artist(s)                   | Type      |
 | :--- | :------------------------------- | :-------------------------- | :-------- |
+| 4/13 | [Facebook][stoney-larue-3]       | Stoney LaRue                | Acoustic  |
 | 4/11 | [Facebook][wade-bowen-2]         | Wade Bowen                  | Acoustic  |
 | 4/11 | [Facebook][josh-ward]            | Josh Ward                   | Acoustic  |
 | 4/9  | [Facebook][cody-johnson]         | Cody Johnson                | Acoustic  |
@@ -32,6 +33,7 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 
 [ny-times]: https://www.nytimes.com/2020/03/29/world/coronavirus-live-news-updates.html
 [quaranstreams-march]: /posts/quaranstreams-march
+[stoney-larue-3]: https://www.facebook.com/144950267652/videos/553685335136570
 [wade-bowen-2]: https://www.facebook.com/17995575887/videos/1086658571712441
 [josh-ward]: https://www.facebook.com/464449500251833/videos/2760184867429683
 [cody-johnson]: https://www.facebook.com/12417566442/videos/223100655567405
