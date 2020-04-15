@@ -32,6 +32,7 @@ const GlobalStyles = createGlobalStyle`
     /* instagram */
     .instagram-media {
         margin: 2rem auto !important;
+        min-width: unset !important;
     }
 
     /* youtube */
