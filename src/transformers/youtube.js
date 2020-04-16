@@ -1,6 +1,7 @@
 const name = "custom youtube"
 
 const shouldTransform = url => {
+    console.log(url)
     return url.includes("youtu.be")
 }
 
