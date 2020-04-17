@@ -14,9 +14,15 @@ Now that this quarantine thing will be going on [for a while][ny-times], a lot o
 
 | Date | Stream                           | Artist(s)                   | Type      |
 | :--- | :------------------------------- | :-------------------------- | :-------- |
+| 4/16 | [Facebook][casey-donahew-3]      | Casey Donahew               | Acoustic  |
+| 4/16 | [Facebook][dave-fenley]          | Dave Fenley                 | Acoustic  |
+| 4/16 | [Facebook][bart-crow]            | Bart Crow                   | Acoustic  |
+| 4/15 | [Facebook][chad-cooke]           | Chad Cooke Band             | Full Band |
+| 4/15 | [Facebook][adam-hood]            | Adam Hood                   | Acoustic  |
 | 4/14 | [Facebook][kevin-fowler-2]       | Kevin Fowler, Kyle Park     | Acoustic  |
 | 4/14 | [Facebook][josh-grider]          | Josh Grider                 | Acoustic  |
 | 4/13 | [Facebook][stoney-larue-3]       | Stoney LaRue                | Acoustic  |
+| 4/13 | [Facebook][bri-bagwell]          | Bri Bagwell                 | Acoustic  |
 | 4/11 | [Facebook][wade-bowen-2]         | Wade Bowen                  | Acoustic  |
 | 4/11 | [Facebook][josh-ward]            | Josh Ward                   | Acoustic  |
 | 4/9  | [Facebook][cody-johnson]         | Cody Johnson                | Acoustic  |
@@ -36,9 +42,15 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 
 [ny-times]: https://www.nytimes.com/2020/03/29/world/coronavirus-live-news-updates.html
 [quaranstreams-march]: /posts/quaranstreams-march
+[casey-donahew-3]: https://www.facebook.com/121598385287/videos/1895242203942658
+[dave-fenley]: https://www.facebook.com/464449500251833/videos/251953745852944
+[bart-crow]: https://www.facebook.com/464449500251833/videos/570090676934348
+[chad-cooke]: https://www.facebook.com/464449500251833/videos/567740077179411
+[adam-hood]: https://www.facebook.com/464449500251833/videos/841409059690960
 [kevin-fowler-2]: https://www.facebook.com/15822102761/videos/153991239342416
 [josh-grider]: https://www.facebook.com/464449500251833/videos/2503391176593066
 [stoney-larue-3]: https://www.facebook.com/144950267652/videos/553685335136570
+[bri-bagwell]: https://www.facebook.com/464449500251833/videos/848215552324718
 [wade-bowen-2]: https://www.facebook.com/17995575887/videos/1086658571712441
 [josh-ward]: https://www.facebook.com/464449500251833/videos/2760184867429683
 [cody-johnson]: https://www.facebook.com/12417566442/videos/223100655567405
