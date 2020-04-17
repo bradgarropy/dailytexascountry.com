@@ -1,15 +1,12 @@
 const name = "custom youtube"
 
-const shouldTransform = url => {
-    console.log(url)
-    return url.includes("youtu.be")
-}
+const shouldTransform = url => url.includes("youtu.be")
 
 const getHTML = string => {
     const url = new URL(string)
     const id = url.pathname.slice(1)
 
-    return `
+    const html = `
         <div class="youtube">
             <iframe
                 title=${id}
@@ -17,9 +14,12 @@ const getHTML = string => {
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-            />
+            >
+            </iframe>
         </div>
     `
+
+    return html
 }
 
 module.exports = {name, shouldTransform, getHTML}
