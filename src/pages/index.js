@@ -45,6 +45,8 @@ const IndexPage = () => {
     const episode = useEpisode()
     const playlist = usePlaylist({name: "Daily Texas Country"})
 
+    console.log(posts)
+
     return (
         <>
             <SEO />
