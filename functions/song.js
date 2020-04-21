@@ -2,6 +2,7 @@ const random = require("./utils/random")
 const spotify = require("./utils/spotify")
 const twitter = require("./utils/twitter")
 const {PLAYLIST_ID} = require("./utils/constants")
+const {getTodaysTrack} = require("./utils/airtable")
 
 const handler = async () => {
     let response = null
