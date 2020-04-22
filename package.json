@@ -30,6 +30,7 @@
         "lint:fix": "eslint . --fix"
     },
     "dependencies": {
+        "airtable": "^0.8.1",
         "babel-plugin-styled-components": "^1.10.7",
         "dotenv": "^8.2.0",
         "gatsby": "^2.20.25",

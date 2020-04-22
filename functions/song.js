@@ -1,62 +1,43 @@
 const random = require("./utils/random")
-const spotify = require("./utils/spotify")
-const twitter = require("./utils/twitter")
+const Spotify = require("./utils/spotify")
+const {tweet} = require("./utils/twitter")
 const {PLAYLIST_ID} = require("./utils/constants")
+const {getTodaysTrack, deleteTodaysTrack} = require("./utils/airtable")
 
 const handler = async () => {
     let response = null
 
-    // get access token
-    response = await spotify.clientCredentialsGrant()
+    const spotify = await Spotify()
 
-    const {access_token} = response.body
-    console.log(`access token granted: ${access_token}`)
+    const todaysTrack = await getTodaysTrack()
 
-    // set access token
-    spotify.setAccessToken(access_token)
-    console.log(`access token set: ${access_token}`)
+    if (todaysTrack) {
+        response = await tweet(todaysTrack.link)
 
-    // get playlist
-    response = await spotify.getPlaylist(PLAYLIST_ID, {
-        fields: "name, tracks(total)",
-    })
+        await deleteTodaysTrack()
 
-    const name = response.body.name
+        response = {
+            statusCode: 200,
+            body: response.text,
+        }
+
+        return response
+    }
+
+    response = await spotify.getPlaylist(PLAYLIST_ID, {fields: "tracks(total)"})
+
     const tracks = response.body.tracks.total
-    console.log(`found playlist: ${name}`)
-    console.log(`total tracks: ${tracks}`)
-
-    // pick random
     const trackNumber = random({max: tracks - 1})
-    console.log(`picked a random track: ${trackNumber}`)
 
-    // get track
     response = await spotify.getPlaylistTracks(PLAYLIST_ID, {
         limit: 1,
         offset: trackNumber,
-        fields:
-            "items(track(artists, album(name), name, external_urls(spotify)))",
+        fields: "items(track(external_urls(spotify)))",
     })
 
-    const artist = response.body.items[0].track.artists[0].name
-    const album = response.body.items[0].track.album.name
-    const track = response.body.items[0].track.name
     const link = response.body.items[0].track.external_urls.spotify
-    console.log(`artist: ${artist}`)
-    console.log(`album: ${album}`)
-    console.log(`track: ${track}`)
-    console.log(`link: ${link}`)
+    response = await tweet(link)
 
-    // compose tweet
-    const tweet = {status: link}
-    console.log(`tweet: ${tweet.status}`)
-
-    // post tweet
-    response = await twitter.post("statuses/update", tweet)
-
-    console.log(`tweet posted: ${response.text}`)
-
-    // response
     response = {
         statusCode: 200,
         body: response.text,
