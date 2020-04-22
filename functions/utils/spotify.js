@@ -6,4 +6,11 @@ const spotify = new Spotify({
     clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
 })
 
-module.exports = spotify
+const login = async () => {
+    const response = await spotify.clientCredentialsGrant()
+    spotify.setAccessToken(response.body.access_token)
+
+    return spotify
+}
+
+module.exports = login

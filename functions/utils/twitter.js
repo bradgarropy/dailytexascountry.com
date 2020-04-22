@@ -8,4 +8,9 @@ const twitter = new Twitter({
     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 })
 
-module.exports = twitter
+const tweet = async content => {
+    const response = await twitter.post("statuses/update", {status: content})
+    return response
+}
+
+module.exports = {tweet}

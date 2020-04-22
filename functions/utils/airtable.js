@@ -9,27 +9,40 @@ Airtable.configure({
 
 const airtable = Airtable.base(AIRTABLE_BASE_ID)
 
-const getTodaysTrack = async () => {
-    const filter = `
-        IS_SAME(
-            {Date},
-            DATETIME_FORMAT(
-                SET_TIMEZONE(
-                    TODAY(),
-                    'America/Chicago'
-                ),
-                'M/D/YYYY'
+const filter = `
+    IS_SAME(
+        {date},
+        DATETIME_FORMAT(
+            SET_TIMEZONE(
+                TODAY(),
+                'America/Chicago'
             ),
-            'days'
-        )
-    `
+            'M/D/YYYY'
+        ),
+        'days'
+    )
+`
 
+const getTodaysTrack = async () => {
     const results = await airtable("dtxc")
         .select({filterByFormula: filter})
         .firstPage()
 
     const tracks = results.map(result => result.fields)
-    return tracks
+    const track = tracks[0]
+
+    return track
 }
 
-module.exports = {getTodaysTrack}
+const deleteTodaysTrack = async () => {
+    const results = await airtable("dtxc")
+        .select({filterByFormula: filter})
+        .firstPage()
+
+    const track = results[0]
+
+    await airtable("dtxc").destroy(track.id)
+    return
+}
+
+module.exports = {getTodaysTrack, deleteTodaysTrack}
