@@ -14,6 +14,7 @@ Now that this quarantine thing will be going on [for a while][ny-times], a lot o
 
 | Date | Stream                           | Artist(s)                   | Type      |
 | :--- | :------------------------------- | :-------------------------- | :-------- |
+| 4/27 | [Facebook][stoney-larue-4]       | Stoney LaRue                | Acoustic  |
 | 4/23 | [Facebook][cody-johnson-2]       | Cody Johnson                | Acoustic  |
 | 4/23 | [Facebook][casey-donahew-4]      | Casey Donahew               | Acoustic  |
 | 4/23 | [Facebook][jon-wolfe-3]          | Jon Wolfe                   | Acoustic  |
@@ -53,6 +54,7 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 
 [ny-times]: https://www.nytimes.com/2020/03/29/world/coronavirus-live-news-updates.html
 [quaranstreams-march]: /posts/quaranstreams-march
+[stoney-larue-4]: https://www.facebook.com/144950267652/videos/249171589783224
 [cody-johnson-2]: https://www.facebook.com/12417566442/videos/2504274209884782
 [casey-donahew-4]: https://www.facebook.com/121598385287/videos/1092896624411491
 [jon-wolfe-3]: https://www.facebook.com/7764681979/videos/3029817460443904
