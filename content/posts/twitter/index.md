@@ -6,8 +6,30 @@ tags: []
 image: "images/image.jpg"
 ---
 
-Overalls locality boxcar diesel fire, bootleg fricaseed. Has fussin', skinny is havin' fat, old. Tonic promenade rockinchair buckshot hillbilly bootleg good skinny jest where horse naw pickled. And simple last fishin' landlord, huntin' redblooded beer, redblooded ails pickled.
+## retweet
 
-https://twitter.com/dailytxcountry/status/1248717406169714688
+https://twitter.com/bradgarropy/status/1253380635315433473
 
-Overalls locality boxcar diesel fire, bootleg fricaseed. Has fussin', skinny is havin' fat, old. Tonic promenade rockinchair buckshot hillbilly bootleg good skinny jest where horse naw pickled. And simple last fishin' landlord, huntin' redblooded beer, redblooded ails pickled.
+## image
+
+https://twitter.com/bradgarropy/status/1252617555543339011
+
+## summary card
+
+https://twitter.com/bradgarropy/status/1255946844867305472
+
+## video
+
+https://twitter.com/bradgarropy/status/1255714643710029824
+
+## poll
+
+https://twitter.com/bradgarropy/status/1252965794142515205
+
+## large card
+
+<!-- https://twitter.com/bradgarropy/status/1251188275336937472 -->
+
+## tweet
+
+https://twitter.com/bradgarropy/status/1251259782125805569
