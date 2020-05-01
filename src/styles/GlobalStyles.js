@@ -28,7 +28,6 @@ const GlobalStyles = createGlobalStyle`
     twitter-widget {
         margin: 2rem auto !important;
         width: 100% !important;
-        max-width: 100% !important;
     }
 
     /* instagram */
