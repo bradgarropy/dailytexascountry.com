@@ -22,11 +22,6 @@ const PlaylistInfo = styled.div`
     align-content: center;
     gap: 1rem;
 
-    h1 {
-        font-size: 2rem;
-        margin: 0;
-    }
-
     span {
         font-size: 1.1rem;
         line-height: 1.5;

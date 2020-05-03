@@ -3,7 +3,6 @@ import {graphql} from "gatsby"
 import PropTypes from "prop-types"
 import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
-import PageTitle from "../styles/PageTitle"
 import Posts from "../components/Posts/Posts"
 
 const TagTemplate = ({data, pageContext}) => {
@@ -14,7 +13,7 @@ const TagTemplate = ({data, pageContext}) => {
         <Container>
             <SEO title={`Tag | ${tag}`} />
 
-            <PageTitle>tag: {tag}</PageTitle>
+            <h1>tag: {tag}</h1>
             <Posts posts={posts} />
         </Container>
     )

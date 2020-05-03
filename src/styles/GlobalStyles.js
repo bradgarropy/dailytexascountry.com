@@ -6,6 +6,11 @@ const GlobalStyles = createGlobalStyle`
         font-weight: normal;
     }
 
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
     a {
         text-decoration: none;
         color: inherit;

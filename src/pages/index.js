@@ -4,7 +4,6 @@ import styled from "styled-components"
 import {SEO} from "../components/SEO"
 import Section from "../styles/Section"
 import YouTube from "../components/YouTube"
-import SectionHeader from "../styles/SectionHeader"
 import {usePosts, useEpisode, usePlaylist} from "../hooks"
 import FeaturedPosts from "../components/Posts/FeaturedPosts"
 import FeaturedPlaylist from "../components/Playlists/FeaturedPlaylist"
@@ -51,7 +50,7 @@ const IndexPage = () => {
 
             <Section color="white">
                 <PostsSection>
-                    <SectionHeader>Latest Posts</SectionHeader>
+                    <h1>Latest Posts</h1>
                     <FeaturedPosts posts={posts} />
                     <MoreButton to="/posts" secondary>
                         READ MORE
@@ -61,7 +60,7 @@ const IndexPage = () => {
 
             <Section color="red">
                 <EpisodesSection>
-                    <SectionHeader>Episodes</SectionHeader>
+                    <h1>Episodes</h1>
                     <YouTube id={episode.videoId} />
                     <MoreButton to="/episodes">WATCH MORE</MoreButton>
                 </EpisodesSection>

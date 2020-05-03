@@ -2,7 +2,6 @@ import React from "react"
 import {useEpisodes} from "../hooks"
 import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
-import PageTitle from "../styles/PageTitle"
 import Episodes from "../components/Episodes/Episodes"
 
 const EpisodesPage = () => {
@@ -12,7 +11,7 @@ const EpisodesPage = () => {
         <Container>
             <SEO title="Episodes" />
 
-            <PageTitle>Episodes</PageTitle>
+            <h1>Episodes</h1>
             <Episodes episodes={episodes} />
         </Container>
     )
