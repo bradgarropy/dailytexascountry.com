@@ -29,6 +29,7 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     font-weight: bold;
     justify-self: start;
+    margin-bottom: -0.82rem;
 `
 
 const StyledDTXC = styled(DTXC)`
