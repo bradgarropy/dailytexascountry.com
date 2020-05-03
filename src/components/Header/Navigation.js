@@ -14,7 +14,6 @@ const StyledNavigation = styled.div`
 
     @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
         grid-auto-flow: row;
-        gap: 2rem;
     }
 `
 
@@ -24,6 +23,11 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     font-size: 1.1rem;
     font-family: "Patua One";
+    width: 100%;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
+        padding: 1rem 2rem;
+    }
 `
 
 const Navigation = ({open = true}) => {
