@@ -20,39 +20,19 @@ const StyledPlaylist = styled.article`
     }
 `
 
-const PlaylistLink = styled.a`
-    position: relative;
-`
-
-const PlaylistCount = styled.span`
-    position: absolute;
-    line-height: 1rem;
-    top: -1.25rem;
-    left: -1.25rem;
-    background: ${({theme}) => theme.colors.red};
-    color: ${({theme}) => theme.colors.white};
-    border: 0.25rem solid ${({theme}) => theme.colors.white};
-    z-index: 1;
-    border-radius: 10rem;
-    padding: 0.4rem 0.6rem;
-    font-weight: 700;
-`
-
 const PlaylistImage = styled(Image)`
     width: 300px;
 `
 
 const Playlist = ({playlist}) => {
-    const count = playlist.tracks.total
     const url = playlist.external_urls.spotify
     const image = playlist.image.childImageSharp.fluid
 
     return (
         <StyledPlaylist>
-            <PlaylistLink href={url} target="_blank" rel="noopener noreferrer">
-                <PlaylistCount>{count}</PlaylistCount>
+            <a href={url} target="_blank" rel="noopener noreferrer">
                 <PlaylistImage fluid={image} />
-            </PlaylistLink>
+            </a>
 
             <PlaylistMeta playlist={playlist} />
         </StyledPlaylist>
