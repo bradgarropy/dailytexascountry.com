@@ -6,8 +6,7 @@ import Image from "../../styles/Image"
 const StyledFeaturedPlaylist = styled.article`
     display: grid;
     justify-content: center;
-    justify-items: center;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr 2fr;
     gap: 2rem;
 
     @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
@@ -29,7 +28,7 @@ const PlaylistInfo = styled.div`
 `
 
 const PlaylistImage = styled(Image)`
-    width: 300px;
+    width: 100%;
 `
 
 const FeaturedPlaylist = ({playlist}) => {
