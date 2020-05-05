@@ -9,19 +9,7 @@ Airtable.configure({
 
 const airtable = Airtable.base(AIRTABLE_BASE_ID)
 
-const filter = `
-    IS_SAME(
-        {date},
-        DATETIME_FORMAT(
-            SET_TIMEZONE(
-                TODAY(),
-                'America/Chicago'
-            ),
-            'M/D/YYYY'
-        ),
-        'days'
-    )
-`
+const filter = "IS_SAME({date}, TODAY())"
 
 const getTodaysTrack = async () => {
     const results = await airtable("dtxc")
