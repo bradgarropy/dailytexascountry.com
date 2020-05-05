@@ -7,7 +7,7 @@ import Image from "../../styles/Image"
 
 const StyledPost = styled.article`
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     max-width: ${({theme}) => theme.breakpoints.mobile};
     gap: 2rem;
