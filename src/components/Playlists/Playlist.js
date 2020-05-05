@@ -11,7 +11,6 @@ const StyledPlaylist = styled.article`
     max-width: ${({theme}) => theme.breakpoints.mobile};
     gap: 2rem;
     align-items: center;
-    justify-items: center;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
         grid-template-columns: auto;
@@ -21,7 +20,8 @@ const StyledPlaylist = styled.article`
 `
 
 const PlaylistImage = styled(Image)`
-    width: 300px;
+    width: 100%;
+    margin: 0 auto;
 `
 
 const Playlist = ({playlist}) => {
