@@ -30,7 +30,8 @@ const EpisodesSection = styled.div`
     justify-self: center;
     display: grid;
     gap: 2rem;
-    width: 60%;
+    width: 100%;
+    max-width: ${({theme}) => theme.breakpoints.mobile};
 `
 
 const PlaylistsSection = styled.div`
