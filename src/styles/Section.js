@@ -5,7 +5,7 @@ const Section = styled.section`
         color === "white" ? theme.colors.black : theme.colors.white};
     background: ${({theme, color}) => theme.colors[color]};
     min-height: 50vh;
-    padding: 3rem 4rem;
+    padding: 2rem;
     display: grid;
     align-content: center;
 

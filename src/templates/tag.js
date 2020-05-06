@@ -1,9 +1,15 @@
 import React from "react"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import Posts from "../components/Posts/Posts"
+
+const StyledTagTemplate = styled.div`
+    display: grid;
+    gap: 2rem;
+`
 
 const TagTemplate = ({data, pageContext}) => {
     const {tag} = pageContext
@@ -13,8 +19,10 @@ const TagTemplate = ({data, pageContext}) => {
         <Container>
             <SEO title={`Tag | ${tag}`} />
 
-            <h1>tag: {tag}</h1>
-            <Posts posts={posts} />
+            <StyledTagTemplate>
+                <h1>tag: {tag}</h1>
+                <Posts posts={posts} />
+            </StyledTagTemplate>
         </Container>
     )
 }

@@ -1,8 +1,14 @@
 import React from "react"
+import styled from "styled-components"
 import {usePlaylists} from "../hooks"
 import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import Playlists from "../components/Playlists/Playlists"
+
+const StyledPlaylistsPage = styled.div`
+    display: grid;
+    gap: 2rem;
+`
 
 const PlaylistsPage = () => {
     const playlists = usePlaylists()
@@ -11,8 +17,10 @@ const PlaylistsPage = () => {
         <Container>
             <SEO title="Playlists" />
 
-            <h1>Playlists</h1>
-            <Playlists playlists={playlists} />
+            <StyledPlaylistsPage>
+                <h1>Playlists</h1>
+                <Playlists playlists={playlists} />
+            </StyledPlaylistsPage>
         </Container>
     )
 }
