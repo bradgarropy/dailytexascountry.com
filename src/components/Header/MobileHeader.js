@@ -6,6 +6,7 @@ import DTXC from "../../svg/dtxc.svg"
 import Menu from "../../svg/menu.svg"
 import Navigation from "./Navigation"
 import {AppContext} from "../../context/app"
+import MobileNavigation from "./MobileNavigation"
 
 const StyledMobileHeader = styled.header`
     color: ${({theme}) => theme.colors.white};
@@ -21,6 +22,10 @@ const StyledMobileHeader = styled.header`
 
     @media (min-width: ${({theme}) => theme.breakpoints.tablet}) {
         display: none;
+    }
+
+    @media (min-width: 650px) {
+        height: auto;
     }
 `
 
@@ -41,6 +46,10 @@ const StyledMenu = styled(Menu)`
     max-height: 1.5rem;
     width: auto;
     cursor: pointer;
+
+    @media (min-width: 650px) {
+        display: none;
+    }
 `
 
 const MobileHeader = () => {
@@ -55,8 +64,10 @@ const MobileHeader = () => {
                 <StyledDTXC />
             </StyledLink>
 
+            <Navigation />
+
             <StyledMenu onClick={onMenu} />
-            <Navigation open={open} />
+            <MobileNavigation open={open} />
         </StyledMobileHeader>
     )
 }

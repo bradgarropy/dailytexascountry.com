@@ -31,6 +31,7 @@ const Header = () => {
             <StyledLink to="/">
                 <StyledDTXC />
             </StyledLink>
+
             <Navigation />
         </StyledHeader>
     )
