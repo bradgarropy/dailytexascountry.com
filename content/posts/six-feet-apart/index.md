@@ -6,7 +6,7 @@ tags: ["coronavirus"]
 image: "images/luke-combs.jpg"
 ---
 
-## Testing incremental build.
+## Testing.
 
 The world is in a crazy place. Coronavirus and this quarantine will go down in the history books. What better way to remember these times than a song?
 
