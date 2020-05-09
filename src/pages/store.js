@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import styled from "styled-components"
+import {post} from "../utils/fetch"
 import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import {STORE_NOTIFICATIONS} from "../utils/convertkit"
@@ -48,13 +49,7 @@ const StorePage = () => {
             tags: [STORE_NOTIFICATIONS],
         }
 
-        const options = {
-            method: "POST",
-            body: JSON.stringify(data),
-            headers: {"Content-Type": "application/json"},
-        }
-
-        const {ok} = await fetch("/.netlify/functions/subscribe", options)
+        const {ok} = await post("/.netlify/functions/subscribe", data)
 
         if (ok) {
             setSubscribed(true)
