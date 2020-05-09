@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import styled from "styled-components"
 import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
+import {STORE_NOTIFICATIONS} from "../utils/convertkit"
 
 const Form = styled.form`
     display: grid;
@@ -35,13 +36,14 @@ const Button = styled.button`
 
 const StorePage = () => {
     const [email, setEmail] = useState("")
+    const tags = [STORE_NOTIFICATIONS]
 
     const onChange = event => setEmail(event.target.value)
 
     const onSubmit = async event => {
         event.preventDefault()
 
-        const data = {email}
+        const data = {email, tags}
 
         const options = {
             method: "POST",
@@ -49,9 +51,7 @@ const StorePage = () => {
             headers: {"Content-Type": "application/json"},
         }
 
-        const response = await fetch("/api/subscribe", options)
-        const json = await response.json()
-        console.log("json", json)
+        fetch("/api/subscribe", options)
     }
 
     return (

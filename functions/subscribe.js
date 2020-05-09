@@ -4,7 +4,7 @@ const fetch = require("node-fetch")
 const CONVERTKIT_FORM_ID = "1378571"
 
 const handler = async event => {
-    const {email} = JSON.parse(event.body)
+    const {email, tags} = JSON.parse(event.body)
 
     let response
 
@@ -13,6 +13,7 @@ const handler = async event => {
     const data = {
         api_key: process.env.CONVERTKIT_API_KEY,
         email,
+        tags,
     }
 
     const options = {
