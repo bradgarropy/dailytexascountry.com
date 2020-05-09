@@ -36,14 +36,17 @@ const Button = styled.button`
 
 const StorePage = () => {
     const [email, setEmail] = useState("")
-    const tags = [STORE_NOTIFICATIONS]
+    const [subscribed, setSubscribed] = useState(false)
 
     const onChange = event => setEmail(event.target.value)
 
     const onSubmit = async event => {
         event.preventDefault()
 
-        const data = {email, tags}
+        const data = {
+            email,
+            tags: [STORE_NOTIFICATIONS],
+        }
 
         const options = {
             method: "POST",
@@ -51,7 +54,11 @@ const StorePage = () => {
             headers: {"Content-Type": "application/json"},
         }
 
-        fetch("/api/subscribe", options)
+        const {ok} = await fetch("/.netlify/functions/subscribe", options)
+
+        if (ok) {
+            setSubscribed(true)
+        }
     }
 
     return (
@@ -59,15 +66,25 @@ const StorePage = () => {
             <SEO title="Store" />
 
             <h1>Store</h1>
-            <p>
-                We don&apos;t have anything for you yet, but expect some awesome
-                stuff soon!
-            </p>
 
-            <Form onSubmit={onSubmit}>
-                <Input type="email" value={email} onChange={onChange} />
-                <Button>NOTIFY ME</Button>
-            </Form>
+            {subscribed ? (
+                <p>
+                    Thanks! We&apos;ll let you know when we&apos;ve got some
+                    awesome stuff for you.
+                </p>
+            ) : (
+                <>
+                    <p>
+                        We don&apos;t have anything for you yet, but expect some
+                        awesome stuff soon!
+                    </p>
+
+                    <Form onSubmit={onSubmit}>
+                        <Input type="email" value={email} onChange={onChange} />
+                        <Button>NOTIFY ME</Button>
+                    </Form>
+                </>
+            )}
         </Container>
     )
 }
