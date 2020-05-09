@@ -49,7 +49,7 @@ const StorePage = () => {
             headers: {"Content-Type": "application/json"},
         }
 
-        const response = await fetch("/.netlify/functions/subscribe", options)
+        const response = await fetch("/api/subscribe", options)
         const json = await response.json()
         console.log("json", json)
     }
