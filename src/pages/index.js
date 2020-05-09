@@ -53,7 +53,7 @@ const IndexPage = () => {
                 <PostsSection>
                     <h1>Latest Posts</h1>
                     <FeaturedPosts posts={posts} />
-                    <MoreButton to="/posts" secondary>
+                    <MoreButton to="/posts" secondary="true">
                         READ MORE
                     </MoreButton>
                 </PostsSection>
@@ -70,7 +70,7 @@ const IndexPage = () => {
             <Section color="white">
                 <PlaylistsSection>
                     <FeaturedPlaylist playlist={playlist} />
-                    <MoreButton to="/playlists" secondary>
+                    <MoreButton to="/playlists" secondary="true">
                         HEAR MORE
                     </MoreButton>
                 </PlaylistsSection>
