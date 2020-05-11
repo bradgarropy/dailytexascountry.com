@@ -14,8 +14,6 @@ const post = async (url, data) => {
         body,
     }
 
-    console.log(response)
-
     return response
 }
 

@@ -4,7 +4,6 @@ const fetch = require("node-fetch")
 const CONVERTKIT_FORM_ID = "1378571"
 
 const handler = async event => {
-    console.log("SUBSCRIBE")
     const {email, tags} = JSON.parse(event.body)
 
     let response

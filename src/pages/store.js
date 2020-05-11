@@ -49,7 +49,7 @@ const StorePage = () => {
             tags: [STORE_NOTIFICATIONS],
         }
 
-        const {ok} = await post("/.netlify/functions/subscribe", data)
+        const {ok} = await post("/api/subscribe", data)
 
         if (ok) {
             setSubscribed(true)
