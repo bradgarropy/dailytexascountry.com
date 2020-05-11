@@ -9,6 +9,9 @@ const Form = styled.form`
     display: grid;
     gap: 0.5rem;
     margin-top: 1rem;
+    width: 100%;
+    max-width: 350px;
+    justify-self: center;
 `
 
 const Input = styled.input`
