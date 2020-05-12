@@ -8,7 +8,7 @@ const TagsPage = () => {
     const tags = useTags()
 
     return (
-        <Container>
+        <Container centered>
             <SEO title="Tags" />
 
             <h1>tags</h1>

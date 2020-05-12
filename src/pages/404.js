@@ -4,7 +4,7 @@ import Container from "../styles/Container"
 
 const NotFoundPage = () => {
     return (
-        <Container>
+        <Container centered>
             <SEO title="404" />
 
             <h1>Ya&apos;ll go to hell, and I&apos;ll go to Texas.</h1>

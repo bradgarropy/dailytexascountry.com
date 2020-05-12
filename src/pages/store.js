@@ -71,7 +71,7 @@ const StorePage = () => {
     }
 
     return (
-        <Container>
+        <Container centered>
             <SEO title="Store" />
 
             <h1>Store</h1>

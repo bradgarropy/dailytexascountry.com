@@ -16,7 +16,7 @@ const TagTemplate = ({data, pageContext}) => {
     const posts = data.allMarkdownRemark.nodes
 
     return (
-        <Container>
+        <Container centered>
             <SEO title={`Tag | ${tag}`} />
 
             <StyledTagTemplate>
