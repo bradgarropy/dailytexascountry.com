@@ -8,14 +8,11 @@ import Image from "../../styles/Image"
 const StyledPost = styled.article`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    max-width: ${({theme}) => theme.breakpoints.mobile};
     gap: 2rem;
     align-items: center;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 `

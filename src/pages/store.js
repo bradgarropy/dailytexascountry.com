@@ -62,8 +62,7 @@ const StorePage = () => {
         }
 
         setLoading(true)
-        // const {ok} = await post("/api/subscribe", data)
-        const {ok} = await post("/.netlify/functions/subscribe", data)
+        const {ok} = await post("/api/subscribe", data)
         setLoading(false)
 
         if (ok) {

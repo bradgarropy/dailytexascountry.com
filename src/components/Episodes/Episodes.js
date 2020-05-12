@@ -7,7 +7,7 @@ const StyledEpisodes = styled.div`
     display: grid;
     grid-auto-flow: row;
     gap: 5rem;
-    justify-items: center;
+    justify-content: center;
 `
 
 const Episodes = ({episodes}) => {

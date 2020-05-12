@@ -8,6 +8,9 @@ import Episodes from "../components/Episodes/Episodes"
 const StyledEpisodesPage = styled.div`
     display: grid;
     gap: 2rem;
+    justify-self: center;
+    width: 100%;
+    max-width: 37.5rem;
 `
 
 const EpisodesPage = () => {

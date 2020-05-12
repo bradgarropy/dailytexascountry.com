@@ -7,11 +7,6 @@ import EpisodeMeta from "./EpisodeMeta"
 const StyledEpisode = styled.article`
     display: grid;
     gap: 1rem;
-    width: 55%;
-
-    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
-        width: 100%;
-    }
 `
 
 const Episode = ({episode}) => {

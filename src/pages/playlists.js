@@ -8,6 +8,9 @@ import Playlists from "../components/Playlists/Playlists"
 const StyledPlaylistsPage = styled.div`
     display: grid;
     gap: 2rem;
+    justify-self: center;
+    width: 100%;
+    max-width: 37.5rem;
 `
 
 const PlaylistsPage = () => {
