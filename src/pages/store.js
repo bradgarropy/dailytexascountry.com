@@ -4,6 +4,11 @@ import {post} from "../utils/fetch"
 import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import {STORE_NOTIFICATIONS} from "../utils/convertkit"
+import {navigate} from "gatsby"
+
+const Item = styled.li`
+    list-style: none;
+`
 
 const Form = styled.form`
     display: grid;
@@ -36,11 +41,15 @@ const Button = styled.button`
     cursor: pointer;
     width: 100%;
     line-height: 1.5;
+
+    &:disabled {
+        cursor: default;
+    }
 `
 
 const StorePage = () => {
     const [email, setEmail] = useState("")
-    const [subscribed, setSubscribed] = useState(false)
+    const [loading, setLoading] = useState(false)
 
     const onChange = event => setEmail(event.target.value)
 
@@ -52,10 +61,13 @@ const StorePage = () => {
             tags: [STORE_NOTIFICATIONS],
         }
 
-        const {ok} = await post("/api/subscribe", data)
+        setLoading(true)
+        // const {ok} = await post("/api/subscribe", data)
+        const {ok} = await post("/.netlify/functions/subscribe", data)
+        setLoading(false)
 
         if (ok) {
-            setSubscribed(true)
+            navigate("/thanks")
         }
     }
 
@@ -65,24 +77,27 @@ const StorePage = () => {
 
             <h1>Store</h1>
 
-            {subscribed ? (
-                <p>
-                    Thanks! We&apos;ll let you know when we&apos;ve got some
-                    awesome stuff for you.
-                </p>
-            ) : (
-                <>
-                    <p>
-                        We don&apos;t have anything for you yet, but expect some
-                        awesome stuff soon!
-                    </p>
+            <p>
+                We don&apos;t have anything for you yet, but we&apos;re in the
+                process of creating some great stuff!
+            </p>
 
-                    <Form onSubmit={onSubmit}>
-                        <Input type="email" value={email} onChange={onChange} />
-                        <Button>NOTIFY ME</Button>
-                    </Form>
-                </>
-            )}
+            <ul>
+                <Item>Hats</Item>
+                <Item>Shirts</Item>
+                <Item>Koozies</Item>
+                <Item>Stickers</Item>
+            </ul>
+
+            <p>
+                Sign up and we&apos;ll send you an email once the store is ready
+                to go.
+            </p>
+
+            <Form onSubmit={onSubmit}>
+                <Input type="email" value={email} onChange={onChange} />
+                <Button disabled={loading}>NOTIFY ME</Button>
+            </Form>
         </Container>
     )
 }
