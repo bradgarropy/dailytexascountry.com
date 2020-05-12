@@ -15,7 +15,7 @@ const StyledNavigation = styled.div`
         gap: 2rem;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 40.625rem) {
         display: none;
     }
 `

@@ -9,7 +9,7 @@ const StyledMobileNavigation = styled.div`
     display: ${({open}) => (open ? "grid" : "none")};
     gap: 2rem;
 
-    @media (min-width: 650px) {
+    @media (min-width: 40.625rem) {
         display: none;
     }
 `
@@ -22,7 +22,7 @@ const StyledLink = styled(Link)`
     font-family: "Patua One";
     width: 100%;
 
-    @media (max-width: 650px) {
+    @media (max-width: 40.625rem) {
         padding: 1rem 2rem;
     }
 `

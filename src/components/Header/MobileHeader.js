@@ -24,7 +24,7 @@ const StyledMobileHeader = styled.header`
         display: none;
     }
 
-    @media (min-width: 650px) {
+    @media (min-width: 40.625rem) {
         height: auto;
     }
 `
@@ -47,7 +47,7 @@ const StyledMenu = styled(Menu)`
     width: auto;
     cursor: pointer;
 
-    @media (min-width: 650px) {
+    @media (min-width: 40.625rem) {
         display: none;
     }
 `

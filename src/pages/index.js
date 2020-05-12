@@ -24,6 +24,12 @@ const MoreButton = styled(Link)`
 const PostsSection = styled.div`
     display: grid;
     gap: 2rem;
+    justify-self: center;
+    width: 100%;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
+        max-width: 37.5rem;
+    }
 `
 
 const EpisodesSection = styled.div`
@@ -35,9 +41,15 @@ const EpisodesSection = styled.div`
 `
 
 const PlaylistsSection = styled.div`
-    justify-self: center;
     display: grid;
     gap: 2rem;
+    justify-self: center;
+    width: 100%;
+    max-width: 60rem;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
+        max-width: 37.5rem;
+    }
 `
 
 const IndexPage = () => {

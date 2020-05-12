@@ -15,7 +15,7 @@ const Form = styled.form`
     gap: 0.5rem;
     margin-top: 1rem;
     width: 100%;
-    max-width: 350px;
+    max-width: 21.875rem;
     justify-self: center;
 `
 

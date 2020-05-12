@@ -16,7 +16,6 @@ const StyledFeaturedPlaylist = styled.article`
 `
 
 const PlaylistInfo = styled.div`
-    max-width: 40rem;
     display: grid;
     align-content: center;
     gap: 1rem;
