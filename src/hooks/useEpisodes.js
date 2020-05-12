@@ -11,7 +11,7 @@ const useEpisodes = ({limit = 0} = {}) => {
                     publishedAt(formatString: "MMMM D, YYYY")
                     localThumbnail {
                         childImageSharp {
-                            fluid(maxWidth: 700) {
+                            fluid(maxWidth: 600) {
                                 ...GatsbyImageSharpFluid
                             }
                         }

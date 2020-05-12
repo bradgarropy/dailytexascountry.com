@@ -15,7 +15,7 @@ const usePosts = ({limit = 0} = {}) => {
                         tags
                         image {
                             childImageSharp {
-                                fluid(maxWidth: 700) {
+                                fluid(maxWidth: 600) {
                                     ...GatsbyImageSharpFluid
                                 }
                             }
