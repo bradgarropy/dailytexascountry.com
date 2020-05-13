@@ -3,10 +3,15 @@ import {useStaticQuery, graphql} from "gatsby"
 const useStore = () => {
     const query = graphql`
         {
-            file(absolutePath: {regex: "/content/pages/store/"}) {
-                childImageSharp {
-                    fluid(maxWidth: 600) {
-                        ...GatsbyImageSharpFluid
+            markdownRemark(fileAbsolutePath: {regex: "/content/pages/store/"}) {
+                html
+                frontmatter {
+                    image {
+                        childImageSharp {
+                            fluid(maxWidth: 600) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
                     }
                 }
             }
@@ -14,7 +19,7 @@ const useStore = () => {
     `
 
     const data = useStaticQuery(query)
-    const store = data.file.childImageSharp
+    const store = data.markdownRemark
 
     return store
 }

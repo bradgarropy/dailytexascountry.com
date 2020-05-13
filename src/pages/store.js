@@ -72,9 +72,12 @@ const Button = styled.button`
 `
 
 const StorePage = () => {
-    const {fluid} = useStore()
+    const store = useStore()
     const [email, setEmail] = useState("")
     const [loading, setLoading] = useState(false)
+
+    const {html} = store
+    const {fluid} = store.frontmatter.image.childImageSharp
 
     const onChange = event => setEmail(event.target.value)
 
@@ -105,20 +108,7 @@ const StorePage = () => {
                 <Image fluid={fluid} />
 
                 <Right>
-                    <div>
-                        <h2>Nothing Here Yet</h2>
-
-                        <p>
-                            We don&apos;t have anything for you yet, but
-                            we&apos;re in the process of creating some great
-                            stuff!
-                        </p>
-
-                        <p>
-                            Sign up and we&apos;ll send you an email once the
-                            store is ready to go.
-                        </p>
-                    </div>
+                    <div dangerouslySetInnerHTML={{__html: html}} />
 
                     <Form onSubmit={onSubmit}>
                         <Input
