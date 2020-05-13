@@ -1,19 +1,43 @@
+import Img from "gatsby-image"
+import {navigate} from "gatsby"
 import React, {useState} from "react"
 import styled from "styled-components"
+import {useStore} from "../hooks"
 import {post} from "../utils/fetch"
 import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import {STORE_NOTIFICATIONS} from "../utils/convertkit"
-import {navigate} from "gatsby"
 
-const Item = styled.li`
-    list-style: none;
+const Box = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 46.875rem;
+    margin-top: 2rem;
+    box-sizing: content-box;
+    line-height: 1.5;
+
+    @media (max-width: 40.625rem) {
+        grid-template-columns: 1fr;
+        max-width: 30rem;
+    }
+`
+
+const Image = styled(Img)`
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+`
+
+const Right = styled.div`
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    padding: 2rem;
+    gap: 1rem;
+    align-content: center;
 `
 
 const Form = styled.form`
     display: grid;
     gap: 0.5rem;
-    margin-top: 1rem;
     width: 100%;
     max-width: 21.875rem;
     justify-self: center;
@@ -48,6 +72,7 @@ const Button = styled.button`
 `
 
 const StorePage = () => {
+    const {fluid} = useStore()
     const [email, setEmail] = useState("")
     const [loading, setLoading] = useState(false)
 
@@ -76,27 +101,37 @@ const StorePage = () => {
 
             <h1>Store</h1>
 
-            <p>
-                We don&apos;t have anything for you yet, but we&apos;re in the
-                process of creating some great stuff!
-            </p>
+            <Box>
+                <Image fluid={fluid} />
 
-            <ul>
-                <Item>Hats</Item>
-                <Item>Shirts</Item>
-                <Item>Koozies</Item>
-                <Item>Stickers</Item>
-            </ul>
+                <Right>
+                    <div>
+                        <h2>Nothing Here Yet</h2>
 
-            <p>
-                Sign up and we&apos;ll send you an email once the store is ready
-                to go.
-            </p>
+                        <p>
+                            We don&apos;t have anything for you yet, but
+                            we&apos;re in the process of creating some great
+                            stuff!
+                        </p>
 
-            <Form onSubmit={onSubmit}>
-                <Input type="email" value={email} onChange={onChange} />
-                <Button disabled={loading}>NOTIFY ME</Button>
-            </Form>
+                        <p>
+                            Sign up and we&apos;ll send you an email once the
+                            store is ready to go.
+                        </p>
+                    </div>
+
+                    <Form onSubmit={onSubmit}>
+                        <Input
+                            type="email"
+                            value={email}
+                            onChange={onChange}
+                            required
+                        />
+
+                        <Button disabled={loading}>NOTIFY ME</Button>
+                    </Form>
+                </Right>
+            </Box>
         </Container>
     )
 }

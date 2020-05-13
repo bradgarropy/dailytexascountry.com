@@ -17,7 +17,7 @@ const PlaylistsPage = () => {
     const playlists = usePlaylists()
 
     return (
-        <Container>
+        <Container centered>
             <SEO title="Playlists" />
 
             <StyledPlaylistsPage>

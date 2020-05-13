@@ -20,7 +20,7 @@ const ThanksPage = () => {
 
             <div>
                 <p>
-                    Please check your email inbox and confirm it&apos;s really
+                    Please check your email inbox to confirm it&apos;s really
                     you.
                 </p>
 
