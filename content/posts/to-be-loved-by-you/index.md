@@ -16,7 +16,7 @@ _C G D_
 Maybe I'm right, maybe I'm wrong  
 Finding out why shouldn't take this long  
 Easier said that done I guess  
-I'm a litle bit harder to love than the rest  
+I'm a little bit harder to love than the rest  
 Why does this have to be so hard  
 Doing my best to hold your heart  
 And I, I'll never let it go again
@@ -30,7 +30,7 @@ Care to tell me the truth
 What in the hell does a man have to do  
 To be loved by you
 
-Well I've been runnin as fast as I can  
+Well I've been runnin' as fast as I can  
 You never get over what you can't understand  
 Pissed off hanging up the telephone  
 The river ain't far I'm headed home  
