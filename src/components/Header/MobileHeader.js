@@ -13,10 +13,7 @@ const StyledMobileHeader = styled.header`
     background: ${({theme}) => theme.colors.blue};
     padding: 2rem;
     display: grid;
-    grid-template-columns: auto auto;
     grid-template-rows: auto 1fr;
-    justify-content: space-between;
-    align-content: start;
     align-items: center;
     height: ${({open}) => (open ? "100vh" : "auto")};
 
@@ -27,6 +24,13 @@ const StyledMobileHeader = styled.header`
     @media (min-width: 40.625rem) {
         height: auto;
     }
+`
+
+const TopBar = styled.div`
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
 `
 
 const StyledLink = styled(Link)`
@@ -60,13 +64,15 @@ const MobileHeader = () => {
 
     return (
         <StyledMobileHeader open={open}>
-            <StyledLink to="/" onClick={onClick}>
-                <StyledDTXC />
-            </StyledLink>
+            <TopBar>
+                <StyledLink to="/" onClick={onClick}>
+                    <StyledDTXC />
+                </StyledLink>
 
-            <Navigation />
+                <Navigation />
 
-            <StyledMenu onClick={onMenu} />
+                <StyledMenu onClick={onMenu} />
+            </TopBar>
             <MobileNavigation open={open} />
         </StyledMobileHeader>
     )

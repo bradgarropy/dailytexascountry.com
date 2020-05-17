@@ -8,6 +8,7 @@ import {AppContext} from "../../context/app"
 const StyledMobileNavigation = styled.div`
     display: ${({open}) => (open ? "grid" : "none")};
     gap: 2rem;
+    justify-content: center;
 
     @media (min-width: 40.625rem) {
         display: none;
@@ -24,6 +25,7 @@ const StyledLink = styled(Link)`
 
     @media (max-width: 40.625rem) {
         padding: 1rem 2rem;
+        font-size: 1.5rem;
     }
 `
 
