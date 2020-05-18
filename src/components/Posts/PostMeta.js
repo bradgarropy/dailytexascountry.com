@@ -2,6 +2,7 @@ import React from "react"
 import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import Tag from "../../styles/Tag"
 import Title from "../../styles/Title"
 
 const StyledPostMeta = styled.div`
@@ -12,20 +13,12 @@ const PostTitle = styled(Link)`
     justify-self: start;
 `
 
-const PostTags = styled.div`
+const Tags = styled.div`
     display: grid;
     grid-auto-flow: column;
     justify-content: start;
     gap: 0.5rem;
     margin-top: 0.3rem;
-`
-
-const PostTag = styled(Link)`
-    color: ${({theme}) => theme.colors.white};
-    background: ${({theme}) => theme.colors.red};
-    padding: 0.2rem 0.4rem;
-    font-size: 0.8rem;
-    border-radius: 0.25rem;
 `
 
 const PostMeta = ({post}) => {
@@ -39,13 +32,13 @@ const PostMeta = ({post}) => {
                 <Title>{title}</Title>
             </PostTitle>
 
-            <PostTags>
+            <Tags>
                 {tags.map((tag, index) => (
-                    <PostTag key={index} to={`/tags/${tag}`}>
+                    <Tag key={index} to={`/tags/${tag}`} size="S">
                         {tag}
-                    </PostTag>
+                    </Tag>
                 ))}
-            </PostTags>
+            </Tags>
         </StyledPostMeta>
     )
 }

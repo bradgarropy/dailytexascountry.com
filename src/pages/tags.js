@@ -11,7 +11,7 @@ const TagsPage = () => {
         <Container centered>
             <SEO title="Tags" />
 
-            <h1>tags</h1>
+            <h1>Tags</h1>
             <Tags tags={tags} />
         </Container>
     )

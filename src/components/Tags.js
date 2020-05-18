@@ -1,18 +1,33 @@
 import React from "react"
-import {Link} from "gatsby"
 import PropTypes from "prop-types"
+import styled from "styled-components"
+import Tag from "../styles/Tag"
+
+const StyledTags = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+    a {
+        margin-bottom: 1rem;
+    }
+
+    a:not(:last-child) {
+        margin-right: 1rem;
+    }
+`
 
 const Tags = ({tags}) => {
     return (
-        <ul>
+        <StyledTags>
             {tags.map((tag, index) => {
                 return (
-                    <li key={index}>
-                        <Link to={`/tags/${tag}`}>{tag}</Link>
-                    </li>
+                    <Tag key={index} to={`/tags/${tag}`} size="M">
+                        {tag}
+                    </Tag>
                 )
             })}
-        </ul>
+        </StyledTags>
     )
 }
 
