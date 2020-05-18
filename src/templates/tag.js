@@ -22,7 +22,10 @@ const TagTemplate = ({data, pageContext}) => {
 
             <StyledTagTemplate>
                 <h1>
-                    Tag | <Tag size="L">{tag}</Tag>
+                    Tag |{" "}
+                    <Tag to={`/tags/${tag}`} size="L">
+                        {tag}
+                    </Tag>
                 </h1>
                 <Posts posts={posts} />
             </StyledTagTemplate>
