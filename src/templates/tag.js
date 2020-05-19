@@ -12,6 +12,14 @@ const StyledTagTemplate = styled.div`
     gap: 2rem;
 `
 
+const TagTitle = styled.h1`
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    column-gap: 0.6rem;
+`
+
 const TagTemplate = ({data, pageContext}) => {
     const {tag} = pageContext
     const posts = data.allMarkdownRemark.nodes
@@ -21,12 +29,12 @@ const TagTemplate = ({data, pageContext}) => {
             <SEO title={`Tag | ${tag}`} />
 
             <StyledTagTemplate>
-                <h1>
-                    Tag |{" "}
+                <TagTitle>
+                    <span>Tag |</span>
                     <Tag to={`/tags/${tag}`} size="L">
                         {tag}
                     </Tag>
-                </h1>
+                </TagTitle>
                 <Posts posts={posts} />
             </StyledTagTemplate>
         </Container>
