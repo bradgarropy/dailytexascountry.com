@@ -14,14 +14,17 @@ Now that this quarantine thing will be going on [for a while][ny-times], a lot o
 
 | Date | Stream                           | Artist(s)                   | Type      |
 | :--- | :------------------------------- | :-------------------------- | :-------- |
+| 4/30 | [Facebook][casey-donahew-5]      | Casey Donahew               | Acoustic  |
+| 4/28 | [Facebook][kevin-fowler-4]       | Kevin Fowler, Cory Morrow   | Acoustic  |
 | 4/27 | [Facebook][stoney-larue-4]       | Stoney LaRue                | Acoustic  |
+| 4/24 | [Facebook][wade-bowen-4]         | Wade Bowen, Brandy Clark    | Acoustic  |
 | 4/23 | [Facebook][cody-johnson-2]       | Cody Johnson                | Acoustic  |
 | 4/23 | [Facebook][casey-donahew-4]      | Casey Donahew               | Acoustic  |
 | 4/23 | [Facebook][jon-wolfe-3]          | Jon Wolfe                   | Acoustic  |
 | 4/22 | [Facebook][jesse-raub-jr]        | Jesse Raub Jr.              | Acoustic  |
 | 4/21 | [Facebook][william-clark-green]  | William Clark Green         | Acoustic  |
 | 4/21 | [Facebook][kevin-fowler-3]       | Kevin Fowler, Josh Abbott   | Acoustic  |
-| 4/17 | [Facebook][wade-bowen-3]         | Wade Bowen                  | Acoustic  |
+| 4/17 | [Facebook][wade-bowen-3]         | Wade Bowen, Corey Morrow    | Acoustic  |
 | 4/17 | [Facebook][jon-wolfe-2]          | Jon Wolfe                   | Acoustic  |
 | 4/16 | [Facebook][casey-donahew-3]      | Casey Donahew               | Acoustic  |
 | 4/16 | [Facebook][randall-king-3]       | Randall King                | Acoustic  |
@@ -54,7 +57,10 @@ I'll keep this updated as the quarantine continues. If you know of any streams t
 
 [ny-times]: https://www.nytimes.com/2020/03/29/world/coronavirus-live-news-updates.html
 [quaranstreams-march]: /posts/quaranstreams-march
+[casey-donahew-5]: https://www.facebook.com/121598385287/videos/285809085769076
+[kevin-fowler-4]: https://www.facebook.com/15822102761/videos/2830046133939573
 [stoney-larue-4]: https://www.facebook.com/144950267652/videos/249171589783224
+[wade-bowen-4]: https://www.facebook.com/17995575887/videos/665369517594996
 [cody-johnson-2]: https://www.facebook.com/12417566442/videos/2504274209884782
 [casey-donahew-4]: https://www.facebook.com/121598385287/videos/1092896624411491
 [jon-wolfe-3]: https://www.facebook.com/7764681979/videos/3029817460443904
