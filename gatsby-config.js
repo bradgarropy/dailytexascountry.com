@@ -41,7 +41,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-google-fonts",
             options: {
-                fonts: ["inter", "roboto", "patua one"],
+                fonts: ["patua one"],
             },
         },
         {
