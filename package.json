@@ -7,7 +7,19 @@
         "react",
         "styled-components",
         "prettier",
-        "eslint"
+        "eslint",
+        "spotify",
+        "youtube",
+        "twitter",
+        "airtable",
+        "blog",
+        "playlists",
+        "episodes",
+        "store",
+        "dtxc",
+        "daily texas country",
+        "texas country",
+        "country"
     ],
     "homepage": "https://dailytexascountry.com",
     "bugs": {
