@@ -13,7 +13,7 @@ const Thanks = styled.h2`
 
 const ThanksPage = () => {
     return (
-        <Container centered>
+        <Container centered middle>
             <SEO title="Thanks" />
 
             <Thanks>Thanks!</Thanks>
