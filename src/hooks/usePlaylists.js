@@ -25,7 +25,7 @@ const usePlaylists = ({name = undefined, limit = 0} = {}) => {
                     image {
                         childImageSharp {
                             fluid(maxWidth: 600) {
-                                ...GatsbyImageSharpFluid
+                                ...GatsbyImageSharpFluid_withWebp
                             }
                         }
                     }

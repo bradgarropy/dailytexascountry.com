@@ -54,7 +54,7 @@ const query = graphql`
                     publicURL
                     childImageSharp {
                         fluid(maxWidth: 700) {
-                            ...GatsbyImageSharpFluid
+                            ...GatsbyImageSharpFluid_withWebp
                         }
                     }
                 }

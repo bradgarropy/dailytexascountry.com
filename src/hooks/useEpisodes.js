@@ -12,7 +12,7 @@ const useEpisodes = ({limit = 0} = {}) => {
                     localThumbnail {
                         childImageSharp {
                             fluid(maxWidth: 600) {
-                                ...GatsbyImageSharpFluid
+                                ...GatsbyImageSharpFluid_withWebp
                             }
                         }
                     }
