@@ -65,7 +65,7 @@ const MobileHeader = () => {
     return (
         <StyledMobileHeader open={open}>
             <TopBar>
-                <StyledLink to="/" onClick={onClick}>
+                <StyledLink aria-label="DTXC" to="/" onClick={onClick}>
                     <StyledDTXC />
                 </StyledLink>
 

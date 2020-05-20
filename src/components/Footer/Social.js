@@ -33,6 +33,7 @@ const Social = () => {
     return (
         <StyledSocial>
             <a
+                aria-label="Twitter"
                 href={`https://twitter.com/${twitter}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -41,6 +42,7 @@ const Social = () => {
             </a>
 
             <a
+                aria-label="YouTube"
                 href={`https://youtube.com/channel/${youtube}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,6 +51,7 @@ const Social = () => {
             </a>
 
             <a
+                aria-label="Instagram"
                 href={`https://instagram.com/${instagram}`}
                 target="_blank"
                 rel="noopener noreferrer"

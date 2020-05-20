@@ -28,7 +28,7 @@ const StyledDTXC = styled(DTXC)`
 const Header = () => {
     return (
         <StyledHeader>
-            <StyledLink to="/">
+            <StyledLink aria-label="DTXC" to="/">
                 <StyledDTXC />
             </StyledLink>
 

@@ -37,7 +37,12 @@ const FeaturedPlaylist = ({playlist}) => {
 
     return (
         <StyledFeaturedPlaylist>
-            <a href={url} target="_blank" rel="noopener noreferrer">
+            <a
+                aria-label="Daily Texas Country"
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <PlaylistImage fluid={image} />
             </a>
 

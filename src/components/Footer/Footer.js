@@ -42,6 +42,7 @@ const Footer = () => {
             <Social />
 
             <StyledA
+                aria-label="bg"
                 href="https://bradgarropy.com"
                 target="_blank"
                 rel="noopener noreferrer"
