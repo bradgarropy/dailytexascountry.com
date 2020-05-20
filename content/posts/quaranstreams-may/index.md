@@ -6,6 +6,8 @@ tags: ["concert", "livestream"]
 image: "images/kevin-fowler.jpg"
 ---
 
+Another month in quarantine and another list of livestreams. While [April][april] was jam packed with concert series from radio stations, venues, and companies, May seems to be thinning out the crowd. Only the truly dedicated artists are keeping up there streams on a weekly cadence.
+
 | Date | Stream                      | Artist(s)                       | Type      |
 | :--- | :-------------------------- | :------------------------------ | :-------- |
 | 5/18 | [Facebook][stoney-larue-2]  | Stoney LaRue                    | Acoustic  |
@@ -20,6 +22,9 @@ image: "images/kevin-fowler.jpg"
 | 5/1  | [Facebook][jon-wolfe]       | Jon Wolfe                       | Acoustic  |
 | 5/1  | [Facebook][wade-bowen-1]    | Wade Bowen, Sean McConnell      | Acoustic  |
 
+I'll keep this updated as the quarantine continues. If you know of any streams that I missed, tweet them to [@dailytxcountry][twitter] and I'll add them to the list. Now go crack a beer with your friends and tune in!
+
+[april]: /posts/quaranstreams-april
 [stoney-larue-2]: https://www.facebook.com/144950267652/videos/249050553104434
 [wade-bowen-3]: https://www.facebook.com/17995575887/videos/1335053826882339
 [casey-donahew-2]: https://www.facebook.com/121598385287/videos/1633641880128281
@@ -31,3 +36,4 @@ image: "images/kevin-fowler.jpg"
 [cody-johnson]: https://www.facebook.com/12417566442/videos/563455124566689
 [jon-wolfe]: https://www.facebook.com/7764681979/videos/255268835596175
 [wade-bowen-1]: https://www.facebook.com/17995575887/videos/2939180442813816
+[twitter]: https://twitter.com/dailytxcountry
