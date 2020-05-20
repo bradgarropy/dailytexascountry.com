@@ -10,12 +10,13 @@ const StyledEpisode = styled.article`
 `
 
 const Episode = ({episode}) => {
-    const {videoId} = episode
+    const {videoId, title} = episode
     const thumbnail = episode.localThumbnail.childImageSharp.fluid
 
     return (
         <StyledEpisode>
             <a
+                aria-label={title}
                 href={`https://youtube.com/watch?v=${videoId}`}
                 target="_blank"
                 rel="noopener noreferrer"

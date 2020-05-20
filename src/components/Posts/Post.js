@@ -18,12 +18,12 @@ const StyledPost = styled.article`
 `
 
 const Post = ({post}) => {
-    const {slug} = post.frontmatter
+    const {slug, title} = post.frontmatter
     const image = post.frontmatter.image.childImageSharp.fluid
 
     return (
         <StyledPost>
-            <Link to={`/posts/${slug}`}>
+            <Link aria-label={title} to={`/posts/${slug}`}>
                 <Image fluid={image} />
             </Link>
 
