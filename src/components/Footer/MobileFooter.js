@@ -1,8 +1,8 @@
 import React from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
+import BG from "./BG"
 import Social from "./Social"
-import BG from "../../svg/bg.svg"
 
 const StyledFooter = styled.footer`
     color: ${({theme}) => theme.colors.white};
@@ -24,31 +24,12 @@ const StyledLink = styled(Link)`
     font-family: "Patua One";
 `
 
-const StyledA = styled.a`
-    color: ${({theme}) => theme.colors.white};
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-`
-
-const StyledBG = styled(BG)`
-    max-height: 1.5rem;
-    width: auto;
-`
-
 const Footer = () => {
     return (
         <StyledFooter>
             <StyledLink to="/about">ABOUT</StyledLink>
             <Social />
-
-            <StyledA
-                href="https://bradgarropy.com"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <StyledBG />
-            </StyledA>
+            <BG />
         </StyledFooter>
     )
 }

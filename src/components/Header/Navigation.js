@@ -22,7 +22,6 @@ const StyledNavigation = styled.div`
 
 const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
-    text-transform: uppercase;
     text-decoration: none;
     font-size: 1.1rem;
     font-family: "Patua One";

@@ -14,7 +14,6 @@ const MoreButton = styled(Link)`
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     font-size: 1.1rem;
-    text-transform: uppercase;
     color: ${({theme, secondary}) =>
         secondary ? theme.colors.white : theme.colors.red};
     background: ${({theme, secondary}) =>
@@ -59,7 +58,7 @@ const IndexPage = () => {
 
     return (
         <>
-            <SEO />
+            <SEO description="This is the SEO description." />
 
             <Section color="white">
                 <PostsSection>

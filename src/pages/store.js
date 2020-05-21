@@ -50,6 +50,10 @@ const Input = styled.input`
     border: 2px solid ${({theme}) => theme.colors.black};
     font-size: 1.1rem;
     line-height: 1.5;
+
+    ::placeholder {
+        color: ${({theme}) => theme.colors.grey};
+    }
 `
 
 const Button = styled.button`
@@ -58,7 +62,6 @@ const Button = styled.button`
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     font-size: 1.1rem;
-    text-transform: uppercase;
     color: ${({theme}) => theme.colors.white};
     background: ${({theme}) => theme.colors.red};
     border: 2px solid ${({theme}) => theme.colors.red};
@@ -112,6 +115,8 @@ const StorePage = () => {
 
                     <Form onSubmit={onSubmit}>
                         <Input
+                            aria-label="email"
+                            placeholder="george@strait.com"
                             type="email"
                             value={email}
                             onChange={onChange}
