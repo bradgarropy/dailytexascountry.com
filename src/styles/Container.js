@@ -5,7 +5,7 @@ const Container = styled.div`
     padding: 2rem 2rem 6rem 2rem;
     justify-content: ${({centered}) => (centered ? "center" : "stretch")};
     align-content: ${({middle}) => (middle ? "center" : "start")};
-    min-height: 100vh;
+    height: 100%;
 `
 
 export default Container
