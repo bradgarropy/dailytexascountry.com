@@ -58,7 +58,7 @@ const IndexPage = () => {
 
     return (
         <>
-            <SEO description="This is the SEO description." />
+            <SEO />
 
             <Section color="white">
                 <PostsSection>
