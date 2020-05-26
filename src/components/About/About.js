@@ -63,7 +63,7 @@ const Summary = styled(Description)`
     text-align: center;
     max-width: ${({theme}) => theme.breakpoints.mobile};
     font-size: 1.25rem;
-    font-family: "Patua One";
+    font-family: "Patua One", sans-serif;
 `
 
 const About = ({sections}) => {

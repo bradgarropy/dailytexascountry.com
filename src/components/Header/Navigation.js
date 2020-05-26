@@ -24,7 +24,7 @@ const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
     text-decoration: none;
     font-size: 1.1rem;
-    font-family: "Patua One";
+    font-family: "Patua One", sans-serif;
     width: 100%;
 `
 

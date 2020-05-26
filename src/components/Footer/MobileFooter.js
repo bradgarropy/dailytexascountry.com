@@ -21,7 +21,7 @@ const StyledFooter = styled.footer`
 const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
     text-decoration: none;
-    font-family: "Patua One";
+    font-family: "Patua One", sans-serif;
 `
 
 const Footer = () => {

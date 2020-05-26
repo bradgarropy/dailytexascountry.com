@@ -9,7 +9,7 @@ import FeaturedPosts from "../components/Posts/FeaturedPosts"
 import FeaturedPlaylist from "../components/Playlists/FeaturedPlaylist"
 
 const MoreButton = styled(Link)`
-    font-family: "Patua One";
+    font-family: "Patua One", sans-serif;
     justify-self: end;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;

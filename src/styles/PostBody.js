@@ -20,7 +20,7 @@ const PostBody = styled.div`
     }
 
     th {
-        font-family: "Patua One";
+        font-family: "Patua One", sans-serif;
         font-weight: normal;
         font-size: 1.25rem;
     }
