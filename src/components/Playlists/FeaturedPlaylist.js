@@ -47,7 +47,15 @@ const FeaturedPlaylist = ({playlist}) => {
             </a>
 
             <PlaylistInfo>
-                <h1>{name}</h1>
+                <a
+                    aria-label="Daily Texas Country"
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <h1>{name}</h1>
+                </a>
+
                 <span>{description}</span>
             </PlaylistInfo>
         </StyledFeaturedPlaylist>
