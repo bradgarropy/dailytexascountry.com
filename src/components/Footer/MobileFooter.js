@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 import styled from "styled-components"
 import BG from "./BG"
 import Social from "./Social"
-import Copywrite from "./Copywrite"
+import Copyright from "./Copyright"
 
 const StyledFooter = styled.footer`
     color: ${({theme}) => theme.colors.white};
@@ -34,7 +34,7 @@ const MobileFooter = () => {
             <Social />
             <BG />
 
-            <Copywrite company="Daily Texas Country" />
+            <Copyright />
         </StyledFooter>
     )
 }
