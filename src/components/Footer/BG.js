@@ -6,6 +6,7 @@ const StyledBG = styled.a`
     color: ${({theme}) => theme.colors.white};
     text-decoration: none;
     font-weight: bold;
+    justify-self: end;
 
     svg {
         max-height: 1.5rem;
