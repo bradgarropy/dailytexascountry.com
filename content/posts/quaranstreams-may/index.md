@@ -6,7 +6,7 @@ tags: ["concert", "livestream"]
 image: "images/kevin-fowler.jpg"
 ---
 
-Another month in quarantine and another list of livestreams. While [April][april] was jam packed with concert series from radio stations, venues, and companies, May seems to be thinning out the crowd. Only the truly dedicated artists are keeping up there streams on a weekly cadence.
+Another month in quarantine and another list of livestreams. While [April][april] was jam packed with concert series from radio stations, venues, and companies, May seems to be thinning out the crowd. Only the truly dedicated artists are keeping up their streams on a weekly cadence.
 
 | Date | Stream                      | Artist(s)                       | Type      |
 | :--- | :-------------------------- | :------------------------------ | :-------- |

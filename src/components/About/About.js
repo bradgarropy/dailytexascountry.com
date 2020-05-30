@@ -91,7 +91,7 @@ const About = ({sections}) => {
             <Summary>
                 I&apos;ve been around the Texas country scene for over 10 years
                 now, and every bit of that experience is built into Daily Texas
-                Country. If you enjoy the lonestar state music and lifestyle as
+                Country. If you enjoy the Lone Star State music and lifestyle as
                 much as I do, you belong here. And if you know all of the songs
                 I referenced in the sections above, you <em>really</em> belong
                 here.

@@ -6,7 +6,7 @@ tags: ["concert", "livestream"]
 image: "images/casey-donahew.jpg"
 ---
 
-_Don't forget to check out [March's Quaranstreams][quaranstreams-march]!._
+_Don't forget to check out [March's Quaranstreams][quaranstreams-march]!_
 
 ---
 

@@ -15,7 +15,7 @@ _C G D_
 
 Maybe I'm right, maybe I'm wrong  
 Finding out why shouldn't take this long  
-Easier said that done I guess  
+Easier said than done I guess  
 I'm a little bit harder to love than the rest  
 Why does this have to be so hard  
 Doing my best to hold your heart  
