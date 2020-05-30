@@ -17,6 +17,7 @@ const StyledFeaturedPlaylist = styled.article`
 
 const PlaylistInfo = styled.div`
     display: grid;
+    justify-items: start;
     align-content: center;
     gap: 1rem;
 
