@@ -148,5 +148,8 @@ module.exports = {
         {
             resolve: "gatsby-plugin-catch-links",
         },
+        {
+            resolve: "@bradgarropy/gatsby-plugin-seo",
+        },
     ],
 }

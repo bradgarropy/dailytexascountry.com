@@ -1,7 +1,7 @@
 import React from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
-import {SEO} from "../components/SEO"
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Section from "../styles/Section"
 import YouTube from "../components/YouTube"
 import {usePosts, useEpisode, usePlaylist} from "../hooks"

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import {SEO} from "../components/SEO"
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Container from "../styles/Container"
 
 const Thanks = styled.h2`

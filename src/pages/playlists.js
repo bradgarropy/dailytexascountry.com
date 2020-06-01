@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import {usePlaylists} from "../hooks"
-import {SEO} from "../components/SEO"
 import Container from "../styles/Container"
 import Playlists from "../components/Playlists/Playlists"
 

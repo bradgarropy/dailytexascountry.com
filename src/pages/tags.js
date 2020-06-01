@@ -1,6 +1,6 @@
 import React from "react"
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import {useTags} from "../hooks"
-import {SEO} from "../components/SEO"
 import Tags from "../components/Tags"
 import Container from "../styles/Container"
 
