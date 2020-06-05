@@ -24,7 +24,7 @@ Another month in quarantine and another list of livestreams. While [April][april
 | 5/14 | [Facebook][casey-donahew-2]       | Casey Donahew                   | Acoustic  |
 | 5/11 | [Facebook][stoney-larue-1]        | Stoney LaRue                    | Acoustic  |
 | 5/7  | [Facebook][hmbwt]                 | Randy Rogers, Wade Bowen        | Full Band |
-| 5/7  | [Facebook][casey-donahew-1]       | Casey Donahew                   | Full Band |
+| 5/7  | [Facebook][casey-donahew-1]       | Casey Donahew                   | Acoustic  |
 | 5/7  | [Facebook][william-clark-green-1] | William Clark Green             | Acoustic  |
 | 5/7  | [Facebook][wade-bowen-2]          | Wade Bowen, Randy Rogers        | Acoustic  |
 | 5/7  | [Facebook][kyle-park-1]           | Kyle Park                       | Acoustic  |
