@@ -2,7 +2,7 @@
 slug: to-be-loved-by-you
 title: To Be Loved By You
 date: 2020-05-14
-tags: ["unreleased", "lyrics"]
+tags: ["unreleased", "lyrics", "chords"]
 image: "images/parker.jpg"
 ---
 

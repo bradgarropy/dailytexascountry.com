@@ -1,7 +1,7 @@
 ---
 slug: quaranstreams-june
 title: Quaranstreams - June
-date: 2020-06-03
+date: 2020-06-01
 tags: ["concert", "livestream"]
 image: "images/stoney-larue.jpg"
 ---
