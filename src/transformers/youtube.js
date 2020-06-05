@@ -7,7 +7,7 @@ const getHTML = string => {
     const id = url.pathname.slice(1)
 
     const html = `
-        <div class="youtube">
+        <div class="video">
             <iframe
                 title=${id}
                 src="https://www.youtube-nocookie.com/embed/${id}"

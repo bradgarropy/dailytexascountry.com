@@ -1,6 +1,7 @@
 require("dotenv").config()
 
 const youtube = require("./src/transformers/youtube")
+const facebook = require("./src/transformers/facebook")
 
 const dtxcChannelId = "UCpbIlFaiv-3188nAWtgL0Iw"
 
@@ -121,7 +122,7 @@ module.exports = {
                     {
                         resolve: "gatsby-remark-embedder",
                         options: {
-                            customTransformers: [youtube],
+                            customTransformers: [youtube, facebook],
                         },
                     },
                     {

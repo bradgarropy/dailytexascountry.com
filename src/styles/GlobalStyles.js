@@ -41,8 +41,8 @@ const GlobalStyles = createGlobalStyle`
         min-width: unset !important;
     }
 
-    /* youtube */
-    .youtube {
+    /* facebook and youtube videos */
+    .video {
         overflow: hidden;
         position: relative;
         width: 100%;
