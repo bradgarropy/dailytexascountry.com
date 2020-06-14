@@ -1,5 +1,6 @@
 require("dotenv").config()
 
+const spotify = require("./src/transformers/spotify")
 const youtube = require("./src/transformers/youtube")
 const facebook = require("./src/transformers/facebook")
 
@@ -122,7 +123,7 @@ module.exports = {
                     {
                         resolve: "gatsby-remark-embedder",
                         options: {
-                            customTransformers: [youtube, facebook],
+                            customTransformers: [spotify, youtube, facebook],
                         },
                     },
                     {
