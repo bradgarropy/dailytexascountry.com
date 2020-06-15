@@ -2,8 +2,8 @@
 slug: lone-star-jam-2020-online
 title: Lone Star Jam 2020 Online
 date: 2020-05-23
-tags: ["concert", "livestream", "festival"]
-image: "images/lone-star-jam.jpg"
+tags: [concert, livestream, festival]
+image: images/lone-star-jam.jpg
 ---
 
 [Lone Star Jam][lsj], the festival I love to hate. Don't get me wrong, I attended religiously for many years, but I always thought leaving the LBJ lawn was the beginning of the end.

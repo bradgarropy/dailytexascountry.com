@@ -2,8 +2,8 @@
 slug: to-be-loved-by-you
 title: To Be Loved By You
 date: 2020-05-14
-tags: ["unreleased", "lyrics", "chords"]
-image: "images/parker.jpg"
+tags: [unreleased, lyrics, chords]
+image: images/parker.jpg
 ---
 
 Let's put these whiskey drinkin' and country music listenin' nights to good use. I wish I would have been there at this show at [Cowboys Dancehall][cowboys] back in November 2019. [Parker McCollum][parker] played an unreleased song called _To Be Loved By You_. Here are the lyrics as best as I can tell.

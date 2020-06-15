@@ -2,8 +2,8 @@
 slug: quaranstreams-march
 title: Quaranstreams - March
 date: 2020-03-20
-tags: ["concert", "livestream"]
-image: "images/band-of-heathens.png"
+tags: [concert, livestream]
+image: images/band-of-heathens.png
 ---
 
 _This list is getting crazy long, so I've split it up by month. Check out [April's Quaranstreams][quaranstreams-april]._

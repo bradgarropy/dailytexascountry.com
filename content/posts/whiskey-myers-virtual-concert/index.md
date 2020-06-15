@@ -2,8 +2,8 @@
 slug: whiskey-myers-virtual-concert
 title: Whiskey Myers Virtual Concert
 date: 2020-05-21
-tags: ["concert", "livestream"]
-image: "images/whiskey-myers.jpg"
+tags: [concert, livestream]
+image: images/whiskey-myers.jpg
 ---
 
 Having all these [livestreams][livestreams] to watch is great, but it doesn't scratch the itch of going to a live concert. The vast majority of these streams are all solo acoustic, just an artist and a guitar. Well, leave it to [Billy Bob's][billy-bobs] to put on a legitimate show in our time of need. And who better to bring us back to life and rock our faces off than [Whiskey Myers][whiskey-myers]?!

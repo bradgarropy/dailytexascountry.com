@@ -2,8 +2,8 @@
 slug: quaranstreams-april
 title: Quaranstreams - April
 date: 2020-04-01
-tags: ["concert", "livestream"]
-image: "images/casey-donahew.jpg"
+tags: [concert, livestream]
+image: images/casey-donahew.jpg
 ---
 
 _Don't forget to check out [March's Quaranstreams][quaranstreams-march]!_

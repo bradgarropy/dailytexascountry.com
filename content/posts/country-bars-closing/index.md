@@ -2,8 +2,8 @@
 slug: country-bars-closing
 title: Country Bars Closing
 date: 2020-04-07
-tags: ["coronavirus"]
-image: "images/the-railhouse.jpg"
+tags: [coronavirus]
+image: images/the-railhouse.jpg
 ---
 
 Shortly after [The Railhouse][railhouse] posted this on Facebook, they announced that they were [closing for good][closed]. While I had never been to the venue personally, I have friends in Kyle who loved it. The Railhouse was slowly gaining traction, with bigger artists like [Curtis Grimes][curtis-grimes], [Sam Riggs][sam-riggs], and [Jason Boland][jason-boland] playing shows there.

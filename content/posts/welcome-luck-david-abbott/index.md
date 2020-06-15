@@ -2,8 +2,8 @@
 slug: welcome-luck-david-abbott
 title: Welcome Luck David Abbott
 date: 2020-06-13
-tags: ["family"]
-image: "images/the-luckiest.jpg"
+tags: [family]
+image: images/the-luckiest.jpg
 ---
 
 Congratulations to [Josh][josh] and [Taylor][taylor] Abbott on their new baby boy! Luck David Abbott was born on June 10th, measuring 9 pounds and 20.5 inches. Luck brings the Abbotts to a family of four. Their first child is a girl by the name of [Emery Farryn][emery].

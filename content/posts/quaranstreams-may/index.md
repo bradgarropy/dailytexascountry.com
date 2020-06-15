@@ -2,8 +2,8 @@
 slug: quaranstreams-may
 title: Quaranstreams - May
 date: 2020-05-01
-tags: ["concert", "livestream"]
-image: "images/kevin-fowler.jpg"
+tags: [concert, livestream]
+image: images/kevin-fowler.jpg
 ---
 
 Another month in quarantine and another list of livestreams. While [April][april] was jam packed with concert series from radio stations, venues, and companies, May seems to be thinning out the crowd. Only the truly dedicated artists are keeping up their streams on a weekly cadence.

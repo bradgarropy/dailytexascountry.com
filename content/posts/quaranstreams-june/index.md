@@ -2,8 +2,8 @@
 slug: quaranstreams-june
 title: Quaranstreams - June
 date: 2020-06-01
-tags: ["concert", "livestream"]
-image: "images/stoney-larue.jpg"
+tags: [concert, livestream]
+image: images/stoney-larue.jpg
 ---
 
 [Last month][may] it was just coronavirus, now we've got police brutality and a race war to worry about?! That's enough to convince me to sit my ass down at home and watch more of these livestreams.

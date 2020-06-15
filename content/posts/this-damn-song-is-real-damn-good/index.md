@@ -3,7 +3,7 @@ slug: this-damn-song-is-real-damn-good
 title: This Damn Song Is Real Damn Good
 date: 2020-05-28
 tags: []
-image: "images/pecos.jpg"
+image: images/pecos.jpg
 ---
 
 The only reason I'd heard of [Pecos & the Rooftops][pecos] was because they played some shows with [Kolby Cooper][kolby-cooper]. I never gave them much thought until [_This Damn Song_][this-damn-song] came across my radar. As it turns out, this song was the first piece of music the band had ever released, and it's a hit! With 5.8 million plays on Spotify and 3.2 million views on YouTube it brought a lot of attention to the band.
