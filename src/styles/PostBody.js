@@ -39,12 +39,12 @@ const PostBody = styled.div`
         padding: 0;
     }
 
-    a:not(.anchor) {
+    a:not(.anchor):not(.gatsby-resp-image-link) {
         transition: all 300ms ease 0s;
         box-shadow: ${({theme}) => theme.colors.red} 0 -0.1rem inset;
     }
 
-    a:not(.anchor):hover {
+    a:not(.anchor):not(.gatsby-resp-image-link):hover {
         text-decoration: none;
         color: ${({theme}) => theme.colors.white};
         box-shadow: ${({theme}) => theme.colors.red} 0 -2rem 0 inset;
