@@ -51,6 +51,10 @@ const PostBody = styled.div`
         padding: 0 0.2rem;
         margin: 0 -0.2rem;
     }
+
+    .gatsby-resp-image-wrapper {
+        margin: 2rem auto;
+    }
 `
 
 export default PostBody
