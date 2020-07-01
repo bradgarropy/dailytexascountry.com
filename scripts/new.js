@@ -6,7 +6,7 @@ const {format} = require("date-fns")
 
 const [title = "new post", ...tags] = process.argv.slice(2)
 
-const slug = slugify(title, {lower: true})
+const slug = slugify(title, {lower: true, remove: /[']/g})
 const date = format(Date.now(), "yyyy-MM-dd")
 
 const frontmatter = `---
