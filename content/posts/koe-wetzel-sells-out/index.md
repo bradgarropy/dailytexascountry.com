@@ -18,7 +18,7 @@ Timed perfectly with the record deal announcement, Koe is releasing a new "pop f
 
 https://www.instagram.com/p/CCGvxY7p37c
 
-And finally, Koe posted a teaser trailer for a song called _Midnight_. The background music seems like the intro to the song, which already sounds intense. I love Koe's music videos because they are so imaginative and hysterical.
+And finally, Koe posted a teaser trailer for the _Sundy Or Mundy_ video. The music seems like the intro to the song, which already sounds intense. I love Koe's music videos because they are so imaginative and hysterical.
 
 Seems like Koe is making a lot of [big moves][moves] in 2020, so get this man a [drink][drink]! Keep an eye on the Daily Texas Country [socials][instagram] for all your Koe Wetzel and country music news.
 
