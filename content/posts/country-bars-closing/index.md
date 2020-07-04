@@ -10,6 +10,7 @@ Shortly after [The Railhouse][railhouse] posted this on Facebook, they announced
 
 In light of the COVID-19 pandemic, many restaraunts, bars, and concert venues are struggling to stay open. But even before the coronavirus came around, there's been quite a few country bars closing down.
 
+-   [Big Texas Spring][big-texas]
 -   [The Railhouse][railhouse]
 -   [Dance Across Texas][dance-across]
 -   [Midnight Rodeo Austin][midnight-austin]
@@ -18,6 +19,7 @@ In light of the COVID-19 pandemic, many restaraunts, bars, and concert venues ar
 
 Luckily my second home, [Mavericks Dance Hall][mavs], is still going strong thanks to the support of their loyal patrons. If you love this place, consider [donating][donate] to help the bartenders and staff. And if your local country bar is struggling, do what you can to help so we all have a dance floor once this quarantine is over!
 
+[big-texas]: http://www.bigtexassaloon.com
 [railhouse]: https://facebook.com/therailhousetx
 [closed]: https://haysfreepress.com/2020/04/22/railhouse-closes
 [curtis-grimes]: https://curtisgrimes.com
