@@ -25,12 +25,18 @@ const PlaylistImage = styled(Image)`
 `
 
 const Playlist = ({playlist}) => {
+    const {name} = playlist
     const url = playlist.external_urls.spotify
     const image = playlist.image.childImageSharp.fluid
 
     return (
         <StyledPlaylist>
-            <a href={url} target="_blank" rel="noopener noreferrer">
+            <a
+                aria-label={name}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <PlaylistImage fluid={image} />
             </a>
 

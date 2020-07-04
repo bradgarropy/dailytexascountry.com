@@ -3,6 +3,7 @@ const colors = {
     lightPurple: "#ccb3e6",
     white: "#ffffff",
     black: "#000000",
+    grey: "#bbbbbb",
     blue: "#003366",
     red: "#b20931",
     blueSelection: "rgba(0, 51, 102, 0.99)",

@@ -1,7 +1,7 @@
 import React from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
-import {SEO} from "../components/SEO"
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Section from "../styles/Section"
 import YouTube from "../components/YouTube"
 import {usePosts, useEpisode, usePlaylist} from "../hooks"
@@ -9,12 +9,11 @@ import FeaturedPosts from "../components/Posts/FeaturedPosts"
 import FeaturedPlaylist from "../components/Playlists/FeaturedPlaylist"
 
 const MoreButton = styled(Link)`
-    font-family: "Patua One";
+    font-family: "Patua One", sans-serif;
     justify-self: end;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     font-size: 1.1rem;
-    text-transform: uppercase;
     color: ${({theme, secondary}) =>
         secondary ? theme.colors.white : theme.colors.red};
     background: ${({theme, secondary}) =>
@@ -24,6 +23,12 @@ const MoreButton = styled(Link)`
 const PostsSection = styled.div`
     display: grid;
     gap: 2rem;
+    justify-self: center;
+    width: 100%;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
+        max-width: 37.5rem;
+    }
 `
 
 const EpisodesSection = styled.div`
@@ -35,9 +40,15 @@ const EpisodesSection = styled.div`
 `
 
 const PlaylistsSection = styled.div`
-    justify-self: center;
     display: grid;
     gap: 2rem;
+    justify-self: center;
+    width: 100%;
+    max-width: 60rem;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.tablet}) {
+        max-width: 37.5rem;
+    }
 `
 
 const IndexPage = () => {
@@ -53,7 +64,7 @@ const IndexPage = () => {
                 <PostsSection>
                     <h1>Latest Posts</h1>
                     <FeaturedPosts posts={posts} />
-                    <MoreButton to="/posts" secondary>
+                    <MoreButton to="/posts" secondary="true">
                         READ MORE
                     </MoreButton>
                 </PostsSection>
@@ -70,7 +81,7 @@ const IndexPage = () => {
             <Section color="white">
                 <PlaylistsSection>
                     <FeaturedPlaylist playlist={playlist} />
-                    <MoreButton to="/playlists" secondary>
+                    <MoreButton to="/playlists" secondary="true">
                         HEAR MORE
                     </MoreButton>
                 </PlaylistsSection>

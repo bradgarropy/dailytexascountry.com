@@ -2,8 +2,8 @@
 slug: six-feet-apart
 title: Six Feet Apart
 date: 2020-04-15
-tags: ["coronavirus"]
-image: "images/luke-combs.jpg"
+tags: [coronavirus]
+image: images/luke-combs.jpg
 ---
 
 ## One last time.

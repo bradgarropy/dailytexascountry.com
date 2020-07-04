@@ -1,9 +1,9 @@
 ---
 slug: come-on-in-yall
 title: Come On In Y'all!
-date: 2020-04-06
+date: 2020-06-18
 tags: []
-image: "images/koke.jpg"
+image: images/koke.jpg
 ---
 
 Hey y'all, welcome to [Daily Texas Country][dtxc]!

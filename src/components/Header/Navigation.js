@@ -15,17 +15,16 @@ const StyledNavigation = styled.div`
         gap: 2rem;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 40.625rem) {
         display: none;
     }
 `
 
 const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
-    text-transform: uppercase;
     text-decoration: none;
     font-size: 1.1rem;
-    font-family: "Patua One";
+    font-family: "Patua One", sans-serif;
     width: 100%;
 `
 

@@ -2,7 +2,7 @@ import {createGlobalStyle} from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6 {
-        font-family: "Patua One";
+        font-family: "Patua One", sans-serif;
         font-weight: normal;
     }
 
@@ -29,20 +29,29 @@ const GlobalStyles = createGlobalStyle`
         background: ${({theme}) => theme.colors.redSelectionImage};
     }
 
-    /* twitter */
+    /* twitter embeds */
     twitter-widget {
         margin: 2rem auto !important;
         width: 100% !important;
+        max-width: 550px !important;
+        min-width: 220px !important;
     }
 
-    /* instagram */
+    /* instagram embeds */
     .instagram-media {
         margin: 2rem auto !important;
         min-width: unset !important;
     }
 
-    /* youtube */
-    .youtube {
+    /* spotify embed */
+    .spotify {
+        margin: 2rem auto;
+        text-align: center;
+        line-height: 0;
+    }
+
+    /* facebook and youtube video embeds */
+    .video {
         overflow: hidden;
         position: relative;
         width: 100%;

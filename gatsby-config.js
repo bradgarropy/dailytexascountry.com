@@ -1,6 +1,8 @@
 require("dotenv").config()
 
+const spotify = require("./src/transformers/spotify")
 const youtube = require("./src/transformers/youtube")
+const facebook = require("./src/transformers/facebook")
 
 const dtxcChannelId = "UCpbIlFaiv-3188nAWtgL0Iw"
 
@@ -39,9 +41,13 @@ module.exports = {
             },
         },
         {
-            resolve: "gatsby-plugin-google-fonts",
+            resolve: "gatsby-plugin-prefetch-google-fonts",
             options: {
-                fonts: ["inter", "roboto", "patua one"],
+                fonts: [
+                    {
+                        family: "Patua One",
+                    },
+                ],
             },
         },
         {
@@ -105,6 +111,7 @@ module.exports = {
                         resolve: "gatsby-remark-images",
                         options: {
                             maxWidth: 700,
+                            linkImagesToOriginal: false,
                         },
                     },
                     {
@@ -117,7 +124,7 @@ module.exports = {
                     {
                         resolve: "gatsby-remark-embedder",
                         options: {
-                            customTransformers: [youtube],
+                            customTransformers: [spotify, youtube, facebook],
                         },
                     },
                     {
@@ -143,6 +150,9 @@ module.exports = {
         },
         {
             resolve: "gatsby-plugin-catch-links",
+        },
+        {
+            resolve: "@bradgarropy/gatsby-plugin-seo",
         },
     ],
 }

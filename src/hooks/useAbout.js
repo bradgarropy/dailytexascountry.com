@@ -14,7 +14,7 @@ const useAbout = () => {
                         image {
                             childImageSharp {
                                 fluid(maxWidth: 700) {
-                                    ...GatsbyImageSharpFluid
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }

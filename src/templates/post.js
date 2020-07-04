@@ -3,8 +3,8 @@ import Img from "gatsby-image"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Post from "../styles/Post"
-import {SEO} from "../components/SEO"
 import PostBody from "../styles/PostBody"
 import Container from "../styles/Container"
 import PostMeta from "../components/Posts/PostMeta"
@@ -54,7 +54,7 @@ const query = graphql`
                     publicURL
                     childImageSharp {
                         fluid(maxWidth: 700) {
-                            ...GatsbyImageSharpFluid
+                            ...GatsbyImageSharpFluid_withWebp
                         }
                     }
                 }

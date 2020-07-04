@@ -24,8 +24,8 @@ const usePlaylist = ({name} = {}) => {
                     spotifyId
                     image {
                         childImageSharp {
-                            fluid(maxWidth: 700) {
-                                ...GatsbyImageSharpFluid
+                            fluid(maxWidth: 600) {
+                                ...GatsbyImageSharpFluid_withWebp
                             }
                         }
                     }

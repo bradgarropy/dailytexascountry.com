@@ -8,25 +8,22 @@ import Image from "../../styles/Image"
 const StyledPost = styled.article`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    max-width: ${({theme}) => theme.breakpoints.mobile};
     gap: 2rem;
     align-items: center;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 `
 
 const Post = ({post}) => {
-    const {slug} = post.frontmatter
+    const {slug, title} = post.frontmatter
     const image = post.frontmatter.image.childImageSharp.fluid
 
     return (
         <StyledPost>
-            <Link to={`/posts/${slug}`}>
+            <Link aria-label={title} to={`/posts/${slug}`}>
                 <Image fluid={image} />
             </Link>
 

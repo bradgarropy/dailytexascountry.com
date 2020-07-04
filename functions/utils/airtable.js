@@ -9,12 +9,8 @@ Airtable.configure({
 
 const airtable = Airtable.base(AIRTABLE_BASE_ID)
 
-const filter = "IS_SAME({date}, TODAY())"
-
 const getTodaysTrack = async () => {
-    const results = await airtable("dtxc")
-        .select({filterByFormula: filter})
-        .firstPage()
+    const results = await airtable("dtxc").select({view: "Today"}).firstPage()
 
     const tracks = results.map(result => result.fields)
     const track = tracks[0]
@@ -23,9 +19,7 @@ const getTodaysTrack = async () => {
 }
 
 const deleteTodaysTrack = async () => {
-    const results = await airtable("dtxc")
-        .select({filterByFormula: filter})
-        .firstPage()
+    const results = await airtable("dtxc").select({view: "Today"}).firstPage()
 
     const track = results[0]
 

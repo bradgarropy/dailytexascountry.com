@@ -16,8 +16,8 @@ const StyledFeaturedPlaylist = styled.article`
 `
 
 const PlaylistInfo = styled.div`
-    max-width: 40rem;
     display: grid;
+    justify-items: start;
     align-content: center;
     gap: 1rem;
 
@@ -38,12 +38,25 @@ const FeaturedPlaylist = ({playlist}) => {
 
     return (
         <StyledFeaturedPlaylist>
-            <a href={url} target="_blank" rel="noopener noreferrer">
+            <a
+                aria-label="Daily Texas Country"
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <PlaylistImage fluid={image} />
             </a>
 
             <PlaylistInfo>
-                <h1>{name}</h1>
+                <a
+                    aria-label="Daily Texas Country"
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <h1>{name}</h1>
+                </a>
+
                 <span>{description}</span>
             </PlaylistInfo>
         </StyledFeaturedPlaylist>

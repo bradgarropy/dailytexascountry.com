@@ -7,7 +7,6 @@ const StyledPosts = styled.div`
     display: grid;
     grid-auto-flow: row;
     gap: 5rem;
-    justify-content: center;
 `
 
 const Posts = ({posts}) => {

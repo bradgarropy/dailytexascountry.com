@@ -8,22 +8,23 @@ import {AppContext} from "../../context/app"
 const StyledMobileNavigation = styled.div`
     display: ${({open}) => (open ? "grid" : "none")};
     gap: 2rem;
+    justify-content: center;
 
-    @media (min-width: 650px) {
+    @media (min-width: 40.625rem) {
         display: none;
     }
 `
 
 const StyledLink = styled(Link)`
     color: ${({theme}) => theme.colors.white};
-    text-transform: uppercase;
     text-decoration: none;
     font-size: 1.1rem;
-    font-family: "Patua One";
+    font-family: "Patua One", sans-serif;
     width: 100%;
 
-    @media (max-width: 650px) {
+    @media (max-width: 40.625rem) {
         padding: 1rem 2rem;
+        font-size: 1.5rem;
     }
 `
 

@@ -20,7 +20,7 @@ const PostBody = styled.div`
     }
 
     th {
-        font-family: "Patua One";
+        font-family: "Patua One", sans-serif;
         font-weight: normal;
         font-size: 1.25rem;
     }
@@ -48,8 +48,12 @@ const PostBody = styled.div`
         text-decoration: none;
         color: ${({theme}) => theme.colors.white};
         box-shadow: ${({theme}) => theme.colors.red} 0 -2rem 0 inset;
-        padding: 0px 0.2rem;
-        margin: 0px -0.2rem;
+        padding: 0 0.2rem;
+        margin: 0 -0.2rem;
+    }
+
+    .gatsby-resp-image-wrapper {
+        margin: 2rem auto;
     }
 `
 

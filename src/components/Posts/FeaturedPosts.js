@@ -42,7 +42,7 @@ const FeaturedPosts = ({posts}) => {
 
                 return (
                     <StyledPost key={index}>
-                        <Link to={`/posts/${slug}`}>
+                        <Link aria-label={title} to={`/posts/${slug}`}>
                             <Image fluid={image} />
                         </Link>
 
