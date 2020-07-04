@@ -14,7 +14,16 @@ const config = plop => {
         return slug
     })
 
-    plop.setHelper("date", () => format(Date.now(), "yyyy-MM-dd"))
+    plop.setHelper("date", () => {
+        return format(Date.now(), "yyyy-MM-dd")
+    })
+
+    plop.setHelper("list", text => {
+        return text
+            .split(",")
+            .map(e => e.trim())
+            .join(", ")
+    })
 
     plop.setActionType("copy", (answers, config, plop) => {
         const src = plop.renderString(config.src, answers)
@@ -32,6 +41,11 @@ const config = plop => {
                 type: "input",
                 name: "title",
                 message: "post title",
+            },
+            {
+                type: "input",
+                name: "tags",
+                message: "post tags",
             },
         ],
         actions: [
