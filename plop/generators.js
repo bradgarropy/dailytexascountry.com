@@ -1,6 +1,6 @@
 const generators = plop => {
-    plop.load("./helpers.js")
-    plop.load("./actions.js")
+    plop.load("@bradgarropy/plop-pack-helpers")
+    plop.load("@bradgarropy/plop-pack-actions")
 
     plop.setDefaultInclude({
         actionTypes: false,
