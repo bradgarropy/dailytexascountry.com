@@ -83,6 +83,8 @@
         "twitter": "^1.7.1"
     },
     "devDependencies": {
+        "@bradgarropy/plop-pack-actions": "0.0.1",
+        "@bradgarropy/plop-pack-helpers": "0.0.1",
         "babel-eslint": "^10.1.0",
         "cross-env": "^7.0.2",
         "eslint": "^7.4.0",
