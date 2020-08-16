@@ -30,11 +30,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     /* twitter embeds */
-    twitter-widget {
+    .twitter-tweet {
         margin: 2rem auto !important;
-        width: 100% !important;
-        max-width: 550px !important;
-        min-width: 220px !important;
     }
 
     /* instagram embeds */
