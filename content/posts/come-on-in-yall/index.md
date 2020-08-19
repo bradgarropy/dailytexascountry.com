@@ -17,7 +17,7 @@ And if you really like what we're doing here, head over to our [store][store]. S
 https://youtu.be/QnwQb2-8yzE
 
 [dtxc]: /
-[spotify-playlist]: https://open.spotify.com/playlist/0AbnxNMZqSCVog82luj1Ir
+[spotify-playlist]: https://open.spotify.com/playlist/1bgAyCwQMBbRQxNnKWj0RM
 [playlists]: /playlists
 [twitter]: https://twitter.com/dailytxcountry
 [youtube]: https://youtube.com/channel/UCpbIlFaiv-3188nAWtgL0Iw

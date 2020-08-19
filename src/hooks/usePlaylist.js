@@ -4,9 +4,7 @@ import {useStaticQuery, graphql} from "gatsby"
 const usePlaylist = ({name} = {}) => {
     const query = graphql`
         {
-            allSpotifyPlaylist(
-                filter: {name: {regex: "/DTXC|Daily Texas Country/"}}
-            ) {
+            allSpotifyPlaylist {
                 nodes {
                     spotifyId
                     name

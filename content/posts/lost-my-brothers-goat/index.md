@@ -27,5 +27,5 @@ Overall I definitely enjoyed this album and recommend that you give it a listen.
 [melinda]: https://www.instagram.com/melindadonahew
 [store]: https://store.caseydonahew.com
 [livestreams]: https://www.facebook.com/CaseyDonahewBand/videos
-[playlist]: https://open.spotify.com/playlist/0AbnxNMZqSCVog82luj1Ir
+[playlist]: https://open.spotify.com/playlist/1bgAyCwQMBbRQxNnKWj0RM
 [twitter]: https://twitter.com/dailytxcountry
