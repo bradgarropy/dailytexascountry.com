@@ -4,6 +4,7 @@ import {useSiteMetadata} from "../../hooks"
 import Twitter from "../../svg/twitter.svg"
 import YouTube from "../../svg/youtube.svg"
 import Instagram from "../../svg/instagram.svg"
+import Spotify from "../../svg/spotify.svg"
 
 const StyledSocial = styled.div`
     display: grid;
@@ -27,8 +28,13 @@ const StyledInstagram = styled(Instagram)`
     width: auto;
 `
 
+const StyledSpotify = styled(Spotify)`
+    max-height: 1.5rem;
+    width: auto;
+`
+
 const Social = () => {
-    const {twitter, youtube, instagram} = useSiteMetadata()
+    const {twitter, youtube, instagram, spotify} = useSiteMetadata()
 
     return (
         <StyledSocial>
@@ -57,6 +63,15 @@ const Social = () => {
                 rel="noopener noreferrer"
             >
                 <StyledInstagram />
+            </a>
+
+            <a
+                aria-label="Spotify"
+                href={`https://open.spotify.com/user/${spotify}`}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <StyledSpotify />
             </a>
         </StyledSocial>
     )

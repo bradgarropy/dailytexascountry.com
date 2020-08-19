@@ -26,6 +26,7 @@ module.exports = {
         twitter: "dailytxcountry",
         youtube: dtxcChannelId,
         instagram: "dailytexascountry",
+        spotify: "azm4kv72ln2dy409hplmkax8p",
     },
     plugins: [
         {

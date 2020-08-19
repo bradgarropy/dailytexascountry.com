@@ -13,6 +13,7 @@ const useSiteMetadata = () => {
                     twitter
                     youtube
                     instagram
+                    spotify
                 }
             }
         }
