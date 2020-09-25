@@ -3,9 +3,7 @@ name: "🎧 tweet playlist"
 on:
     schedule:
         # every friday @ 4pm
-        # - cron: "0 16 * * 5"
-        # every 10 minutes
-        - cron: "0/10 * * * *"
+        - cron: "0 16 * * 5"
 
 jobs:
     tweet:
