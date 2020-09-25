@@ -5,7 +5,7 @@ on:
         # every thursday @ 1am
         # - cron: "0 1 * * 4"
         # every 10 minutes
-        - cron: "*/10 * * * *"
+        - cron: "0/10 * * * *"
 
 jobs:
     rebuild:

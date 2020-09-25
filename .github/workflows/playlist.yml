@@ -5,7 +5,7 @@ on:
         # every friday @ 4pm
         # - cron: "0 16 * * 5"
         # every 10 minutes
-        - cron: "*/10 * * * *"
+        - cron: "0/10 * * * *"
 
 jobs:
     tweet:
