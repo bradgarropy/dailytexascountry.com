@@ -2,8 +2,9 @@ name: "💿 tweet song"
 
 on:
     schedule:
-        # daily @ 8am
-        - cron: "0 8 * * *"
+        # utc time zone
+        # daily @ 8am cst
+        - cron: "0 13 * * *"
 
 jobs:
     tweet:

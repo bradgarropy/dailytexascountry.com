@@ -2,8 +2,9 @@ name: "🥃 whiskey wednesday"
 
 on:
     schedule:
-        # every thursday @ 1am
-        - cron: "0 1 * * 4"
+        # utc time zone
+        # every thursday @ 1am cst
+        - cron: "0 6 * * 4"
 
 jobs:
     rebuild:

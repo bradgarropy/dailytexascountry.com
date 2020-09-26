@@ -2,8 +2,9 @@ name: "🎧 tweet playlist"
 
 on:
     schedule:
-        # every friday @ 4pm
-        - cron: "0 16 * * 5"
+        # utc time zone
+        # every friday @ 4pm cst
+        - cron: "0 21 * * 5"
 
 jobs:
     tweet:
