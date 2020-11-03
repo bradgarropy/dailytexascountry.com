@@ -4,6 +4,7 @@ import {useContext} from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import {AppContext} from "../../context/app"
+import {navLink} from "../../styles/partials"
 
 const StyledMobileNavigation = styled.div`
     display: ${({open}) => (open ? "grid" : "none")};
@@ -16,11 +17,16 @@ const StyledMobileNavigation = styled.div`
 `
 
 const StyledLink = styled(Link)`
-    color: ${({theme}) => theme.colors.white};
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-family: "Patua One", sans-serif;
-    width: 100%;
+    ${navLink}
+
+    @media (max-width: 40.625rem) {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+`
+
+const StyledA = styled.a`
+    ${navLink}
 
     @media (max-width: 40.625rem) {
         padding: 1rem 2rem;
@@ -43,9 +49,9 @@ const MobileNavigation = ({open = true}) => {
                 EPISODES
             </StyledLink>
 
-            <StyledLink to="/store" onClick={onClick}>
+            <StyledA href="https://cottonbureau.com/people/daily-texas-country">
                 STORE
-            </StyledLink>
+            </StyledA>
 
             <StyledLink to="/playlists" onClick={onClick}>
                 PLAYLISTS
