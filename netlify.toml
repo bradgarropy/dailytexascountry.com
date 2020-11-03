@@ -8,5 +8,10 @@
     to = "/.netlify/functions/:splat"
     status = 200
 
+[[redirects]]
+    from = "/store"
+    to = "https://cottonbureau.com/people/daily-texas-country"
+    status = 200
+
 [[plugins]]
     package = "netlify-plugin-gatsby-cache"
