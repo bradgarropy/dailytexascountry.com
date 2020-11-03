@@ -3,6 +3,7 @@ import {Link} from "gatsby"
 import {useContext} from "react"
 import styled from "styled-components"
 import {AppContext} from "../../context/app"
+import {navLink} from "../../styles/partials"
 
 const StyledNavigation = styled.div`
     display: grid;
@@ -21,11 +22,11 @@ const StyledNavigation = styled.div`
 `
 
 const StyledLink = styled(Link)`
-    color: ${({theme}) => theme.colors.white};
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-family: "Patua One", sans-serif;
-    width: 100%;
+    ${navLink}
+`
+
+const StyledA = styled.a`
+    ${navLink}
 `
 
 const Navigation = () => {
@@ -43,9 +44,9 @@ const Navigation = () => {
                 EPISODES
             </StyledLink>
 
-            <StyledLink to="/store" onClick={onClick}>
+            <StyledA href="https://cottonbureau.com/people/daily-texas-country">
                 STORE
-            </StyledLink>
+            </StyledA>
 
             <StyledLink to="/playlists" onClick={onClick}>
                 PLAYLISTS
