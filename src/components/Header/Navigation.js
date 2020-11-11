@@ -44,9 +44,9 @@ const Navigation = () => {
                 EPISODES
             </StyledLink>
 
-            <StyledA href="https://cottonbureau.com/people/daily-texas-country">
+            <StyledLink href="/store" onClick={onClick}>
                 STORE
-            </StyledA>
+            </StyledLink>
 
             <StyledLink to="/playlists" onClick={onClick}>
                 PLAYLISTS
