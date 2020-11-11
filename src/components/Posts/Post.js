@@ -1,9 +1,9 @@
 import React from "react"
 import {Link} from "gatsby"
+import Image from "styles/Image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import PostMeta from "./PostMeta"
-import Image from "../../styles/Image"
+import PostMeta from "components/Posts/PostMeta"
 
 const StyledPost = styled.article`
     display: grid;

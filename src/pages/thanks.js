@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import Container from "styles/Container"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
-import Container from "../styles/Container"
 
 const Thanks = styled.h2`
     background: ${({theme}) => theme.colors.red};

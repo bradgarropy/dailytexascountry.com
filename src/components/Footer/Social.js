@@ -1,10 +1,10 @@
 import React from "react"
+import {useSiteMetadata} from "hooks"
 import styled from "styled-components"
-import {useSiteMetadata} from "../../hooks"
-import Twitter from "../../svg/twitter.svg"
-import YouTube from "../../svg/youtube.svg"
-import Instagram from "../../svg/instagram.svg"
-import Spotify from "../../svg/spotify.svg"
+import Twitter from "svg/twitter.svg"
+import YouTube from "svg/youtube.svg"
+import Spotify from "svg/spotify.svg"
+import Instagram from "svg/instagram.svg"
 
 const StyledSocial = styled.div`
     display: grid;

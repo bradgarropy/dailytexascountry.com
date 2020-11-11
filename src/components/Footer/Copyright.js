@@ -1,7 +1,7 @@
 import React from "react"
 import copyright from "copyright"
+import {useSiteMetadata} from "hooks"
 import styled from "styled-components"
-import {useSiteMetadata} from "../../hooks"
 
 const StyledCopyright = styled.p`
     font-size: 0.9rem;

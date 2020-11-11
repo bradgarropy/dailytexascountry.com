@@ -1,13 +1,13 @@
 import React from "react"
 import Img from "gatsby-image"
 import {graphql} from "gatsby"
+import Post from "styles/Post"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import PostBody from "styles/PostBody"
+import Container from "styles/Container"
+import PostMeta from "components/Posts/PostMeta"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
-import Post from "../styles/Post"
-import PostBody from "../styles/PostBody"
-import Container from "../styles/Container"
-import PostMeta from "../components/Posts/PostMeta"
 
 const Image = styled(Img)`
     display: block;

@@ -2,8 +2,8 @@ import React from "react"
 import {Link} from "gatsby"
 import {useContext} from "react"
 import styled from "styled-components"
-import {AppContext} from "../../context/app"
-import {navLink} from "../../styles/partials"
+import {AppContext} from "context/app"
+import {navLink} from "styles/partials"
 
 const StyledNavigation = styled.div`
     display: grid;

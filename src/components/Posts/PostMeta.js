@@ -1,9 +1,9 @@
 import React from "react"
 import {Link} from "gatsby"
+import Tag from "styles/Tag"
+import Title from "styles/Title"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Tag from "../../styles/Tag"
-import Title from "../../styles/Title"
 
 const StyledPostMeta = styled.div`
     display: grid;

@@ -3,8 +3,8 @@ import {Link} from "gatsby"
 import {useContext} from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import {AppContext} from "../../context/app"
-import {navLink} from "../../styles/partials"
+import {AppContext} from "context/app"
+import {navLink} from "styles/partials"
 
 const StyledMobileNavigation = styled.div`
     display: ${({open}) => (open ? "grid" : "none")};

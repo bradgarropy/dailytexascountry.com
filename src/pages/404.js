@@ -1,10 +1,10 @@
 import React from "react"
+import {usePosts} from "hooks"
 import styled from "styled-components"
+import Oklahoma from "svg/oklahoma.svg"
+import Container from "styles/Container"
+import Post from "components/Posts/Post"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
-import {usePosts} from "../hooks"
-import Oklahoma from "../svg/oklahoma.svg"
-import Container from "../styles/Container"
-import Post from "../components/Posts/Post"
 
 const FourOhFour = styled.div`
     max-width: 37.5rem;

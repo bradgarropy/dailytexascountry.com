@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Episode from "./Episode"
+import Episode from "components/Episodes/Episode"
 
 const StyledEpisodes = styled.div`
     display: grid;

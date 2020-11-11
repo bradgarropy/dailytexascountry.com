@@ -1,5 +1,5 @@
-import colors from "./colors"
-import breakpoints from "./breakpoints"
+import colors from "styles/colors"
+import breakpoints from "styles/breakpoints"
 
 const theme = {
     colors,

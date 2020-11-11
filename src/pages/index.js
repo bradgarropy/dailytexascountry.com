@@ -1,12 +1,12 @@
 import React from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
+import Section from "styles/Section"
+import YouTube from "components/YouTube"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
-import Section from "../styles/Section"
-import YouTube from "../components/YouTube"
-import {usePosts, useEpisode, usePlaylist} from "../hooks"
-import FeaturedPosts from "../components/Posts/FeaturedPosts"
-import FeaturedPlaylist from "../components/Playlists/FeaturedPlaylist"
+import {usePosts, useEpisode, usePlaylist} from "hooks"
+import FeaturedPosts from "components/Posts/FeaturedPosts"
+import FeaturedPlaylist from "components/Playlists/FeaturedPlaylist"
 
 const MoreButton = styled(Link)`
     font-family: "Patua One", sans-serif;

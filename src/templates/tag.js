@@ -1,11 +1,11 @@
 import React from "react"
+import Tag from "styles/Tag"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import Container from "styles/Container"
+import Posts from "components/Posts/Posts"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
-import Tag from "../styles/Tag"
-import Container from "../styles/Container"
-import Posts from "../components/Posts/Posts"
 
 const StyledTagTemplate = styled.div`
     display: grid;

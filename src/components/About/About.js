@@ -1,9 +1,9 @@
 import React from "react"
 import Img from "gatsby-image"
+import Title from "styles/Title"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import YouTube from "../YouTube"
-import Title from "../../styles/Title"
+import YouTube from "components/YouTube"
 
 const StyledAbout = styled.div`
     display: grid;
