@@ -25,10 +25,6 @@ const StyledLink = styled(Link)`
     ${navLink}
 `
 
-const StyledA = styled.a`
-    ${navLink}
-`
-
 const Navigation = () => {
     const {setOpen} = useContext(AppContext)
 
@@ -44,9 +40,9 @@ const Navigation = () => {
                 EPISODES
             </StyledLink>
 
-            <StyledA href="https://cottonbureau.com/people/daily-texas-country">
+            <StyledLink href="/store" onClick={onClick}>
                 STORE
-            </StyledA>
+            </StyledLink>
 
             <StyledLink to="/playlists" onClick={onClick}>
                 PLAYLISTS

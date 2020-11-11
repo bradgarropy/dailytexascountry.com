@@ -25,15 +25,6 @@ const StyledLink = styled(Link)`
     }
 `
 
-const StyledA = styled.a`
-    ${navLink}
-
-    @media (max-width: 40.625rem) {
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
-    }
-`
-
 const MobileNavigation = ({open = true}) => {
     const {setOpen} = useContext(AppContext)
 
@@ -49,9 +40,9 @@ const MobileNavigation = ({open = true}) => {
                 EPISODES
             </StyledLink>
 
-            <StyledA href="https://cottonbureau.com/people/daily-texas-country">
+            <StyledLink to="/store" onClick={onClick}>
                 STORE
-            </StyledA>
+            </StyledLink>
 
             <StyledLink to="/playlists" onClick={onClick}>
                 PLAYLISTS
