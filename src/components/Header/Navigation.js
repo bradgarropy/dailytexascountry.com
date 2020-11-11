@@ -25,10 +25,6 @@ const StyledLink = styled(Link)`
     ${navLink}
 `
 
-const StyledA = styled.a`
-    ${navLink}
-`
-
 const Navigation = () => {
     const {setOpen} = useContext(AppContext)
 
