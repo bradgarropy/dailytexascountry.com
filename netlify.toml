@@ -8,5 +8,31 @@
     to = "/.netlify/functions/:splat"
     status = 200
 
+
+[[redirects]]
+    from = "/facebook"
+    to = "https://facebook.com/dailytexascountry"
+    status = 301
+
+[[redirects]]
+    from = "/twitter"
+    to = "https://twitter.com/dailytxcountry"
+    status = 301
+
+[[redirects]]
+    from = "/instagram"
+    to = "https://instagram.com/dailytxcountry"
+    status = 301
+
+[[redirects]]
+    from = "/youtube"
+    to = "https://www.youtube.com/channel/UCpbIlFaiv-3188nAWtgL0Iw"
+    status = 301
+
+[[redirects]]
+    from = "/spotify"
+    to = "https://open.spotify.com/user/azm4kv72ln2dy409hplmkax8p"
+    status = 301
+
 [[plugins]]
     package = "netlify-plugin-gatsby-cache"
