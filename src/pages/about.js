@@ -1,7 +1,7 @@
 import React from "react"
 import {useAbout} from "hooks"
+import About from "components/About"
 import Container from "styles/Container"
-import About from "components/About/About"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 
 const AboutPage = () => {

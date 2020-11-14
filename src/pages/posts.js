@@ -1,8 +1,8 @@
 import React from "react"
 import {usePosts} from "hooks"
+import Posts from "components/Posts"
 import styled from "styled-components"
 import Container from "styles/Container"
-import Posts from "components/Posts/Posts"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 
 const StyledPostsPage = styled.div`

@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Post from "components/Post"
 import styled from "styled-components"
-import Post from "components/Posts/Post"
 
 const StyledPosts = styled.div`
     display: grid;

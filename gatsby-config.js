@@ -57,7 +57,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-layout",
             options: {
-                component: require.resolve("./src/components/Layout.js"),
+                component: require.resolve("./src/components/Layout/Layout.js"),
             },
         },
         {
@@ -128,7 +128,8 @@ module.exports = {
                             customTransformers: [spotify, youtube, facebook],
                             services: {
                                 Instagram: {
-                                    accessToken: process.env.FACEBOOK_ACCESS_TOKEN,
+                                    accessToken:
+                                        process.env.FACEBOOK_ACCESS_TOKEN,
                                 },
                             },
                         },

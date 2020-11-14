@@ -2,8 +2,8 @@ import React from "react"
 import {usePlaylists} from "hooks"
 import styled from "styled-components"
 import Container from "styles/Container"
+import Playlists from "components/Playlists"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
-import Playlists from "components/Playlists/Playlists"
 
 const StyledPlaylistsPage = styled.div`
     display: grid;

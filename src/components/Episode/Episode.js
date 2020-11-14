@@ -2,7 +2,7 @@ import React from "react"
 import Image from "styles/Image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import EpisodeMeta from "components/Episodes/EpisodeMeta"
+import EpisodeMeta from "components/EpisodeMeta"
 
 const StyledEpisode = styled.article`
     display: grid;

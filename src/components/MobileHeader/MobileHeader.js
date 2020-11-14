@@ -5,8 +5,8 @@ import Menu from "svg/menu.svg"
 import {useContext} from "react"
 import {AppContext} from "context/app"
 import styled from "styled-components"
-import Navigation from "components/Header/Navigation"
-import MobileNavigation from "components/Header/MobileNavigation"
+import Navigation from "components/Navigation"
+import MobileNavigation from "components/MobileNavigation"
 
 const StyledMobileHeader = styled.header`
     color: ${({theme}) => theme.colors.white};

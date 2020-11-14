@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 import Image from "styles/Image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import PostMeta from "components/Posts/PostMeta"
+import PostMeta from "components/PostMeta"
 
 const StyledPost = styled.article`
     display: grid;

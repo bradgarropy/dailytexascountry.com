@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import PostBody from "styles/PostBody"
 import Container from "styles/Container"
-import PostMeta from "components/Posts/PostMeta"
+import PostMeta from "components/PostMeta"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 
 const Image = styled(Img)`

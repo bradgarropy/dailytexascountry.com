@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from "gatsby"
 import DTXC from "svg/dtxc.svg"
 import styled from "styled-components"
-import Navigation from "components/Header/Navigation"
+import Navigation from "components/Navigation"
 
 const StyledHeader = styled.header`
     color: ${({theme}) => theme.colors.white};

@@ -1,9 +1,9 @@
 import React from "react"
 import {Link} from "gatsby"
-import BG from "components/Footer/BG"
+import BG from "components/BG"
 import styled from "styled-components"
-import Social from "components/Footer/Social"
-import Copyright from "components/Footer/Copyright"
+import Social from "components/Social"
+import Copyright from "components/Copyright"
 
 const StyledFooter = styled.footer`
     color: ${({theme}) => theme.colors.white};

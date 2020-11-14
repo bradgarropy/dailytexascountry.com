@@ -2,8 +2,8 @@ import React from "react"
 import {useEpisodes} from "hooks"
 import styled from "styled-components"
 import Container from "styles/Container"
+import Episodes from "components/Episodes"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
-import Episodes from "components/Episodes/Episodes"
 
 const StyledEpisodesPage = styled.div`
     display: grid;

@@ -1,9 +1,9 @@
 import React from "react"
 import {usePosts} from "hooks"
+import Post from "components/Post"
 import styled from "styled-components"
 import Oklahoma from "svg/oklahoma.svg"
 import Container from "styles/Container"
-import Post from "components/Posts/Post"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 
 const FourOhFour = styled.div`
