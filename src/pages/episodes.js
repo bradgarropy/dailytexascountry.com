@@ -1,4 +1,3 @@
-import React from "react"
 import {useEpisodes} from "hooks"
 import styled from "styled-components"
 import Container from "styles/Container"

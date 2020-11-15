@@ -1,4 +1,3 @@
-import React from "react"
 import styled from "styled-components"
 import Container from "styles/Container"
 import SEO from "@bradgarropy/gatsby-plugin-seo"

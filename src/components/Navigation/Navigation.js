@@ -1,4 +1,3 @@
-import React from "react"
 import {Link} from "gatsby"
 import {useContext} from "react"
 import styled from "styled-components"

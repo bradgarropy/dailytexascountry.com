@@ -1,4 +1,3 @@
-import React from "react"
 import Img from "gatsby-image"
 import {graphql} from "gatsby"
 import Post from "styles/Post"

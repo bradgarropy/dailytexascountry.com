@@ -1,4 +1,3 @@
-import React from "react"
 import {Link} from "gatsby"
 import Tag from "styles/Tag"
 import Title from "styles/Title"

@@ -1,4 +1,3 @@
-import React from "react"
 import Logo from "svg/bg.svg"
 import styled from "styled-components"
 

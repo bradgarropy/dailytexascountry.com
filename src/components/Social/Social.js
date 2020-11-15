@@ -1,4 +1,3 @@
-import React from "react"
 import {useSiteMetadata} from "hooks"
 import styled from "styled-components"
 import Twitter from "svg/twitter.svg"

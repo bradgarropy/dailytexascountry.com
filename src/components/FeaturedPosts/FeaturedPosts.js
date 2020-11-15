@@ -1,4 +1,3 @@
-import React from "react"
 import {Link} from "gatsby"
 import Image from "styles/Image"
 import PropTypes from "prop-types"

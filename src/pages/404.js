@@ -1,4 +1,3 @@
-import React from "react"
 import {usePosts} from "hooks"
 import Post from "components/Post"
 import styled from "styled-components"

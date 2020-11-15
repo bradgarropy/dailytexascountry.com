@@ -1,4 +1,3 @@
-import React from "react"
 import {useTags} from "hooks"
 import Tags from "components/Tags"
 import Container from "styles/Container"

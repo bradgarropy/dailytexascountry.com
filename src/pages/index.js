@@ -1,4 +1,3 @@
-import React from "react"
 import {Link} from "gatsby"
 import Section from "styles/Section"
 import styled from "styled-components"

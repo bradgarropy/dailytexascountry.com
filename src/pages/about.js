@@ -1,4 +1,3 @@
-import React from "react"
 import {useAbout} from "hooks"
 import About from "components/About"
 import Container from "styles/Container"
