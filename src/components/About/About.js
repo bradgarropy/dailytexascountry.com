@@ -1,4 +1,3 @@
-import React from "react"
 import Img from "gatsby-image"
 import Title from "styles/Title"
 import PropTypes from "prop-types"
