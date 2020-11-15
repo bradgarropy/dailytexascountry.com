@@ -26,7 +26,7 @@
 
 [[redirects]]
     from = "/youtube"
-    to = "https://www.youtube.com/channel/UCpbIlFaiv-3188nAWtgL0Iw"
+    to = "https://youtube.com/channel/UCpbIlFaiv-3188nAWtgL0Iw"
     status = 301
 
 [[redirects]]
