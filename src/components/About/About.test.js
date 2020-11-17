@@ -1,5 +1,5 @@
 import About from "./About"
-import {mockSections} from "./mocks"
+import {mockSections} from "test-utils/mocks"
 import {render, screen} from "test-utils/render"
 
 test("shows about sections", () => {

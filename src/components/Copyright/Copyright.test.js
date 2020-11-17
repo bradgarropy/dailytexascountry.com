@@ -1,7 +1,7 @@
 import Copyright from "./Copyright"
 import {useSiteMetadata} from "hooks"
-import {mockSiteMetadata} from "./mocks"
 import {render, screen} from "test-utils/render"
+import {mockSiteMetadata} from "test-utils/mocks"
 
 jest.mock("hooks")
 useSiteMetadata.mockReturnValue(mockSiteMetadata)
