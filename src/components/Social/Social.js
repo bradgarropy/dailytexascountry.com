@@ -1,8 +1,7 @@
-import {useSiteMetadata} from "hooks"
-import styled from "styled-components"
 import Twitter from "svg/twitter.svg"
 import YouTube from "svg/youtube.svg"
 import Spotify from "svg/spotify.svg"
+import styled from "styled-components"
 import Instagram from "svg/instagram.svg"
 
 const StyledSocial = styled.div`
@@ -33,13 +32,11 @@ const StyledSpotify = styled(Spotify)`
 `
 
 const Social = () => {
-    const {twitter, youtube, instagram, spotify} = useSiteMetadata()
-
     return (
         <StyledSocial>
             <a
                 aria-label="Twitter"
-                href={`https://twitter.com/${twitter}`}
+                href="/twitter"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -48,7 +45,7 @@ const Social = () => {
 
             <a
                 aria-label="YouTube"
-                href={`https://youtube.com/channel/${youtube}`}
+                href="/youtube"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -57,7 +54,7 @@ const Social = () => {
 
             <a
                 aria-label="Instagram"
-                href={`https://instagram.com/${instagram}`}
+                href="/instagram"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -66,7 +63,7 @@ const Social = () => {
 
             <a
                 aria-label="Spotify"
-                href={`https://open.spotify.com/user/${spotify}`}
+                href="/spotify"
                 target="_blank"
                 rel="noopener noreferrer"
             >
