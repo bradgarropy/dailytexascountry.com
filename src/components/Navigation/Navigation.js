@@ -38,7 +38,7 @@ const Navigation = () => {
                 EPISODES
             </StyledLink>
 
-            <StyledLink href="/store" onClick={onClick}>
+            <StyledLink to="/store" onClick={onClick}>
                 STORE
             </StyledLink>
 
