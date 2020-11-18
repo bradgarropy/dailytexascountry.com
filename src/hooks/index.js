@@ -1,3 +1,4 @@
+export {default as useApp} from "hooks/useApp"
 export {default as useTags} from "hooks/useTags"
 export {default as useAbout} from "hooks/useAbout"
 export {default as usePosts} from "hooks/usePosts"

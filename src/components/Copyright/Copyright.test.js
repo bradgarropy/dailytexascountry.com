@@ -1,5 +1,5 @@
-import Copyright from "./Copyright"
 import {useSiteMetadata} from "hooks"
+import Copyright from "components/Copyright"
 import {render, screen} from "test-utils/render"
 import {mockSiteMetadata} from "test-utils/mocks"
 

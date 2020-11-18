@@ -1,4 +1,4 @@
-import BG from "./BG"
+import BG from "components/BG"
 import {render} from "test-utils/render"
 
 test("shows logo", () => {

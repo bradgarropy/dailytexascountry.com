@@ -1,7 +1,6 @@
 import {Link} from "gatsby"
-import {useContext} from "react"
+import {useApp} from "hooks"
 import styled from "styled-components"
-import {AppContext} from "context/app"
 import {navLink} from "styles/partials"
 
 const StyledNavigation = styled.div`
@@ -25,9 +24,9 @@ const StyledLink = styled(Link)`
 `
 
 const Navigation = () => {
-    const {setOpen} = useContext(AppContext)
+    const appCtx = useApp()
 
-    const onClick = () => setOpen(false)
+    const onClick = () => appCtx.setOpen(false)
 
     return (
         <StyledNavigation>

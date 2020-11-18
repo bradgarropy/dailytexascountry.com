@@ -1,4 +1,4 @@
-import Episode from "./Episode"
+import Episode from "components/Episode"
 import {mockEpisode} from "test-utils/mocks"
 import {render, screen} from "test-utils/render"
 

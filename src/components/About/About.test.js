@@ -1,4 +1,4 @@
-import About from "./About"
+import About from "components/About"
 import {mockSections} from "test-utils/mocks"
 import {render, screen} from "test-utils/render"
 

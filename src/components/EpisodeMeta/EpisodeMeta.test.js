@@ -1,5 +1,5 @@
-import EpisodeMeta from "./EpisodeMeta"
 import {mockEpisode} from "test-utils/mocks"
+import EpisodeMeta from "components/EpisodeMeta"
 import {render, screen} from "test-utils/render"
 
 test("shows episode", () => {

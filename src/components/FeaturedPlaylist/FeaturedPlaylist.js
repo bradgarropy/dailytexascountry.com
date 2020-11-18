@@ -38,7 +38,7 @@ const FeaturedPlaylist = ({playlist}) => {
     return (
         <StyledFeaturedPlaylist>
             <a
-                aria-label="Daily Texas Country"
+                aria-label={name}
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const FeaturedPlaylist = ({playlist}) => {
 
             <PlaylistInfo>
                 <a
-                    aria-label="Daily Texas Country"
+                    aria-label={name}
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"

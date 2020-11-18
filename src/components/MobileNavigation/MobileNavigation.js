@@ -1,8 +1,7 @@
 import {Link} from "gatsby"
-import {useContext} from "react"
+import {useApp} from "hooks"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import {AppContext} from "context/app"
 import {navLink} from "styles/partials"
 
 const StyledMobileNavigation = styled.div`
@@ -24,13 +23,13 @@ const StyledLink = styled(Link)`
     }
 `
 
-const MobileNavigation = ({open = true}) => {
-    const {setOpen} = useContext(AppContext)
+const MobileNavigation = () => {
+    const appCtx = useApp()
 
-    const onClick = () => setOpen(false)
+    const onClick = () => appCtx.setOpen(false)
 
     return (
-        <StyledMobileNavigation open={open}>
+        <StyledMobileNavigation open={appCtx.open}>
             <StyledLink to="/posts" onClick={onClick}>
                 POSTS
             </StyledLink>

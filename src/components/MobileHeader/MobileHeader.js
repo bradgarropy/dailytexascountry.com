@@ -1,8 +1,7 @@
 import {Link} from "gatsby"
+import {useApp} from "hooks"
 import DTXC from "svg/dtxc.svg"
 import Menu from "svg/menu.svg"
-import {useContext} from "react"
-import {AppContext} from "context/app"
 import styled from "styled-components"
 import Navigation from "components/Navigation"
 import MobileNavigation from "components/MobileNavigation"
@@ -56,13 +55,13 @@ const StyledMenu = styled(Menu)`
 `
 
 const MobileHeader = () => {
-    const {open, setOpen} = useContext(AppContext)
+    const appCtx = useApp()
 
-    const onClick = () => setOpen(false)
-    const onMenu = () => setOpen(!open)
+    const onClick = () => appCtx.setOpen(false)
+    const onMenu = () => appCtx.setOpen(!appCtx.open)
 
     return (
-        <StyledMobileHeader open={open}>
+        <StyledMobileHeader open={appCtx.open}>
             <TopBar>
                 <StyledLink aria-label="DTXC" to="/" onClick={onClick}>
                     <StyledDTXC />
@@ -72,7 +71,7 @@ const MobileHeader = () => {
 
                 <StyledMenu onClick={onMenu} />
             </TopBar>
-            <MobileNavigation open={open} />
+            <MobileNavigation open={appCtx.open} />
         </StyledMobileHeader>
     )
 }
