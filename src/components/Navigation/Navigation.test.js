@@ -24,6 +24,7 @@ test("closes navigation", () => {
     render(<Navigation />)
 
     userEvent.click(screen.getByText(links[0].toUpperCase()))
+
     expect(mockAppCtx.setOpen).toHaveBeenCalledTimes(1)
     expect(mockAppCtx.setOpen).toHaveBeenCalledWith(false)
 })

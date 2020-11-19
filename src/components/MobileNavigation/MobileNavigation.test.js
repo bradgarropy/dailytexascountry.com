@@ -7,9 +7,11 @@ import MobileNavigation from "components/MobileNavigation"
 jest.mock("hooks")
 
 const links = ["posts", "episodes", "store", "playlists"]
+const mockOpenAppCtx = generateAppCtx({open: true})
+const mockClosedAppCtx = generateAppCtx()
 
 test("shows closed mobile navigation", () => {
-    useApp.mockReturnValue(generateAppCtx())
+    useApp.mockReturnValue(mockClosedAppCtx)
 
     render(<MobileNavigation />)
 
@@ -22,7 +24,7 @@ test("shows closed mobile navigation", () => {
 })
 
 test("shows open mobile navigation", () => {
-    useApp.mockReturnValue(generateAppCtx({open: true}))
+    useApp.mockReturnValue(mockOpenAppCtx)
 
     render(<MobileNavigation />)
 
@@ -35,11 +37,12 @@ test("shows open mobile navigation", () => {
 })
 
 test("closes mobile navigation", () => {
-    useApp.mockReturnValue(generateAppCtx({open: true}))
+    useApp.mockReturnValue(mockOpenAppCtx)
 
     render(<MobileNavigation />)
 
     userEvent.click(screen.getByText(links[0].toUpperCase()))
-    expect(mockAppCtx.setOpen).toHaveBeenCalledTimes(1)
-    expect(mockAppCtx.setOpen).toHaveBeenCalledWith(false)
+
+    expect(mockOpenAppCtx.setOpen).toHaveBeenCalledTimes(1)
+    expect(mockOpenAppCtx.setOpen).toHaveBeenCalledWith(false)
 })
