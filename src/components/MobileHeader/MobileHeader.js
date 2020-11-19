@@ -71,6 +71,7 @@ const MobileHeader = () => {
 
                 <StyledMenu onClick={onMenu} />
             </TopBar>
+
             <MobileNavigation open={appCtx.open} />
         </StyledMobileHeader>
     )
