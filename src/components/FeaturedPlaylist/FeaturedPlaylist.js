@@ -47,12 +47,7 @@ const FeaturedPlaylist = ({playlist}) => {
             </a>
 
             <PlaylistInfo>
-                <a
-                    aria-label={name}
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <a href={url} target="_blank" rel="noopener noreferrer">
                     <h1>{name}</h1>
                 </a>
 

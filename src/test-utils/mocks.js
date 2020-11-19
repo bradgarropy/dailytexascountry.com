@@ -43,6 +43,21 @@ const mockPlaylist = {
     image: mockImage,
 }
 
+const mockPlaylists = [
+    {
+        name: "First Test Playlist",
+        description: "This is the first test playlist.",
+        external_urls: {spotify: "https://spotify.com"},
+        image: mockImage,
+    },
+    {
+        name: "Second Test Playlist",
+        description: "This is the second test playlist.",
+        external_urls: {spotify: "https://spotify.com"},
+        image: mockImage,
+    },
+]
+
 const mockSections = [
     {
         html: "<p>First about content.</p>",
@@ -60,17 +75,31 @@ const mockSections = [
     },
 ]
 
+const mockPost = {
+    frontmatter: {
+        title: "Test Post",
+        slug: "test-post",
+        image: mockImage,
+        tags: ["test"],
+        date: "January 1, 2021",
+    },
+}
+
 const mockPosts = [
     {
         frontmatter: {
             title: "First Post",
             slug: "first-post",
             image: mockImage,
+            tags: ["test"],
+            date: "January 1, 2021",
         },
         frontmatter: {
             title: "Second Post",
             slug: "second-post",
             image: mockImage,
+            tags: ["test"],
+            date: "February 1, 2021",
         },
     },
 ]
@@ -87,6 +116,8 @@ export {
     mockSiteMetadata,
     mockEpisodes,
     mockPlaylist,
+    mockPlaylists,
+    mockPost,
     mockPosts,
     mockAppCtx,
 }
