@@ -75,6 +75,8 @@ const mockSections = [
     },
 ]
 
+const mockTags = ["first", "second", "third"]
+
 const mockPost = {
     frontmatter: {
         title: "Test Post",
@@ -117,6 +119,7 @@ export {
     mockEpisodes,
     mockPlaylist,
     mockPlaylists,
+    mockTags,
     mockPost,
     mockPosts,
     mockAppCtx,
