@@ -5,6 +5,7 @@ const config = {
     moduleDirectories: ["<rootDir>/src", "node_modules"],
     moduleNameMapper: {
         "\\.(svg)$": "<rootDir>/src/test-utils/file.js",
+        "\\.(css)$": "identity-obj-proxy",
     },
 }
 
