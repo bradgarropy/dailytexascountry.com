@@ -96,6 +96,8 @@ const mockPosts = [
             tags: ["test"],
             date: "January 1, 2021",
         },
+    },
+    {
         frontmatter: {
             title: "Second Post",
             slug: "second-post",
