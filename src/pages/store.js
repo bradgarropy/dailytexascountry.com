@@ -10,7 +10,7 @@ const StorePage = () => {
             <SEO title="Store" />
 
             <Helmet>
-                <meta http-equiv="refresh" content={`0;url=${store}`} />
+                <meta httpEquiv="refresh" content={`0;url=${store}`} />
             </Helmet>
         </Container>
     )
