@@ -1,7 +1,7 @@
-import {Link} from "gatsby"
-import DTXC from "svg/dtxc.svg"
-import styled from "styled-components"
 import Navigation from "components/Navigation"
+import {Link} from "gatsby"
+import styled from "styled-components"
+import DTXC from "svg/dtxc.svg"
 
 const StyledHeader = styled.header`
     color: ${({theme}) => theme.colors.white};

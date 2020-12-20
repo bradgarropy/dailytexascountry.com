@@ -1,6 +1,6 @@
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import styled from "styled-components"
 import Container from "styles/Container"
-import SEO from "@bradgarropy/gatsby-plugin-seo"
 
 const Thanks = styled.h2`
     background: ${({theme}) => theme.colors.red};

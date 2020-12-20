@@ -1,7 +1,7 @@
-import {useSiteMetadata} from "hooks"
 import Footer from "components/Footer"
-import {render, screen} from "test-utils/render"
+import {useSiteMetadata} from "hooks"
 import {mockSiteMetadata} from "test-utils/mocks"
+import {render, screen} from "test-utils/render"
 
 jest.mock("hooks")
 useSiteMetadata.mockReturnValue(mockSiteMetadata)

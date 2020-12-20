@@ -1,4 +1,4 @@
-import {useStaticQuery, graphql} from "gatsby"
+import {graphql, useStaticQuery} from "gatsby"
 
 const useEpisodes = ({limit = 0} = {}) => {
     const query = graphql`

@@ -1,6 +1,6 @@
-import Title from "styles/Title"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import Title from "styles/Title"
 
 const StyledEpisodeMeta = styled.div`
     display: grid;

@@ -1,8 +1,8 @@
-import {usePosts} from "hooks"
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Posts from "components/Posts"
+import {usePosts} from "hooks"
 import styled from "styled-components"
 import Container from "styles/Container"
-import SEO from "@bradgarropy/gatsby-plugin-seo"
 
 const StyledPostsPage = styled.div`
     display: grid;

@@ -1,8 +1,8 @@
+import userEvent from "@testing-library/user-event"
+import Navigation from "components/Navigation"
 import {useApp} from "hooks"
 import {mockAppCtx} from "test-utils/mocks"
-import Navigation from "components/Navigation"
 import {render, screen} from "test-utils/render"
-import userEvent from "@testing-library/user-event"
 
 jest.mock("hooks")
 useApp.mockReturnValue(mockAppCtx)

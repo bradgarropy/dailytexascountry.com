@@ -1,7 +1,7 @@
-import Image from "styles/Image"
+import EpisodeMeta from "components/EpisodeMeta"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import EpisodeMeta from "components/EpisodeMeta"
+import Image from "styles/Image"
 
 const StyledEpisode = styled.article`
     display: grid;

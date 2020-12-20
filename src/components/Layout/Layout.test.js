@@ -1,7 +1,7 @@
 import Layout from "components/Layout"
 import {useApp, useSiteMetadata} from "hooks"
-import {render, screen} from "test-utils/render"
 import {mockAppCtx, mockSiteMetadata} from "test-utils/mocks"
+import {render, screen} from "test-utils/render"
 
 jest.mock("hooks")
 useApp.mockReturnValue(mockAppCtx)

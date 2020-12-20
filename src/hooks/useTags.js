@@ -1,4 +1,4 @@
-import {useStaticQuery, graphql} from "gatsby"
+import {graphql, useStaticQuery} from "gatsby"
 
 const useTags = ({limit = 0} = {}) => {
     const query = graphql`

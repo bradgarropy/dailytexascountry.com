@@ -1,5 +1,5 @@
+import {graphql, useStaticQuery} from "gatsby"
 import he from "he"
-import {useStaticQuery, graphql} from "gatsby"
 
 const usePlaylists = ({name = undefined, limit = 0} = {}) => {
     const query = graphql`

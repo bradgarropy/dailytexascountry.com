@@ -1,5 +1,5 @@
-import Logo from "svg/bg.svg"
 import styled from "styled-components"
+import Logo from "svg/bg.svg"
 
 const StyledBG = styled.a`
     color: ${({theme}) => theme.colors.white};

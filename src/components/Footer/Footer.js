@@ -1,8 +1,8 @@
-import {Link} from "gatsby"
 import BG from "components/BG"
-import styled from "styled-components"
-import Social from "components/Social"
 import Copyright from "components/Copyright"
+import Social from "components/Social"
+import {Link} from "gatsby"
+import styled from "styled-components"
 
 const StyledFooter = styled.footer`
     color: ${({theme}) => theme.colors.white};

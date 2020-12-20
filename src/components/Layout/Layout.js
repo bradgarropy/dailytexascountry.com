@@ -1,12 +1,13 @@
-import theme from "styles/theme"
-import PropTypes from "prop-types"
-import {AppProvider} from "context/app"
-import GlobalStyles from "styles/GlobalStyles"
 import "modern-normalize/modern-normalize.css"
-import Sidebar from "components/Sidebar/Sidebar"
-import MobileHeader from "components/MobileHeader"
+
 import MobileFooter from "components/MobileFooter"
+import MobileHeader from "components/MobileHeader"
+import Sidebar from "components/Sidebar/Sidebar"
+import {AppProvider} from "context/app"
+import PropTypes from "prop-types"
 import styled, {ThemeProvider} from "styled-components"
+import GlobalStyles from "styles/GlobalStyles"
+import theme from "styles/theme"
 
 const StyledLayout = styled.div`
     min-height: 100vh;

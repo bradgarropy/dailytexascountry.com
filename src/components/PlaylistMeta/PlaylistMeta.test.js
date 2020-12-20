@@ -1,6 +1,6 @@
+import PlaylistMeta from "components/PlaylistMeta"
 import {mockPlaylist} from "test-utils/mocks"
 import {render, screen} from "test-utils/render"
-import PlaylistMeta from "components/PlaylistMeta"
 
 test("shows playlist meta", () => {
     render(<PlaylistMeta playlist={mockPlaylist} />)

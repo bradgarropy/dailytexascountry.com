@@ -1,8 +1,8 @@
-import Twitter from "svg/twitter.svg"
-import YouTube from "svg/youtube.svg"
-import Spotify from "svg/spotify.svg"
 import styled from "styled-components"
 import Instagram from "svg/instagram.svg"
+import Spotify from "svg/spotify.svg"
+import Twitter from "svg/twitter.svg"
+import YouTube from "svg/youtube.svg"
 
 const StyledSocial = styled.div`
     display: grid;

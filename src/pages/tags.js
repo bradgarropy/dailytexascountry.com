@@ -1,7 +1,7 @@
-import {useTags} from "hooks"
-import Tags from "components/Tags"
-import Container from "styles/Container"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
+import Tags from "components/Tags"
+import {useTags} from "hooks"
+import Container from "styles/Container"
 
 const TagsPage = () => {
     const tags = useTags()

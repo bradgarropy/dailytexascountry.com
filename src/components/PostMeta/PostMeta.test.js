@@ -1,5 +1,5 @@
-import {mockPost} from "test-utils/mocks"
 import PostMeta from "components/PostMeta"
+import {mockPost} from "test-utils/mocks"
 import {render, screen} from "test-utils/render"
 
 test("shows post meta", () => {

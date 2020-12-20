@@ -1,8 +1,8 @@
-import {useApp} from "hooks"
-import {render, screen} from "test-utils/render"
 import userEvent from "@testing-library/user-event"
-import {generateAppCtx} from "test-utils/generators"
 import MobileNavigation from "components/MobileNavigation"
+import {useApp} from "hooks"
+import {generateAppCtx} from "test-utils/generators"
+import {render, screen} from "test-utils/render"
 
 jest.mock("hooks")
 

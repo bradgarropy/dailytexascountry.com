@@ -1,7 +1,7 @@
-import {useAbout} from "hooks"
-import About from "components/About"
-import Container from "styles/Container"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
+import About from "components/About"
+import {useAbout} from "hooks"
+import Container from "styles/Container"
 
 const AboutPage = () => {
     const sections = useAbout()

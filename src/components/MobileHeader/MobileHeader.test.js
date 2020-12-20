@@ -1,8 +1,8 @@
-import {useApp} from "hooks"
-import {render, screen} from "test-utils/render"
-import MobileHeader from "components/MobileHeader"
 import userEvent from "@testing-library/user-event"
+import MobileHeader from "components/MobileHeader"
+import {useApp} from "hooks"
 import {generateAppCtx} from "test-utils/generators"
+import {render, screen} from "test-utils/render"
 
 jest.mock("hooks")
 

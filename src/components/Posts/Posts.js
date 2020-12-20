@@ -1,5 +1,5 @@
-import PropTypes from "prop-types"
 import Post from "components/Post"
+import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const StyledPosts = styled.div`

@@ -1,9 +1,9 @@
-import {usePosts} from "hooks"
-import Post from "components/Post"
-import styled from "styled-components"
-import Oklahoma from "svg/oklahoma.svg"
-import Container from "styles/Container"
 import SEO from "@bradgarropy/gatsby-plugin-seo"
+import Post from "components/Post"
+import {usePosts} from "hooks"
+import styled from "styled-components"
+import Container from "styles/Container"
+import Oklahoma from "svg/oklahoma.svg"
 
 const FourOhFour = styled.div`
     max-width: 37.5rem;

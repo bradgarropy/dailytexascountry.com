@@ -1,6 +1,6 @@
+import FeaturedPosts from "components/FeaturedPosts"
 import {mockPosts} from "test-utils/mocks"
 import {render, screen} from "test-utils/render"
-import FeaturedPosts from "components/FeaturedPosts"
 
 test("shows featured posts", () => {
     render(<FeaturedPosts posts={mockPosts} />)

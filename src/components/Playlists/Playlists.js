@@ -1,6 +1,6 @@
+import Playlist from "components/Playlist"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Playlist from "components/Playlist"
 
 const StyledPlaylists = styled.div`
     display: grid;

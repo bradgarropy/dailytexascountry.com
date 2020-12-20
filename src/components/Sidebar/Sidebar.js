@@ -1,7 +1,7 @@
-import Star from "svg/star.svg"
-import styled from "styled-components"
-import Header from "components/Header/Header"
 import Footer from "components/Footer/Footer"
+import Header from "components/Header/Header"
+import styled from "styled-components"
+import Star from "svg/star.svg"
 
 const StyledSidebar = styled.div`
     color: ${({theme}) => theme.colors.white};

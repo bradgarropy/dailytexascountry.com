@@ -1,7 +1,7 @@
-import Image from "styles/Image"
+import PlaylistMeta from "components/PlaylistMeta"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import PlaylistMeta from "components/PlaylistMeta"
+import Image from "styles/Image"
 
 const StyledPlaylist = styled.article`
     display: grid;

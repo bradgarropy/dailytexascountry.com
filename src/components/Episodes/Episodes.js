@@ -1,6 +1,6 @@
+import Episode from "components/Episode"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Episode from "components/Episode"
 
 const StyledEpisodes = styled.div`
     display: grid;

@@ -1,10 +1,10 @@
+import MobileNavigation from "components/MobileNavigation"
+import Navigation from "components/Navigation"
 import {Link} from "gatsby"
 import {useApp} from "hooks"
+import styled from "styled-components"
 import DTXC from "svg/dtxc.svg"
 import Menu from "svg/menu.svg"
-import styled from "styled-components"
-import Navigation from "components/Navigation"
-import MobileNavigation from "components/MobileNavigation"
 
 const StyledMobileHeader = styled.header`
     color: ${({theme}) => theme.colors.white};

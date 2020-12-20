@@ -114,15 +114,15 @@ const mockAppCtx = {
 }
 
 export {
-    mockImage,
-    mockSections,
+    mockAppCtx,
     mockEpisode,
-    mockSiteMetadata,
     mockEpisodes,
+    mockImage,
     mockPlaylist,
     mockPlaylists,
-    mockTags,
     mockPost,
     mockPosts,
-    mockAppCtx,
+    mockSections,
+    mockSiteMetadata,
+    mockTags,
 }

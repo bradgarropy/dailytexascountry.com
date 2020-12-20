@@ -1,6 +1,6 @@
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import {Helmet} from "react-helmet"
 import Container from "styles/Container"
-import SEO from "@bradgarropy/gatsby-plugin-seo"
 
 const StorePage = () => {
     const store = "https://cottonbureau.com/people/daily-texas-country"

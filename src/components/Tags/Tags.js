@@ -1,6 +1,6 @@
-import Tag from "styles/Tag"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import Tag from "styles/Tag"
 
 const StyledTags = styled.div`
     display: flex;

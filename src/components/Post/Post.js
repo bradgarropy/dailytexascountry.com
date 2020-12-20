@@ -1,8 +1,8 @@
+import PostMeta from "components/PostMeta"
 import {Link} from "gatsby"
-import Image from "styles/Image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import PostMeta from "components/PostMeta"
+import Image from "styles/Image"
 
 const StyledPost = styled.article`
     display: grid;
