@@ -16,10 +16,6 @@ _**Just where in the hell was my invite?**_
 
 https://www.instagram.com/p/CC3jJCwhtas
 
-<!-- parker mccollum -->
-
-https://www.instagram.com/p/CC190eAHntZ
-
 <!-- chris colston -->
 
 https://www.instagram.com/p/CC1NQp0F9KK
