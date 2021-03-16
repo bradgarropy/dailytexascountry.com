@@ -15,14 +15,14 @@ const getHTML = string => {
 
     const html = `
         <div class="video">
-            <iframe
-                title=${id}
-                src=${src}
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-            >
-            </iframe>
+        <iframe
+        title=${id}
+        src=${src}
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        >
+        </iframe>
         </div>
     `
 

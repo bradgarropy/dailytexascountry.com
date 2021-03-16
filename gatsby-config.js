@@ -81,7 +81,7 @@ module.exports = {
             },
         },
         {
-            resolve: "gatsby-source-youtube-v2",
+            resolve: "gatsby-source-youtube-v3",
             options: {
                 channelId: [dtxcChannelId],
                 apiKey: process.env.YOUTUBE_API_KEY,
@@ -146,6 +146,9 @@ module.exports = {
         },
         {
             resolve: "gatsby-plugin-instagram-embed",
+        },
+        {
+            resolve: "gatsby-plugin-image",
         },
         {
             resolve: "gatsby-plugin-sharp",

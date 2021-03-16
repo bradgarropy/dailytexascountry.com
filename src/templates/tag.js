@@ -59,9 +59,12 @@ const query = graphql`
                     tags
                     image {
                         childImageSharp {
-                            fluid(maxWidth: 700) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
+                            gatsbyImageData(
+                                width: 700
+                                placeholder: BLURRED
+                                formats: [AUTO, WEBP, AVIF]
+                                quality: 100
+                            )
                         }
                     }
                 }

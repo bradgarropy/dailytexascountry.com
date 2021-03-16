@@ -1,4 +1,5 @@
 import EpisodeMeta from "components/EpisodeMeta"
+import {getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "styles/Image"
@@ -10,7 +11,7 @@ const StyledEpisode = styled.article`
 
 const Episode = ({episode}) => {
     const {videoId, title} = episode
-    const thumbnail = episode.localThumbnail.childImageSharp.fluid
+    const thumbnail = getImage(episode.localThumbnail)
 
     return (
         <StyledEpisode>
@@ -20,7 +21,7 @@ const Episode = ({episode}) => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <Image fluid={thumbnail} />
+                <Image image={thumbnail} alt={title} />
             </a>
 
             <EpisodeMeta episode={episode} />

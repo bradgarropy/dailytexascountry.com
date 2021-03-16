@@ -15,9 +15,12 @@ const usePosts = ({limit = 0} = {}) => {
                         tags
                         image {
                             childImageSharp {
-                                fluid(maxWidth: 600) {
-                                    ...GatsbyImageSharpFluid_withWebp
-                                }
+                                gatsbyImageData(
+                                    width: 600
+                                    placeholder: BLURRED
+                                    formats: [AUTO, WEBP, AVIF]
+                                    quality: 100
+                                )
                             }
                         }
                     }

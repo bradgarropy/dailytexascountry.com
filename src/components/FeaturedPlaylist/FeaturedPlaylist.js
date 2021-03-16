@@ -1,3 +1,4 @@
+import {getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "styles/Image"
@@ -33,7 +34,7 @@ const PlaylistImage = styled(Image)`
 const FeaturedPlaylist = ({playlist}) => {
     const {name, description} = playlist
     const url = playlist.external_urls.spotify
-    const image = playlist.image.childImageSharp.fluid
+    const image = getImage(playlist.image)
 
     return (
         <StyledFeaturedPlaylist>
@@ -43,7 +44,7 @@ const FeaturedPlaylist = ({playlist}) => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <PlaylistImage fluid={image} />
+                <PlaylistImage image={image} />
             </a>
 
             <PlaylistInfo>
