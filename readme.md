@@ -31,7 +31,7 @@ _She tries to tell me that Oklahoma's better, but I ain't got time for that._
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[netlify]: https://app.netlify.com/sites/bradgarropy/deploys
+[netlify]: https://app.netlify.com/sites/dailytexascountry/deploys
 [netlify-badge]: https://img.shields.io/netlify/4ff7c97b-22ff-4478-b310-94c085680cdf?style=flat-square
 [github-actions]: https://github.com/bradgarropy/dailytexascountry.com/actions
 [github-actions-badge]: https://img.shields.io/github/workflow/status/bradgarropy/dailytexascountry.com/%F0%9F%A7%AA%20test?style=flat-square
