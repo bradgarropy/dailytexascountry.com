@@ -37,7 +37,7 @@
     },
     "scripts": {
         "start": "gatsby develop",
-        "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+        "build": "gatsby build",
         "netlify": "npm run build",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
@@ -98,7 +98,6 @@
         "@testing-library/user-event": "^13.0.0",
         "all-contributors-cli": "^6.20.0",
         "babel-eslint": "^10.1.0",
-        "cross-env": "^7.0.3",
         "eslint": "^7.16.0",
         "eslint-config-prettier": "^8.1.0",
         "eslint-plugin-jsx-a11y": "^6.4.1",
