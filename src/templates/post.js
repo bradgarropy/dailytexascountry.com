@@ -20,7 +20,7 @@ const PostTemplate = ({data}) => {
     const post = data.markdownRemark
     const {html, frontmatter} = post
     const {title} = frontmatter
-    const image = getImage(frontmatter.image)
+    // const image = getImage(frontmatter.image)
     const imageUrl = frontmatter.image.publicURL
 
     return (
@@ -28,7 +28,7 @@ const PostTemplate = ({data}) => {
             <SEO title={title} image={imageUrl} />
 
             <Post>
-                <Image image={image} alt={title} />
+                {/* <Image image={image} alt={title} /> */}
 
                 <PostMeta post={post} />
                 <PostBody dangerouslySetInnerHTML={{__html: html}} />
@@ -52,14 +52,14 @@ const query = graphql`
                 tags
                 image {
                     publicURL
-                    childImageSharp {
-                        gatsbyImageData(
-                            width: 750
-                            placeholder: BLURRED
-                            formats: [AUTO, WEBP, AVIF]
-                            quality: 100
-                        )
-                    }
+                    # childImageSharp {
+                    #     gatsbyImageData(
+                    #         width: 750
+                    #         placeholder: BLURRED
+                    #         formats: [AUTO, WEBP, AVIF]
+                    #         quality: 100
+                    #     )
+                    # }
                 }
             }
         }
