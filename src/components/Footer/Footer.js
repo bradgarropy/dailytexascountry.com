@@ -1,7 +1,7 @@
+import Link from "@bradgarropy/gatsby-link"
 import BG from "components/BG"
 import Copyright from "components/Copyright"
 import Social from "components/Social"
-import {Link} from "gatsby"
 import styled from "styled-components"
 
 const StyledFooter = styled.footer`

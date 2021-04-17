@@ -1,6 +1,6 @@
+import Link from "@bradgarropy/gatsby-link"
 import MobileNavigation from "components/MobileNavigation"
 import Navigation from "components/Navigation"
-import {Link} from "gatsby"
 import {useApp} from "hooks"
 import styled from "styled-components"
 import DTXC from "svg/dtxc.svg"

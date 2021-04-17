@@ -1,5 +1,5 @@
+import Link from "@bradgarropy/gatsby-link"
 import PostMeta from "components/PostMeta"
-import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "styles/Image"
