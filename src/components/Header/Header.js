@@ -1,5 +1,5 @@
+import Link from "@bradgarropy/gatsby-link"
 import Navigation from "components/Navigation"
-import {Link} from "gatsby"
 import styled from "styled-components"
 import DTXC from "svg/dtxc.svg"
 

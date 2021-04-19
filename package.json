@@ -49,6 +49,7 @@
         "new": "plop"
     },
     "dependencies": {
+        "@bradgarropy/gatsby-link": "^0.0.2",
         "@bradgarropy/gatsby-plugin-seo": "^1.0.0",
         "airtable": "^0.11.0",
         "babel-plugin-styled-components": "^1.12.0",
@@ -94,11 +95,11 @@
         "@bradgarropy/eslint-config-react": "^1.0.0",
         "@testing-library/jest-dom": "^5.11.6",
         "@testing-library/react": "^11.2.2",
-        "@testing-library/user-event": "^13.0.0",
+        "@testing-library/user-event": "^13.1.3",
         "all-contributors-cli": "^6.20.0",
         "babel-eslint": "^10.1.0",
         "eslint": "^7.16.0",
-        "eslint-config-prettier": "^8.1.0",
+        "eslint-config-prettier": "^8.2.0",
         "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-react": "^7.21.5",
         "eslint-plugin-react-hooks": "^4.2.0",

@@ -1,4 +1,4 @@
-import {Link} from "gatsby"
+import Link from "@bradgarropy/gatsby-link"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Tag from "styles/Tag"

@@ -1,3 +1,4 @@
+import Link from "@bradgarropy/gatsby-link"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Title from "styles/Title"
@@ -13,7 +14,7 @@ const StyledPlaylistMeta = styled.div`
     }
 `
 
-const PlaylistLink = styled.a`
+const PlaylistLink = styled(Link)`
     justify-self: start;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
@@ -43,7 +44,7 @@ const PlaylistMeta = ({playlist}) => {
 
     return (
         <StyledPlaylistMeta>
-            <PlaylistLink href={url} target="_blank" rel="noopener noreferrer">
+            <PlaylistLink to={url}>
                 <PlaylistName>{name}</PlaylistName>
             </PlaylistLink>
 

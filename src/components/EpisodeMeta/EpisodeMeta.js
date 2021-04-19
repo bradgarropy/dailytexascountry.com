@@ -1,3 +1,4 @@
+import Link from "@bradgarropy/gatsby-link"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Title from "styles/Title"
@@ -6,7 +7,7 @@ const StyledEpisodeMeta = styled.div`
     display: grid;
 `
 
-const TitleLink = styled.a`
+const TitleLink = styled(Link)`
     justify-self: start;
 `
 
@@ -17,11 +18,7 @@ const EpisodeMeta = ({episode}) => {
         <StyledEpisodeMeta>
             <span>{publishedAt}</span>
 
-            <TitleLink
-                href={`https://youtube.com/watch?v=${videoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <TitleLink to={`https://youtube.com/watch?v=${videoId}`}>
                 <Title>{title}</Title>
             </TitleLink>
         </StyledEpisodeMeta>

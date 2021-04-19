@@ -1,3 +1,4 @@
+import Link from "@bradgarropy/gatsby-link"
 import PlaylistMeta from "components/PlaylistMeta"
 import {getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
@@ -31,14 +32,9 @@ const Playlist = ({playlist}) => {
 
     return (
         <StyledPlaylist>
-            <a
-                aria-label={name}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <Link aria-label={name} to={url}>
                 <PlaylistImage image={image} />
-            </a>
+            </Link>
 
             <PlaylistMeta playlist={playlist} />
         </StyledPlaylist>

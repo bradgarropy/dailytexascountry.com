@@ -1,3 +1,4 @@
+import Link from "@bradgarropy/gatsby-link"
 import EpisodeMeta from "components/EpisodeMeta"
 import {getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
@@ -15,14 +16,12 @@ const Episode = ({episode}) => {
 
     return (
         <StyledEpisode>
-            <a
+            <Link
                 aria-label={title}
-                href={`https://youtube.com/watch?v=${videoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                to={`https://youtube.com/watch?v=${videoId}`}
             >
                 <Image image={thumbnail} alt={title} />
-            </a>
+            </Link>
 
             <EpisodeMeta episode={episode} />
         </StyledEpisode>

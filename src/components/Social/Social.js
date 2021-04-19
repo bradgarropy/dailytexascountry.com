@@ -1,3 +1,5 @@
+import Link from "@bradgarropy/gatsby-link"
+import {useSiteMetadata} from "hooks"
 import styled from "styled-components"
 import Instagram from "svg/instagram.svg"
 import Spotify from "svg/spotify.svg"
@@ -32,43 +34,34 @@ const StyledSpotify = styled(Spotify)`
 `
 
 const Social = () => {
+    const {twitter, youtube, instagram, spotify} = useSiteMetadata()
+
     return (
         <StyledSocial>
-            <a
-                aria-label="Twitter"
-                href="/twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <Link aria-label="Twitter" to={`https://twitter.com/${twitter}`}>
                 <StyledTwitter />
-            </a>
+            </Link>
 
-            <a
+            <Link
                 aria-label="YouTube"
-                href="/youtube"
-                target="_blank"
-                rel="noopener noreferrer"
+                to={`https://youtube.com/channel/${youtube}`}
             >
                 <StyledYouTube />
-            </a>
+            </Link>
 
-            <a
+            <Link
                 aria-label="Instagram"
-                href="/instagram"
-                target="_blank"
-                rel="noopener noreferrer"
+                to={`https://instagram.com/${instagram}`}
             >
                 <StyledInstagram />
-            </a>
+            </Link>
 
-            <a
+            <Link
                 aria-label="Spotify"
-                href="/spotify"
-                target="_blank"
-                rel="noopener noreferrer"
+                to={`https://open.spotify.com/user/${spotify}`}
             >
                 <StyledSpotify />
-            </a>
+            </Link>
         </StyledSocial>
     )
 }

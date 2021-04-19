@@ -1,4 +1,5 @@
 import {getImage} from "gatsby-plugin-image"
+import Link from "@bradgarropy/gatsby-link"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "styles/Image"
@@ -38,19 +39,14 @@ const FeaturedPlaylist = ({playlist}) => {
 
     return (
         <StyledFeaturedPlaylist>
-            <a
-                aria-label={name}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <Link aria-label={name} to={url}>
                 <PlaylistImage image={image} />
-            </a>
+            </Link>
 
             <PlaylistInfo>
-                <a href={url} target="_blank" rel="noopener noreferrer">
+                <Link to={url}>
                     <h1>{name}</h1>
-                </a>
+                </Link>
 
                 <span>{description}</span>
             </PlaylistInfo>

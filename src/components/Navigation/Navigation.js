@@ -1,4 +1,4 @@
-import {Link} from "gatsby"
+import Link from "@bradgarropy/gatsby-link"
 import {useApp} from "hooks"
 import styled from "styled-components"
 import {navLink} from "styles/partials"
