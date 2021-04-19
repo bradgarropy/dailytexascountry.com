@@ -40,7 +40,7 @@ const FeaturedPlaylist = ({playlist}) => {
     return (
         <StyledFeaturedPlaylist>
             <Link aria-label={name} to={url}>
-                <PlaylistImage image={image} />
+                <PlaylistImage image={image} alt={name} />
             </Link>
 
             <PlaylistInfo>

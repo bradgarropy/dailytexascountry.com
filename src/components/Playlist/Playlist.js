@@ -33,7 +33,7 @@ const Playlist = ({playlist}) => {
     return (
         <StyledPlaylist>
             <Link aria-label={name} to={url}>
-                <PlaylistImage image={image} />
+                <PlaylistImage image={image} alt={name} />
             </Link>
 
             <PlaylistMeta playlist={playlist} />
