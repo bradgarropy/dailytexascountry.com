@@ -1,5 +1,6 @@
 import Link from "@bradgarropy/gatsby-link"
 import EpisodeMeta from "components/EpisodeMeta"
+import {getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "styles/Image"
@@ -11,7 +12,7 @@ const StyledEpisode = styled.article`
 
 const Episode = ({episode}) => {
     const {videoId, title} = episode
-    const thumbnail = episode.localThumbnail.childImageSharp.fluid
+    const thumbnail = getImage(episode.localThumbnail)
 
     return (
         <StyledEpisode>
@@ -19,7 +20,7 @@ const Episode = ({episode}) => {
                 aria-label={title}
                 to={`https://youtube.com/watch?v=${videoId}`}
             >
-                <Image fluid={thumbnail} />
+                <Image image={thumbnail} alt={title} />
             </Link>
 
             <EpisodeMeta episode={episode} />

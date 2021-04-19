@@ -5,7 +5,7 @@ const useAbout = () => {
         {
             allMarkdownRemark(
                 filter: {fileAbsolutePath: {regex: "/content/pages/about/"}}
-                sort: {fields: fileAbsolutePath, order: ASC}
+                sort: {fields: frontmatter___order, order: ASC}
             ) {
                 nodes {
                     html
@@ -13,9 +13,12 @@ const useAbout = () => {
                         title
                         image {
                             childImageSharp {
-                                fluid(maxWidth: 700) {
-                                    ...GatsbyImageSharpFluid_withWebp
-                                }
+                                gatsbyImageData(
+                                    width: 700
+                                    placeholder: BLURRED
+                                    formats: [AUTO, WEBP]
+                                    quality: 100
+                                )
                             }
                         }
                     }

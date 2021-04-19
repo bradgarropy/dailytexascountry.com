@@ -1,7 +1,7 @@
-import Img from "gatsby-image"
+import {GatsbyImage} from "gatsby-plugin-image"
 import styled from "styled-components"
 
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
     transition: all 300ms;
     border-radius: 0.25rem;
 

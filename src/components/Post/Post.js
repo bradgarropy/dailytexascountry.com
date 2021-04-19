@@ -1,5 +1,6 @@
 import Link from "@bradgarropy/gatsby-link"
 import PostMeta from "components/PostMeta"
+import {getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "styles/Image"
@@ -18,12 +19,12 @@ const StyledPost = styled.article`
 
 const Post = ({post}) => {
     const {slug, title} = post.frontmatter
-    const image = post.frontmatter.image.childImageSharp.fluid
+    const image = getImage(post.frontmatter.image)
 
     return (
         <StyledPost>
             <Link aria-label={title} to={`/posts/${slug}`}>
-                <Image fluid={image} />
+                <Image image={image} alt={title} />
             </Link>
 
             <PostMeta post={post} />

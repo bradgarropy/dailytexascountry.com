@@ -1,5 +1,6 @@
 import Link from "@bradgarropy/gatsby-link"
 import PlaylistMeta from "components/PlaylistMeta"
+import {getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "styles/Image"
@@ -27,12 +28,12 @@ const PlaylistImage = styled(Image)`
 const Playlist = ({playlist}) => {
     const {name} = playlist
     const url = playlist.external_urls.spotify
-    const image = playlist.image.childImageSharp.fluid
+    const image = getImage(playlist.image)
 
     return (
         <StyledPlaylist>
             <Link aria-label={name} to={url}>
-                <PlaylistImage fluid={image} />
+                <PlaylistImage image={image} />
             </Link>
 
             <PlaylistMeta playlist={playlist} />

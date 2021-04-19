@@ -1,14 +1,14 @@
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 import PostMeta from "components/PostMeta"
 import {graphql} from "gatsby"
-import Img from "gatsby-image"
+import {GatsbyImage, getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Container from "styles/Container"
 import Post from "styles/Post"
 import PostBody from "styles/PostBody"
 
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
     display: block;
     width: 100%;
     max-height: 50vh;
@@ -20,15 +20,16 @@ const PostTemplate = ({data}) => {
     const post = data.markdownRemark
     const {html, frontmatter} = post
     const {title} = frontmatter
-    const {fluid} = frontmatter.image.childImageSharp
-    const image = frontmatter.image.publicURL
+    const image = getImage(frontmatter.image)
+    const imageUrl = frontmatter.image.publicURL
 
     return (
         <Container>
-            <SEO title={title} image={image} />
+            <SEO title={title} image={imageUrl} />
 
             <Post>
-                <Image fluid={fluid} />
+                <Image image={image} alt={title} />
+
                 <PostMeta post={post} />
                 <PostBody dangerouslySetInnerHTML={{__html: html}} />
             </Post>
@@ -52,9 +53,12 @@ const query = graphql`
                 image {
                     publicURL
                     childImageSharp {
-                        fluid(maxWidth: 700) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
+                        gatsbyImageData(
+                            width: 750
+                            # placeholder: BLURRED
+                            # formats: [AUTO, WEBP]
+                            # quality: 100
+                        )
                     }
                 }
             }

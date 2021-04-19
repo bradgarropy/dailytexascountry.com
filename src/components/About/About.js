@@ -1,5 +1,5 @@
 import YouTube from "components/YouTube"
-import Img from "gatsby-image"
+import {GatsbyImage, getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Title from "styles/Title"
@@ -32,7 +32,7 @@ const AboutSection = styled.section`
     }
 `
 
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
     width: 100%;
     height: auto;
     border-radius: 0.25rem;
@@ -71,11 +71,11 @@ const About = ({sections}) => {
             {sections.map((section, index) => {
                 const {html, frontmatter} = section
                 const {title} = frontmatter
-                const {fluid} = frontmatter.image.childImageSharp
+                const image = getImage(frontmatter.image)
 
                 return (
                     <AboutSection key={index}>
-                        <Image fluid={fluid} />
+                        <Image image={image} alt={title} />
 
                         <div>
                             <Title>{title}</Title>
