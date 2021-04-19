@@ -18,7 +18,7 @@ const usePosts = ({limit = 0} = {}) => {
                                 gatsbyImageData(
                                     width: 600
                                     placeholder: BLURRED
-                                    formats: [AUTO, WEBP, AVIF]
+                                    formats: [AUTO, WEBP]
                                     quality: 100
                                 )
                             }
