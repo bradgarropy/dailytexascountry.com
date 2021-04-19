@@ -1,5 +1,5 @@
-import {getImage} from "gatsby-plugin-image"
 import Link from "@bradgarropy/gatsby-link"
+import {getImage} from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Image from "styles/Image"
