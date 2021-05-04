@@ -6,20 +6,7 @@ const getHTML = string => {
     const {origin, pathname} = new URL(string)
     const src = `${origin}/embed${pathname}`
 
-    const html = `
-        <div class="spotify">
-            <iframe
-                src=${src}
-                width="300"
-                height="380"
-                frameborder="0"
-                allowtransparency="true"
-                allow="encrypted-media"
-            >
-            </iframe>
-        </div>
-    `
-
+    const html = `<div class="spotify"><iframe src=${src} width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>`
     return html
 }
 
