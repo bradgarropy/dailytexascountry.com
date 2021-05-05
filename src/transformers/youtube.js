@@ -1,6 +1,8 @@
 const name = "custom youtube"
 
-const shouldTransform = url => url.includes("youtu.be")
+const shouldTransform = url => {
+    return url.includes("youtu.be")
+}
 
 const getHTML = string => {
     const {pathname, searchParams} = new URL(string)
@@ -13,19 +15,7 @@ const getHTML = string => {
         src = `${src}?start=${start}`
     }
 
-    const html = `
-        <div class="video">
-        <iframe
-        title=${id}
-        src=${src}
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        >
-        </iframe>
-        </div>
-    `
-
+    const html = `<div class="video"><iframe title="${id}" src="${src}" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe></div>`
     return html
 }
 

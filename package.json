@@ -49,7 +49,7 @@
         "new": "plop"
     },
     "dependencies": {
-        "@bradgarropy/gatsby-link": "^0.0.2",
+        "@bradgarropy/gatsby-link": "^1.0.0",
         "@bradgarropy/gatsby-plugin-seo": "^1.0.0",
         "airtable": "^0.11.0",
         "babel-plugin-styled-components": "^1.12.0",
