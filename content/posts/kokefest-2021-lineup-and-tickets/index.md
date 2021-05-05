@@ -18,7 +18,7 @@ https://youtu.be/2-vQo0c6mjQ
 
 Overall, I'd rate this lineup a solid B+, as both days have a variety of great artists. The KOKEFEST lineup has always been impressive, but I personally thought the [KOKEFEST 2019][kokefest-2019] lineup leaned too heavily towards the Saturday shows. This year I'd say it's an even split between both days. So if you have to choose, you have two distinct flavors of Texas country music to pick from.
 
-But you better choose fast, because tickets go on sale **May 10th** on the [KOKEFEST][kokefest] website.
+But you better choose fast, because tickets go on sale **May 10th** on the [KOKEFEST][kokefest] website. Until then, listen to our [KOKEFEST 2021 playlist][playlist] to get hyped for the festival!
 
 [kokefest]: https://kokefest.com
 [video]: https://youtu.be/2-vQo0c6mjQ
@@ -32,3 +32,4 @@ But you better choose fast, because tickets go on sale **May 10th** on the [KOKE
 [giovanni]: https://www.gioandtheguns.com
 [austin-meade]: https://www.austinmeade.com
 [kokefest-2019]: https://kokefm.com/2019/05/08/kokefest-2019-lineup-announcement
+[playlist]: https://open.spotify.com/playlist/69GsY4MauEesJa06EHQhml
