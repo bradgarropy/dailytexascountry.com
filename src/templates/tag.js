@@ -46,7 +46,7 @@ TagTemplate.propTypes = {
 }
 
 const query = graphql`
-    query($tag: [String]!) {
+    query ($tag: [String]!) {
         allMarkdownRemark(
             filter: {frontmatter: {tags: {in: $tag}}}
             sort: {fields: frontmatter___date, order: DESC}
