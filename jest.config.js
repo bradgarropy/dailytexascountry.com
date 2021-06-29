@@ -7,6 +7,7 @@ const config = {
         "\\.(svg)$": "<rootDir>/src/test-utils/file.js",
         "\\.(css)$": "identity-obj-proxy",
     },
+    testEnvironment: "jsdom",
     testPathIgnorePatterns: ["<rootDir>/plop"],
 }
 
