@@ -7,10 +7,6 @@ const facebook = require("./src/transformers/facebook")
 const dtxcChannelId = "UCpbIlFaiv-3188nAWtgL0Iw"
 
 module.exports = {
-    flags: {
-        FAST_DEV: true,
-        PARALLEL_SOURCING: true,
-    },
     siteMetadata: {
         url: "https://dailytexascountry.com",
         title: "Daily Texas Country",
