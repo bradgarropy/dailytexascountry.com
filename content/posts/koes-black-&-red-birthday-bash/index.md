@@ -24,10 +24,6 @@ https://www.instagram.com/p/CC1NQp0F9KK
 
 https://www.instagram.com/p/CC1yOjnJzTU
 
-<!-- giovanni and the hired guns -->
-
-https://www.instagram.com/p/CC16XpklOlj
-
 <!-- austin meade -->
 
 https://www.instagram.com/p/CC4gUVHFfIh
