@@ -4,7 +4,9 @@ const {tweet} = require("./utils/twitter")
 const {PLAYLIST_ID} = require("./utils/constants")
 const {getTodaysTrack, deleteTodaysTrack} = require("./utils/airtable")
 
-const handler = async () => {
+const handler = async event => {
+    console.log(event)
+
     let response = null
 
     const spotify = await Spotify()

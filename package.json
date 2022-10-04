@@ -36,9 +36,10 @@
         "url": "https://github.com/bradgarropy/dailytexascountry.com"
     },
     "scripts": {
-        "start": "gatsby develop",
-        "build": "gatsby build",
-        "netlify": "npm run build",
+        "start": "npm run clean ; gatsby develop",
+        "build": "npm run clean ; gatsby build",
+        "clean": "gatsby clean",
+        "netlify": "npm run clean ; npm run build",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "format": "prettier --check .",
