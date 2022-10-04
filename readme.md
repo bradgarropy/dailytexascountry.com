@@ -1,5 +1,7 @@
 # 🤠 dailytexascountry.com
 
+whatever
+
 _She tries to tell me that Oklahoma's better, but I ain't got time for that._
 
 [![netlify][netlify-badge]][netlify]
