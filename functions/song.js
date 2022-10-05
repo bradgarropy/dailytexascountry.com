@@ -9,6 +9,8 @@ const handler = async event => {
     const functionSecret = event.headers["Authorization"]
 
     console.log(event)
+    console.log(event.headers["authorization"])
+    console.log(event.headers["Authorization"])
     console.log(functionSecret)
 
     if (functionSecret !== process.env.FUNCTION_SECRET) {
