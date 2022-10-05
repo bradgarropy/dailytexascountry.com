@@ -5,6 +5,7 @@ on:
         # utc time zone
         # every thursday @ 1am cst
         - cron: "0 6 * * 4"
+    workflow_dispatch:
 
 jobs:
     rebuild:
