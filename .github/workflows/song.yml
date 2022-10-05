@@ -19,4 +19,4 @@ jobs:
               with:
                   url: https://dailytexascountry.com/api/song
                   # prettier-ignore
-                  headers: "{\"authorization\": \"$FUNCTION_SECRET\"}"
+                  headers: "{\"authorization\": \"${FUNCTION_SECRET}\"}"
