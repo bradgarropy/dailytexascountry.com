@@ -5,10 +5,7 @@ const {PLAYLIST_ID} = require("./utils/constants")
 
 const handler = async event => {
     let response = null
-    const functionSecret = event.headers["Authorization"]
-
-    console.log(event)
-    console.log(functionSecret)
+    const functionSecret = event.headers["authorization"]
 
     if (functionSecret !== process.env.FUNCTION_SECRET) {
         response = {

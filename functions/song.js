@@ -8,9 +8,6 @@ const handler = async event => {
     let response = null
     const functionSecret = event.headers["authorization"]
 
-    console.log(event)
-    console.log(functionSecret)
-
     if (functionSecret !== process.env.FUNCTION_SECRET) {
         response = {
             statusCode: 400,
