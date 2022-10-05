@@ -5,6 +5,7 @@ on:
         # utc time zone
         # every friday @ 4pm cst
         - cron: "0 21 * * 5"
+    workflow_dispatch:
 
 jobs:
     tweet:
