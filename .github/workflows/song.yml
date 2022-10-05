@@ -26,8 +26,7 @@ jobs:
               uses: joelwmale/webhook-action@2.1.0
               env:
                   FUNCTION_SECRET: ${{secrets.FUNCTION_SECRET}}
-
               with:
                   url: https://dailytexascountry.com/api/song
                   # prettier-ignore
-                  headers: "{\"authorization\": \"${FUNCTION_SECRET}\"}"
+                  headers: "{\"authorization\": \"${{env.FUNCTION_SECRET}}\"}"
