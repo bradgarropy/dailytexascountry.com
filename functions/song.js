@@ -5,9 +5,20 @@ const {PLAYLIST_ID} = require("./utils/constants")
 const {getTodaysTrack, deleteTodaysTrack} = require("./utils/airtable")
 
 const handler = async event => {
-    console.log(event)
-
     let response = null
+    const functionSecret = event.headers["Authorization"]
+
+    console.log(event)
+    console.log(functionSecret)
+
+    if (functionSecret !== process.env.FUNCTION_SECRET) {
+        response = {
+            statusCode: 400,
+            body: "Unauthorized",
+        }
+
+        return response
+    }
 
     const spotify = await Spotify()
 
