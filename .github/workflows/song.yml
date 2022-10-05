@@ -12,10 +12,21 @@ jobs:
         name: "🐦 tweet"
         runs-on: ubuntu-latest
         steps:
+            - env:
+                  FUNCTION_SECRET: ${{secrets.FUNCTION_SECRET}}
+              run: |
+                  echo $FUNCTION_SECRET
+                  echo ${FUNCTION_SECRET}
+                  echo "$FUNCTION_SECRET"
+                  echo "${FUNCTION_SECRET}"
+                  echo ${{ env.FUNCTION_SECRET }}
+                  echo "${{ env.FUNCTION_SECRET }}"
+
             - name: "🎣 webhook"
-              uses: joelwmale/webhook-action@2.0.2
+              uses: joelwmale/webhook-action@2.1.0
               env:
                   FUNCTION_SECRET: ${{secrets.FUNCTION_SECRET}}
+
               with:
                   url: https://dailytexascountry.com/api/song
                   # prettier-ignore
