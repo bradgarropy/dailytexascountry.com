@@ -18,4 +18,5 @@ jobs:
                   FUNCTION_SECRET: ${{secrets.FUNCTION_SECRET}}
               with:
                   url: https://dailytexascountry.com/api/song
-                  headers: '{"Authorization": "testing123"}'
+                  # prettier-ignore
+                  headers: "{\"authorization\": \"$FUNCTION_SECRET\"}"

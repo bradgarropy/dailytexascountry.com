@@ -6,11 +6,9 @@ const {getTodaysTrack, deleteTodaysTrack} = require("./utils/airtable")
 
 const handler = async event => {
     let response = null
-    const functionSecret = event.headers["Authorization"]
+    const functionSecret = event.headers["authorization"]
 
     console.log(event)
-    console.log(event.headers["authorization"])
-    console.log(event.headers["Authorization"])
     console.log(functionSecret)
 
     if (functionSecret !== process.env.FUNCTION_SECRET) {
