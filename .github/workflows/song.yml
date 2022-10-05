@@ -18,4 +18,4 @@ jobs:
                   FUNCTION_SECRET: ${{secrets.FUNCTION_SECRET}}
               with:
                   url: https://dailytexascountry.com/api/song
-                  headers: '{"Authorization": "$FUNCTION_SECRET"}'
+                  headers: "{'Authorization': '${FUNCTION_SECRET}'}"
