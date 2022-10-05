@@ -3,8 +3,18 @@ const Spotify = require("./utils/spotify")
 const {tweet} = require("./utils/twitter")
 const {PLAYLIST_ID} = require("./utils/constants")
 
-const handler = async () => {
+const handler = async event => {
     let response = null
+    const functionSecret = event.headers["Authorization"]
+
+    if (functionSecret !== process.env.FUNCTION_SECRET) {
+        response = {
+            statusCode: 400,
+            body: "Unauthorized",
+        }
+
+        return response
+    }
 
     const spotify = await Spotify()
 
