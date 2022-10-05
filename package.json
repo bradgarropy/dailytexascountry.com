@@ -52,7 +52,7 @@
     },
     "dependencies": {
         "@bradgarropy/gatsby-link": "^1.0.1",
-        "@bradgarropy/gatsby-plugin-seo": "^1.1.1",
+        "@bradgarropy/gatsby-plugin-seo": "^2.2.0",
         "airtable": "^0.11.1",
         "babel-plugin-styled-components": "^1.13.2",
         "copyright": "0.0.5",
