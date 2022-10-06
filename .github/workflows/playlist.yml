@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "🎣 webhook"
-              uses: joelwmale/webhook-action@2.0.2
+              uses: joelwmale/webhook-action@2.1.0
               with:
                   url: https://dailytexascountry.com/api/playlist
                   # prettier-ignore
