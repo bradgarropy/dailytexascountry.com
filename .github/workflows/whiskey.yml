@@ -13,6 +13,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "🎣 webhook"
-              uses: joelwmale/webhook-action@2.0.2
+              uses: joelwmale/webhook-action@2.1.0
               with:
-                  url: https://api.netlify.com/build_hooks/5ec53c98799bd3b4f89dbb09
+                  url: ${{ secrets.NETLIFY_BUILD_HOOK }}
