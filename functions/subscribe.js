@@ -1,5 +1,4 @@
 require("dotenv").config()
-const fetch = require("node-fetch")
 
 const CONVERTKIT_FORM_ID = "1378571"
 
@@ -24,6 +23,7 @@ const handler = async event => {
         },
     }
 
+    const fetch = await import("node-fetch")
     response = await fetch(url, options)
     const json = await response.json()
 
