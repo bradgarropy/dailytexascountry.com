@@ -10,6 +10,10 @@ const twitter = new Twitter({
 
 const tweet = async content => {
     const response = await twitter.post("statuses/update", {status: content})
+    console.log(response)
+    console.log(response.ok)
+    console.log(response.status)
+    console.log(response.statusText)
     return response
 }
 
