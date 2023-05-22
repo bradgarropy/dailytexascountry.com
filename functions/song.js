@@ -18,10 +18,7 @@ const handler = async event => {
     }
 
     const spotify = await Spotify()
-    console.log("LOGGED IN TO SPOTIFY")
-
     const todaysTrack = await getTodaysTrack()
-    console.log("GOT TODAYS TRACK")
 
     if (todaysTrack) {
         response = await tweet(todaysTrack.link)
@@ -37,7 +34,6 @@ const handler = async event => {
     }
 
     response = await spotify.getPlaylist(PLAYLIST_ID, {fields: "tracks(total)"})
-    console.log("GOT PLAYLIST")
 
     const tracks = response.body.tracks.total
     const trackNumber = random({max: tracks - 1})
@@ -47,11 +43,9 @@ const handler = async event => {
         offset: trackNumber,
         fields: "items(track(external_urls(spotify)))",
     })
-    console.log("GOT PLAYLIST TRACKS")
 
     const link = response.body.items[0].track.external_urls.spotify
     response = await tweet(link)
-    console.log("TWEETED")
 
     response = {
         statusCode: 200,

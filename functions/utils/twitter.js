@@ -8,25 +8,12 @@ const twitter = new Twitter({
     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 })
 
-console.log("NEW TWITTER")
-console.log(twitter)
-
 const tweet = async content => {
-    console.log("INSIDE TWEET")
-    console.log(content)
-    try {
-        const response = await twitter.post("statuses/update", {
-            status: content,
-        })
-        console.log(response)
-        console.log(response.ok)
-        console.log(response.status)
-        console.log(response.statusText)
-        return response
-    } catch (error) {
-        console.log("ERROR WITH TWITTER.POST")
-        console.log(error)
-    }
+    const response = await twitter.post("statuses/update", {
+        status: content,
+    })
+
+    return response
 }
 
 module.exports = {tweet}
