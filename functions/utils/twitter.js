@@ -8,7 +8,12 @@ const twitter = new Twitter({
     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 })
 
+console.log("NEW TWITTER")
+console.log(twitter)
+
 const tweet = async content => {
+    console.log("INSIDE TWEET")
+    console.log(content)
     const response = await twitter.post("statuses/update", {status: content})
     console.log(response)
     console.log(response.ok)
