@@ -14,5 +14,5 @@ They followed up the single with a six track EP called [Red Eye][red-eye] which 
 
 [pecos]: https://facebook.com/pecosandtherooftops
 [kolby-cooper]: https://kolbycooper.com
-[this-damn-song]: https://open.spotify.com/track/7s9bJQK8sr8yDyOAHn8miR
-[red-eye]: https://open.spotify.com/album/4siecYatTT3ySmsG6juFIv
+[this-damn-song]: https://music.apple.com/us/album/this-damn-song/1670116902?i=1670116903
+[red-eye]: https://music.apple.com/us/album/red-eye-ep/1671682627

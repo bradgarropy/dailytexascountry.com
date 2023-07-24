@@ -26,14 +26,14 @@ Randy Rogers / Wade Bowen - [Hold My Beer, Vol. 2][hmbwt]
 Kody West - [Overgrown][overgrown]
 
 [muscadine]: https://muscadinebloodline.com
-[movin-on]: https://open.spotify.com/album/5PY3Qnw71LdFtEySdfnfxo
-[work-tapes]: https://open.spotify.com/album/3CAwQf7FEayeoRQLIPASfZ
-[turn-back-time]: https://open.spotify.com/album/1YTUy55SBqVmOTSJHJ8ken
-[breakdown]: https://open.spotify.com/album/5WI1T3Yznpu6W5Ci65XGBq
-[sundy]: https://open.spotify.com/track/61gRcxqJKDTHNQgSpxp2bL
-[goat]: https://open.spotify.com/album/6YIl2LhrRvctLS4vHvIdvZ
-[kuntry]: https://open.spotify.com/track/5KAW7flnsWEiMNFlwsSHWE
-[if-i-still-had-it]: https://open.spotify.com/track/1QnJzu7kgPPxGO2HJIRkMy
-[like-a-cowboy]: https://open.spotify.com/track/13bXmY0acm51KkgEdhCm1n
-[hmbwt]: https://open.spotify.com/album/4UvP4sa5O6YQP1xr7Yb1xK
-[overgrown]: https://open.spotify.com/album/6UuzqyNB6X5SZyGCGdYmDl
+[movin-on]: https://music.apple.com/us/album/movin-on-ep/1639426255
+[work-tapes]: https://music.apple.com/us/album/quarantine-work-tapes-vol-1-ep/1504463264
+[turn-back-time]: https://music.apple.com/us/album/turn-back-time-ep/1519392119
+[breakdown]: https://music.apple.com/us/album/breakdown/1513225537
+[sundy]: https://music.apple.com/us/album/sundy-or-mundy/1536021697?i=1536022050
+[goat]: https://music.apple.com/us/album/lost-my-brothers-goat/1519879450
+[kuntry]: https://music.apple.com/us/album/kuntry-wistern/1536021697?i=1536021712
+[if-i-still-had-it]: https://music.apple.com/us/album/if-i-still-had-it/1513107710?i=1513107718
+[like-a-cowboy]: https://music.apple.com/us/album/like-a-cowboy/1504914186?i=1504914198
+[hmbwt]: https://music.apple.com/us/album/hold-my-beer-vol-2/1497964578
+[overgrown]: https://music.apple.com/us/album/overgrown/1503096648

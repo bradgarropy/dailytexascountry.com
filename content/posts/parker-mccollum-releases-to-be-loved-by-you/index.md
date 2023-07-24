@@ -6,7 +6,7 @@ tags: []
 image: images/parker.jpg
 ---
 
-With nothing but a single post on [Twitter][twitter] and [Instagram][instagram] for marketing, [Parker McCollum][parker] kicked off 2021 strong with the brand new single _To Be Loved By You_. Only one week later it's got 100k views on [YouTube][youtube] and 486k streams on [Spotify][spotify].
+With nothing but a single post on [Twitter][twitter] and [Instagram][instagram] for marketing, [Parker McCollum][parker] kicked off 2021 strong with the brand new single [_To Be Loved By You_][apple-music]. Only one week later it's got 100k views on [YouTube][youtube] and 486k streams on Spotify.
 
 https://youtu.be/-IeGE6DHXmA
 
@@ -17,11 +17,11 @@ The constant, driving, acoustic strumming creates a bit of tension that reflects
 Regardless, with his recent singles and the [Hollywood Gold EP][ep], I'm assuming he'll drop a full album here soon. Now let's just hope he records [Dallas][dallas] for it.
 
 [dallas]: https://youtu.be/iBY5bA2GAL0?t=96
-[ep]: https://open.spotify.com/album/5n7F9Q6XIZM4JCdWBVISV4
+[ep]: https://music.apple.com/us/album/hollywood-gold-ep/1531780614
 [live]: https://youtu.be/cs5ffegdbeA?t=48
 [versions]: https://youtu.be/ghOat3uNCgs
 [youtube]: https://youtu.be/-IeGE6DHXmA
-[spotify]: https://open.spotify.com/track/5Ykc3Wr4L4wef5QDdaaxM7
+[apple-music]: https://music.apple.com/us/album/to-be-loved-by-you/1545612565?i=1545612569
 [parker]: https://twitter.com/ParkerMcCollum
 [instagram]: https://www.instagram.com/p/CJePsTQn3io
 [twitter]: https://twitter.com/ParkerMcCollum/status/1344715706512904192
