@@ -12,7 +12,7 @@ https://twitter.com/joshabbottband/status/1271875924645089293
 
 While the name Luck is definitely unique, it's a phrase we've heard mentioned a lot recently with [Josh Abbott Band][jab]. They released a new single called [_The Luckiest_][luckiest], a song about being grateful for the simple things. I wonder if the song had anything to do with naming the baby?
 
-https://open.spotify.com/track/4lrusIbfvFfYyOPKGIxgg9
+https://music.apple.com/us/album/the-luckiest-feat-catie-offerman/1632636167?i=1632636449
 
 [josh]: https://instagram.com/joshidalou
 [taylor]: https://instagram.com/mrs_taylorabbott

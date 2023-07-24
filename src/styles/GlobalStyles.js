@@ -47,6 +47,13 @@ const GlobalStyles = createGlobalStyle`
         line-height: 0;
     }
 
+    /* apple music embed */
+    .apple-music {
+        margin: 2rem auto;
+        text-align: center;
+        line-height: 0;
+    }
+
     /* facebook and youtube video embeds */
     .video {
         overflow: hidden;
