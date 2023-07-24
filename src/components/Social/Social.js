@@ -1,8 +1,8 @@
 import Link from "@bradgarropy/gatsby-link"
 import {useSiteMetadata} from "hooks"
 import styled from "styled-components"
+import AppleMusic from "svg/apple-music.svg"
 import Instagram from "svg/instagram.svg"
-import Spotify from "svg/spotify.svg"
 import Twitter from "svg/twitter.svg"
 import YouTube from "svg/youtube.svg"
 
@@ -28,7 +28,7 @@ const StyledInstagram = styled(Instagram)`
     width: auto;
 `
 
-const StyledSpotify = styled(Spotify)`
+const StyledAppleMusic = styled(AppleMusic)`
     max-height: 1.5rem;
     width: auto;
 `
@@ -57,10 +57,10 @@ const Social = () => {
             </Link>
 
             <Link
-                aria-label="Spotify"
+                aria-label="Apple Music"
                 to={`https://open.spotify.com/user/${spotify}`}
             >
-                <StyledSpotify />
+                <StyledAppleMusic />
             </Link>
         </StyledSocial>
     )
