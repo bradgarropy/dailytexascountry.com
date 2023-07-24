@@ -6,7 +6,7 @@ tags: [birthday]
 image: images/koe-wetzel.jpg
 ---
 
-It was [Koe Wetzel][koe-wetzel]'s birthday on July 14th, so he did what any other rebel country music star would do and threw himself a huge party. While he kept it on the down low, this party was anything but chill. Hosted in Fort Worth, Koe and his guests dressed up in black and red to celebrate, drink, smoke, and party the night away. Many familiar faces showed up, like [Casey Donahew][casey-donahew], [Parker McCollum][parker-mccollum], [Chris Colston][chris-colston], and many other Texas country artists. He even invited a special guest to sing him happy birthday, [Lil Flip][lil-flip]!
+It was [Koe Wetzel][koe-wetzel-instagram]'s birthday on July 14th, so he did what any other rebel country music star would do and threw himself a huge party. While he kept it on the down low, this party was anything but chill. Hosted in Fort Worth, Koe and his guests dressed up in black and red to celebrate, drink, smoke, and party the night away. Many familiar faces showed up, like [Casey Donahew][casey-donahew-instagram], [Parker McCollum][parker-mccollum-instagram], [Chris Colston][chris-colston-instagram], and many other Texas country artists. He even invited a special guest to sing him happy birthday, [Lil Flip][lil-flip-instagram]!
 
 Based on the tweets from the night, everyone partied hard and woke up with ridiculous hangovers. But in the end, there's only one question to be asked.
 
@@ -14,34 +14,36 @@ _**Just where in the hell was my invite?**_
 
 <!-- casey donahew -->
 
-https://www.instagram.com/p/CC3jJCwhtas
+![casey-donahew][casey-donahew]
 
 <!-- chris colston -->
 
-https://www.instagram.com/p/CC1NQp0F9KK
+![chris-colston][chris-colston]
 
 <!-- kolby cooper -->
 
-https://www.instagram.com/p/CC1yOjnJzTU
+![kolby-cooper][kolby-cooper]
 
 <!-- austin meade -->
 
-https://www.instagram.com/p/CC4gUVHFfIh
+![austin-meade][austin-meade]
 
 <!-- pecos & the rooftops -->
 
-https://www.instagram.com/p/CC13UCtFhpX
+![pecos][pecos]
 
 <!-- lil fip & koe-->
 
-https://www.instagram.com/p/CC1dy7QDu3U
+![lil-flip][lil-flip]
 
-<!-- lil flip - happy birthday -->
-
-https://www.instagram.com/p/CCz5YNHj4C0
-
-[koe-wetzel]: https://www.instagram.com/koe_wetzel
-[casey-donahew]: https://www.instagram.com/caseydonahew
-[parker-mccollum]: https://www.instagram.com/parkermccollum
-[chris-colston]: https://www.instagram.com/chriscolston_
-[lil-flip]: https://www.instagram.com/lilflip713
+[koe-wetzel-instagram]: https://www.instagram.com/koe_wetzel
+[casey-donahew-instagram]: https://www.instagram.com/caseydonahew
+[parker-mccollum-instagram]: https://www.instagram.com/parkermccollum
+[chris-colston-instagram]: https://www.instagram.com/chriscolston_
+[lil-flip-instagram]: https://www.instagram.com/lilflip713
+[casey-donahew]: images/casey-donahew.jpg
+[chris-colston]: images/chris-colston.jpg
+[kolby-cooper]: images/kolby-cooper.jpg
+[austin-meade]: images/austin-meade.jpg
+[pecos]: images/pecos.jpg
+[lil-flip]: images/lil-flip.jpg
