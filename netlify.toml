@@ -30,8 +30,8 @@
     status = 301
 
 [[redirects]]
-    from = "/spotify"
-    to = "https://open.spotify.com/user/azm4kv72ln2dy409hplmkax8p"
+    from = "/apple-music"
+    to = "https://music.apple.com/us/playlist/daily-texas-country/pl.u-leyl0Y6tMkvW2oL"
     status = 301
 
 [[plugins]]
