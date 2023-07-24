@@ -6,7 +6,7 @@ tags: [birthday]
 image: images/koe-wetzel.jpg
 ---
 
-It was [Koe Wetzel][koe-wetzel-instagram]'s birthday on July 14th, so he did what any other rebel country music star would do and threw himself a huge party. While he kept it on the down low, this party was anything but chill. Hosted in Fort Worth, Koe and his guests dressed up in black and red to celebrate, drink, smoke, and party the night away. Many familiar faces showed up, like [Casey Donahew][casey-donahew-instagram], [Parker McCollum][parker-mccollum-instagram], [Chris Colston][chris-colston-instagram], and many other Texas country artists. He even invited a special guest to sing him happy birthday, [Lil Flip][lil-flip-instagram]!
+It was [Koe Wetzel][koe-wetzel-instagram]'s birthday on July 14th, so he did what any other rebel country music star would do and threw himself a huge party. While he kept it on the down low, this party was anything but chill. Hosted in Fort Worth, Koe and his guests dressed up in black and red to celebrate, drink, smoke, and party the night away. Many familiar faces showed up, like [Casey Donahew][casey-donahew-instagram], [Parker McCollum][parker-mccollum-instagram], [Chris Colston][chris-colston-instagram], and many other Texas country artists. He even invited a special guest to sing him [happy birthday][happy-birthday], [Lil Flip][lil-flip-instagram]!
 
 Based on the tweets from the night, everyone partied hard and woke up with ridiculous hangovers. But in the end, there's only one question to be asked.
 
@@ -47,3 +47,4 @@ _**Just where in the hell was my invite?**_
 [austin-meade]: images/austin-meade.jpg
 [pecos]: images/pecos.jpg
 [lil-flip]: images/lil-flip.jpg
+[happy-birthday]: https://www.instagram.com/p/CCz5YNHj4C0
