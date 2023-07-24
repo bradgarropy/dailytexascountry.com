@@ -124,12 +124,6 @@ module.exports = {
                         resolve: "gatsby-remark-embedder",
                         options: {
                             customTransformers: [spotify, youtube, facebook],
-                            services: {
-                                Instagram: {
-                                    accessToken:
-                                        process.env.FACEBOOK_ACCESS_TOKEN,
-                                },
-                            },
                         },
                     },
                     {
