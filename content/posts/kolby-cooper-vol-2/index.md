@@ -26,6 +26,6 @@ Congratulations to [Kolby Cooper][kolby-cooper] on this release! I expect to see
 
 https://twitter.com/KolbyCooper_/status/1294487737974894593
 
-[vol-2]: https://open.spotify.com/album/57ZSt2TiKNe3MII9ElrUKp
+[vol-2]: https://music.apple.com/us/album/vol-2-ep/1525330285
 [kolby-cooper]: https://www.kolbycooper.com
 [teaser]: https://www.instagram.com/p/CAp558Gp7Xg

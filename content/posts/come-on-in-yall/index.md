@@ -8,7 +8,7 @@ image: images/koke.jpg
 
 Hey y'all, welcome to [Daily Texas Country][dtxc]!
 
-Daily Texas Country was created out of love for Texas country music, and formed around our [Spotify playlist][spotify-playlist]. We've got a collection of over 1,000 tracks, so you'll never run out of songs to listen to. If you just can't choose, we post one song every day on our [Twitter][twitter], or you can explore some of our other hand picked [playlists][playlists].
+Daily Texas Country was created out of love for Texas country music, and formed around our [Apple Music playlist][apple-music-playlist]. We've got a collection of over 1,000 tracks, so you'll never run out of songs to listen to. If you just can't choose, we post one song every day on our [Twitter][twitter], or you can explore some of our other hand picked [playlists][playlists].
 
 If you're looking for an excuse to drink whiskey, look no further. Check out [Whiskey Wednesday][whiskey-wednesday] on our [YouTube][youtube] channel. It's a weekly series where I listen to the daily song, tell you what I think about it, and share some stories. Trust me, I've got some.
 
@@ -17,7 +17,7 @@ And if you really like what we're doing here, head over to our [store][store]. S
 https://youtu.be/QnwQb2-8yzE
 
 [dtxc]: /
-[spotify-playlist]: https://open.spotify.com/playlist/1bgAyCwQMBbRQxNnKWj0RM
+[apple-music-playlist]: https://music.apple.com/us/playlist/daily-texas-country/pl.u-leyl0Y6tMkvW2oL
 [playlists]: /playlists
 [twitter]: https://twitter.com/dailytxcountry
 [youtube]: https://youtube.com/channel/UCpbIlFaiv-3188nAWtgL0Iw

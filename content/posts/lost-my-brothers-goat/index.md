@@ -23,9 +23,9 @@ Overall I definitely enjoyed this album and recommend that you give it a listen.
 <h2 style="text-align: center">RATING: 🥃🥃🥃🥃<span style="opacity: 20%">🥃</span></h2>
 
 [cdb]: https://twitter.com/caseydband
-[goat]: https://open.spotify.com/album/6YIl2LhrRvctLS4vHvIdvZ
+[goat]: https://music.apple.com/us/album/lost-my-brothers-goat/1519879450
 [melinda]: https://www.instagram.com/melindadonahew
 [store]: https://store.caseydonahew.com
 [livestreams]: https://www.facebook.com/CaseyDonahewBand/videos
-[playlist]: https://open.spotify.com/playlist/1bgAyCwQMBbRQxNnKWj0RM
+[playlist]: https://music.apple.com/us/playlist/daily-texas-country/pl.u-leyl0Y6tMkvW2oL
 [twitter]: https://twitter.com/dailytxcountry

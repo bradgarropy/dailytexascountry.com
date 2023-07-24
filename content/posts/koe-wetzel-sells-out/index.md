@@ -24,7 +24,7 @@ Seems like Koe is making a lot of [big moves][moves] in 2020, so get this man a 
 [columbia]: http://www.columbiarecords.com
 [tgtbr]: https://www.facebook.com/GreatTexasBalloonRace/posts/2487975284557433
 [blink]: https://www.blink182.com
-[kuntry]: https://open.spotify.com/track/5KAW7flnsWEiMNFlwsSHWE
+[kuntry]: https://music.apple.com/us/album/kuntry-wistern/1536021697?i=1536021712
 [moves]: https://twitter.com/KoeWetzel/status/1267521138680307714
 [drink]: https://twitter.com/KoeWetzel/status/1277821136261263360
 [instagram]: https://instagram.com/dailytexascountry
